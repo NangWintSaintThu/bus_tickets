@@ -17,3 +17,4 @@ Route::get('/','PageController@homefun')->name('homepage');
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
