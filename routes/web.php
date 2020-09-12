@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 //Route::get('/', 'PageController@home')->name('homepage');
 Route::get('/','PageController@home')->name('homepage');
+Route::get('route', 'PageController@routefun')->name('routepage');
 
 Route::get('travellerinfo', 'PageController@travellerinfofun')->name('travellerinfopage');
 
@@ -22,7 +23,11 @@ Route::get('bookingdetail', 'PageController@bookingdetailfun')->name('bookingdet
 
 
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
+//<<<<<<< HEAD
+Route::resource('routes', 'RouteController');
+//=======
 Route::resource('travellerinfos','TravellerInfoController');
 Route::resource('bookingdetails','BookingdetailController');
 
 
+//>>>>>>> 522ea2ef5ea673dfa244edde9fc54f375587f03c
