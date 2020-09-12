@@ -17,3 +17,6 @@ Route::get('/','PageController@home')->name('homepage');
 
 
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
+
+Route::resource('cities','CityController');
+Route::resource('bus_types','Bus_typeController');
