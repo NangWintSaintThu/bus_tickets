@@ -1,7 +1,6 @@
 @extends('master')
-@section('content')
-
-<div class="hero-wrap" style="background-image: url({{asset('frontend/images/bg_1.jpg')}});" data-stellar-background-ratio="0.5">
+@section('contact')
+<div class="hero-wrap" style="background-image: url({{asset('frontend/img/world.jpg')}});" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center">
@@ -342,7 +341,7 @@
           </div>
           <div class="col-md-3">
             <div class="car-wrap ftco-animate">
-              <div class="img d-flex align-items-end" style="background-image: url({{asset('frontend/images/car-7.jpg')}};">
+              <div class="img d-flex align-items-end" style="background-image: url({{asset('frontend/images/car-7.jpg')}});">
                 <div class="price-wrap d-flex">
                   <span class="rate">$25</span>
                   <p class="from-day">
@@ -577,5 +576,5 @@
           </div>
         </div>
       </div>
-    </section>    
-@endsection
+    </section>
+    @endsection
