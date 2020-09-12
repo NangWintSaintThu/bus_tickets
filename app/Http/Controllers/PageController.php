@@ -10,4 +10,12 @@ class PageController extends Controller
 	{
 		return view('frontend.home');
 }
+    
+     public function routefun($id)
+    {
+        $route =Route::find($id);
+        return view ('backend.route',compact('route')) ;
+        
+    }
+
 }

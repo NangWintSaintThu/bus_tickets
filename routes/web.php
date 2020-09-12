@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 //Route::get('/', 'PageController@home')->name('homepage');
 Route::get('/','PageController@home')->name('homepage');
+Route::get('route', 'PageController@routefun')->name('routepage');
 
 
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
+Route::resource('routes', 'RouteController');
