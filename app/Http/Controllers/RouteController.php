@@ -14,7 +14,9 @@ class RouteController extends Controller
      */
     public function index()
     {
+
         $routes=Route::all();
+
          return view('backend.routes.index');
     }
 
@@ -25,7 +27,7 @@ class RouteController extends Controller
      */
     public function create()
     {
-        
+
     }
 
     /**
@@ -36,7 +38,7 @@ class RouteController extends Controller
      */
     public function store(Request $request)
     {
-        
+
     }
 
     /**
@@ -58,7 +60,7 @@ class RouteController extends Controller
      */
     public function edit(Route $route)
     {
-        
+
     }
 
     /**
@@ -70,7 +72,7 @@ class RouteController extends Controller
      */
     public function update(Request $request, Route $route)
     {
-         
+
     }
 
     /**
@@ -81,6 +83,6 @@ class RouteController extends Controller
      */
     public function destroy(Route $route)
     {
-        
+
     }
 }
