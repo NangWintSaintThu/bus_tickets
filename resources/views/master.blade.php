@@ -42,7 +42,7 @@
 	  </nav>
     <!-- END nav -->
     
-   @yield('contact')
+   @yield('content')
    
 
     <footer class="ftco-footer ftco-section">
