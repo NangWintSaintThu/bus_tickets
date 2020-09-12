@@ -34,8 +34,8 @@
           <li>
             <a href="{{route('bookingdetailpage')}}"><span class="fa fa-pencil mr-3"></span>Booking Detail</a>
           </li>
-          <li>
-            <a href="#"><span class="fa fa-trophy mr-3"></span> Top Review</a>
+           <li>
+            <a href="{{route('routepage')}}"><span class="fa fa-book mr-3"></span> Route </a>
           </li>
           <li>
             <a href="#"><span class="fa fa-cog mr-3"></span> Settings</a>

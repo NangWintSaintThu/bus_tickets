@@ -25,7 +25,7 @@
         </div>
         <ul class="list-unstyled components mb-5">
           <li class="active">
-            <a href="#"><span class="fa fa-home mr-3"></span> Home</a>
+            <a href="{{route('dashboardpage')}}"><span class="fa fa-home mr-3"></span> Home</a>
           </li>
           <li>
               <a href="{{route('travellerinfopage')}}"><span class="fa fa-book mr-3 notif"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a>
@@ -34,7 +34,7 @@
             <a href="{{route('bookingdetailpage')}}"><span class="fa fa-pencil mr-3"></span>Booking Detail</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-trophy mr-3"></span> Top Review</a>
+            <a href="{{route('routepage')}}"><span class="fa fa-book mr-3"></span> Route </a>
           </li>
           <li>
             <a href="#"><span class="fa fa-cog mr-3"></span> Settings</a>

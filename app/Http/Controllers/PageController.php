@@ -12,10 +12,10 @@ class PageController extends Controller
 }
 //<<<<<<< HEAD
     
-     public function routefun($id)
+     public function routefun($value='')
     {
-        $route =Route::find($id);
-        return view ('backend.route',compact('route')) ;
+       
+        return view ('backend.routes.index') ;
         
     }
 

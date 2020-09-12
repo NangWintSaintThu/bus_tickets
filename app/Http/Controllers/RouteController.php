@@ -14,6 +14,7 @@ class RouteController extends Controller
      */
     public function index()
     {
+        $routes=Route::all();
          return view('backend.routes.index');
     }
 
@@ -24,8 +25,7 @@ class RouteController extends Controller
      */
     public function create()
     {
-         $buses = Bus_type::all();
-        return view('backend.routes.create',compact('buses'));
+        
     }
 
     /**
@@ -36,32 +36,7 @@ class RouteController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request);
-
-        //Validation
-         $request->validate([
-            
-            "departure_station"=> 'required',
-            "arrival_station"=> 'required',
-            "departure_time"=> 'required',
-            "price"=> 'required',
-            "seat"=> 'required',
-            "bus_type"=> 'required',
-        ]);
-        //If include file,upload file
-
-        //Data insert
-        $route=new Route;
-        $route->departure_station=$request->departure_station;
-        $route->arrival_station=$request->arrival_station;
-        $route->departure_time=$request->departure_time;
-        $route->price=$request->price;
-        $route->seat=$request->seat;
-        $route->bus_type_id=$request->bus_type;
-        $route->save();
-
-         //redirect
-            return redirect()->route('routes.index');
+        
     }
 
     /**
@@ -83,8 +58,7 @@ class RouteController extends Controller
      */
     public function edit(Route $route)
     {
-         $buses=Category::all();
-        return view('backend.routes.edit',compact('buses','subcategory'));
+        
     }
 
     /**
@@ -96,31 +70,7 @@ class RouteController extends Controller
      */
     public function update(Request $request, Route $route)
     {
-         $request->validate([
-            
-            "departure_station"=> 'required',
-            "arrival_station"=> 'required',
-            "departure_time"=> 'required',
-            "price"=> 'required',
-            "seat"=> 'required',
-            "bus_type"=> 'required'
-             
-        ]);
-        //If include file,upload file
-        
-        //data update
-           
-        
-        $route->departure_station=$request->departure_station;
-        $route->arrival_station=$request->arrival_station;
-        $route->departure_time=$request->departure_time;
-        $route->price=$request->price;
-        $route->seat=$request->seat;
-        $route->bus_type_id=$request->bus_type;
-        $route->save();
-
-         //redirect
-            return redirect()->route('routes.index');
+         
     }
 
     /**
@@ -131,7 +81,6 @@ class RouteController extends Controller
      */
     public function destroy(Route $route)
     {
-        $route->delete();
-        return redirect()->route('routes.index');
+        
     }
 }
