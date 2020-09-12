@@ -14,13 +14,13 @@ class CreateRoutesTable extends Migration
     public function up()
     {
         Schema::create('routes', function (Blueprint $table) {
-           $table->id();
+            $table->id();
             $table->string('departure_station');
             $table->string('arrival_station');
             $table->time('departure_time');
             $table->integer('price');
             $table->integer('seat');
-           $table->unsignedBigInteger('bus_type_id'); 
+            $table->unsignedBigInteger('bus_type_id'); 
             $table->timestamps();
 
             

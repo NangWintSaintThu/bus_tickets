@@ -10,6 +10,7 @@ class PageController extends Controller
 	{
 		return view('frontend.home');
 }
+//<<<<<<< HEAD
     
      public function routefun($id)
     {
@@ -18,4 +19,14 @@ class PageController extends Controller
         
     }
 
+//=======
+	public function travellerinfofun($value='')
+	{
+		return view('backend.travellerinfo');
+	}
+	public function bookingdetailfun($value='')
+	{
+		return view('backend.bookingdetail');
+	}
+//>>>>>>> 522ea2ef5ea673dfa244edde9fc54f375587f03c
 }

@@ -14,7 +14,7 @@ class RouteController extends Controller
      */
     public function index()
     {
-         return view('backend.routes.index',compact('routes'));
+         return view('backend.routes.index');
     }
 
     /**
