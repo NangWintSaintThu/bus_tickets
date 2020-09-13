@@ -14,11 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 //Route::get('/', 'PageController@home')->name('homepage');
 Route::get('/','PageController@home')->name('homepage');
+Route::get('about','PageController@about')->name('aboutpage');
+Route::get('yourticket','PageController@yourticket')->name('yourticketpage');
 Route::get('route', 'PageController@routefun')->name('routepage');
 
-Route::get('travellerinfo', 'PageController@travellerinfofun')->name('travellerinfopage');
+Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
 
-Route::get('bookingdetail', 'PageController@bookingdetailfun')->name('bookingdetailpage');
+Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');
 
 
 

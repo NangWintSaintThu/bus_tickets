@@ -11,6 +11,16 @@ class PageController extends Controller
 		return view('frontend.home');
 }
 
+     public function about($value='')
+	{
+		return view('frontend.about');
+}
+     
+      public function yourticket($value='')
+	{
+		return view('frontend.yourticket');
+}
+
     
      public function routefun($value='')
     {
@@ -20,13 +30,13 @@ class PageController extends Controller
     }
 
 
-	public function travellerinfofun($value='')
+	public function travellerinfo($value='')
 	{
-		return view('backend.travellerinfo');
+		return view('frontend.travellerinfo');
 	}
-	public function bookingdetailfun($value='')
+	public function bookingdetail($value='')
 	{
-		return view('backend.bookingdetail');
+		return view('frontend.bookingdetail');
 	}
 //>>>>>>> 522ea2ef5ea673dfa244edde9fc54f375587f03c
 }
