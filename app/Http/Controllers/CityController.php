@@ -1,7 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Route;
+
+
+
 use App\City;
 use Illuminate\Http\Request;
 
@@ -14,9 +18,13 @@ class CityController extends Controller
      */
     public function index()
     {
+
        $cities=City::all();
        //dd($items);
        return view('backend.cities.index',compact('cities'));
+
+        //
+
     }
 
     /**
@@ -26,7 +34,11 @@ class CityController extends Controller
      */
     public function create()
     {
+
        return view('backend.cities.create');
+
+        //
+
     }
 
     /**
@@ -37,25 +49,8 @@ class CityController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request);
 
-        //Validation
-         $request->validate([
-         "id" => 'required',
-         "name" => 'required',
-         ]);
-        //If include file,upload file
-        /*$imageName=time().'.'.$request->photo->extension();
-        $request->photo->move(public_path('backend/brandimg'),$imageName);
-        $path='backend/brandimg/'.$imageName;*/
 
-        //Data insert
-        $city=new City;
-        $city->id=$request->id;
-        $city->name=$request->name;
-        $city->save();
-        //redirect
-        return redirect()->route('cities.index');
     }
 
     /**
@@ -66,7 +61,7 @@ class CityController extends Controller
      */
     public function show(City $city)
     {
-        //
+        
     }
 
     /**
@@ -77,7 +72,7 @@ class CityController extends Controller
      */
     public function edit(City $city)
     {
-        return view('backend.cities.edit',compact('city'));
+
     }
 
     /**
@@ -89,26 +84,7 @@ class CityController extends Controller
      */
     public function update(Request $request, City $city)
     {
-        $request->validate([
-         "id" => 'required',
-         "name" => 'required',
-         ]);
-        //file upload,if data
-       /* if($request->hasFile('photo')){
-        $imageName=time().'.'.$request->photo->extension();
-       
-        $request->photo->move(public_path('backend/brandimg'),$imageName);
-        $path='backend/brandimg/'.$imageName;
-    }else{
-        $path=$request->oldphoto;
-    }*/
-        
-        //data update
-        $city->id=$request->id;
-        $city->name=$request->name;
-       $city->save();
-        //redirect
-        return redirect()->route('cities.index');
+
     }
 
     /**

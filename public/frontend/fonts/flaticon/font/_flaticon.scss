@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 15/07/2020 11:15
+    Creation date: 24/07/2019 12:28
     */
 
     @font-face {
@@ -37,28 +37,26 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-system:before { content: "\f100"; }
-.flaticon-supervised:before { content: "\f101"; }
-.flaticon-accounting:before { content: "\f102"; }
-.flaticon-engineer:before { content: "\f103"; }
-.flaticon-blueprint:before { content: "\f104"; }
-.flaticon-lamp:before { content: "\f105"; }
-.flaticon-house:before { content: "\f106"; }
-.flaticon-relax:before { content: "\f107"; }
-.flaticon-kitchen:before { content: "\f108"; }
-.flaticon-debate:before { content: "\f109"; }
-.flaticon-wall:before { content: "\f10a"; }
-.flaticon-hotel:before { content: "\f10b"; }
+    .flaticon-customer-support:before { content: "\f100"; }
+.flaticon-route:before { content: "\f101"; }
+.flaticon-online-booking:before { content: "\f102"; }
+.flaticon-rent:before { content: "\f103"; }
+.flaticon-review:before { content: "\f104"; }
+.flaticon-dashboard:before { content: "\f105"; }
+.flaticon-car-machine:before { content: "\f106"; }
+.flaticon-car-seat:before { content: "\f107"; }
+.flaticon-backpack:before { content: "\f108"; }
+.flaticon-diesel:before { content: "\f109"; }
+.flaticon-select:before { content: "\f10a"; }
     
-    $font-Flaticon-system: "\f100";
-    $font-Flaticon-supervised: "\f101";
-    $font-Flaticon-accounting: "\f102";
-    $font-Flaticon-engineer: "\f103";
-    $font-Flaticon-blueprint: "\f104";
-    $font-Flaticon-lamp: "\f105";
-    $font-Flaticon-house: "\f106";
-    $font-Flaticon-relax: "\f107";
-    $font-Flaticon-kitchen: "\f108";
-    $font-Flaticon-debate: "\f109";
-    $font-Flaticon-wall: "\f10a";
-    $font-Flaticon-hotel: "\f10b";
+    $font-Flaticon-customer-support: "\f100";
+    $font-Flaticon-route: "\f101";
+    $font-Flaticon-online-booking: "\f102";
+    $font-Flaticon-rent: "\f103";
+    $font-Flaticon-review: "\f104";
+    $font-Flaticon-dashboard: "\f105";
+    $font-Flaticon-car-machine: "\f106";
+    $font-Flaticon-car-seat: "\f107";
+    $font-Flaticon-backpack: "\f108";
+    $font-Flaticon-diesel: "\f109";
+    $font-Flaticon-select: "\f10a";
