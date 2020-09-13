@@ -20,6 +20,7 @@ Route::get('register','PageController@register')->name('registerpage');
 Route::get('yourticket','PageController@yourticket')->name('yourticketpage');
 Route::get('contact','PageController@contact')->name('contactpage');
 Route::get('route', 'PageController@routefun')->name('routepage');
+Route::get('search','PageController@searchfun')->name('searchpage');
 
 Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
 

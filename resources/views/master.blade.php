@@ -39,8 +39,14 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="{{ route('homepage') }}" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="{{ route('aboutpage') }}" class="nav-link">About</a></li>
+<<<<<<< HEAD
            <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
             <li class="nav-item"><a href="{{ route('yourticketpage') }}" class="nav-link">Bus Ticket</a></li>
+=======
+          {{--   <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
+            <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li> --}}
+            <li class="nav-item"><a href="{{ route('yourticketpage') }}" class="nav-link">Your Ticket</a></li>
+>>>>>>> 59f5ad2faa485a0198433cf3a2df6cb237d3cbfc
             <li class="nav-item"><a href="{{ route ('contactpage') }}" class="nav-link">Contact</a></li>
             <span class="float-right d-xl-block d-lg-block d-md-block d-none">
             <a href="{{route('loginpage')}}" class=" text-decoration-none loginLink ml-right"> Login |</a>
@@ -54,7 +60,7 @@
     </nav>
     <!-- END nav -->
     
-     @yield('contact')
+     @yield('content')
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">

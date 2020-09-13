@@ -1,4 +1,5 @@
 @extends('master')
+<<<<<<< HEAD
 @section('contact')
   
   
@@ -10,6 +11,26 @@
   
   <!-- Content -->
   <div class="container my-5">
+=======
+@section('content')
+   
+ <div class="col-lg-18 col-md-12 mt-0 mt-md-5 d-flex mt-5">
+           
+   
+       <section class="ftco-section ftco-no-pb ftco-no-pt">
+        <div class="container mt-5"> 
+         <div class="row">
+         	<form action="" method=""class="mt-5">
+         		<h1>Contact Us</h1>
+           <div class="form-group">
+                 <div class="d-flex">
+                <div class="form-group mr-2">
+                  <label for="" class="label">Name</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+                  </div>
+              </div>
+>>>>>>> 59f5ad2faa485a0198433cf3a2df6cb237d3cbfc
 
     <div class="row justify-content-center">
       <div class="col-8">
