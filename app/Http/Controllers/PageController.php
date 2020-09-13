@@ -10,4 +10,12 @@ class PageController extends Controller
 	{
 		return view('frontend.home');
 }
+	public function travellerinfofun($value='')
+	{
+		return view('backend.travellerinfo');
+	}
+	public function bookingdetailfun($value='')
+	{
+		return view('backend.bookingdetail');
+	}
 }

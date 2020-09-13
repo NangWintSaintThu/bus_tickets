@@ -1,5 +1,5 @@
 @extends('master')
-@section('contact')
+@section('content')
 
  <section class="hero-wrap" style="background-image: url('{{asset('frontend/images/bg_1.jpg')}}');" data-stellar-background-ratio="0.3">
       <div class="overlay"></div>

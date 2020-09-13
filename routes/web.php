@@ -15,8 +15,15 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', 'PageController@home')->name('homepage');
 Route::get('/','PageController@home')->name('homepage');
 
+Route::get('travellerinfo', 'PageController@travellerinfofun')->name('travellerinfopage');
+
+Route::get('bookingdetail', 'PageController@bookingdetailfun')->name('bookingdetailpage');
+
+
 
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
 
+
 Route::resource('cities','CityController');
 Route::resource('bus_types','Bus_typeController');
+
