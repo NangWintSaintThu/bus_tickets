@@ -27,7 +27,19 @@ class PageController extends Controller
      public function contact($value='')
 	{
 		return view('frontend.contact');
+<<<<<<< HEAD
+}
+      public function login($value='')
+	{
+		return view('frontend.login');
+}     
+       public function register($value='')
+	{
+		return view('frontend.register');
+}
+=======
     }
+>>>>>>> 59f5ad2faa485a0198433cf3a2df6cb237d3cbfc
 
     
      public function routefun($value='')
