@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,41 +7,41 @@
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('frontend/css/css/open-iconic-bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('frontend/css/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/open-iconic-bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/animate.css')}}">
     
-    <link rel="stylesheet" href="{{asset('frontend/css/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('frontend/css/css/owl.theme.default.min.css')}}">
-    <link rel="stylesheet" href="{{asset('frontend/css/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/magnific-popup.css')}}">
 
-    <link rel="stylesheet" href="{{asset('frontend/css/css/aos.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/aos.css')}}">
 
-    <link rel="stylesheet" href="{{asset('frontend/css/css/ionicons.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/ionicons.min.css')}}">
 
-    <link rel="stylesheet" href="{{asset('frontend/css/css/bootstrap-datepicker.css')}}">
-    <link rel="stylesheet" href="{{asset('frontend/css/css/jquery.timepicker.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap-datepicker.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/jquery.timepicker.css')}}">
 
     
-    <link rel="stylesheet" href="{{asset('frontend/css/css/flaticon.css')}}">
-    <link rel="stylesheet" href="{{asset('frontend/css/css/icomoon.css')}}">
-    <link rel="stylesheet" href="{{asset('frontend/css/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/icomoon.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
   </head>
   <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Auto<span>road</span></a>
+        <a class="navbar-brand" href="index.html">Bus<span>Reservation</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="car.html" class="nav-link">Our Car</a></li>
-            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item active"><a href="{{ route('homepage') }}" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="{{ route('aboutpage') }}" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
+            <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li>
+            <li class="nav-item"><a href="{{ route('yourticketpage') }}" class="nav-link">Your Ticket</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
@@ -50,7 +49,7 @@
     </nav>
     <!-- END nav -->
     
-    @yield('contact')    
+     @yield('contact')
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -122,7 +121,7 @@
 
   <script type="text/javascript" src="{{asset('frontend/js/jquery.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('frontend/js/jquery-migrate-3.0.1.min.js')}}"></script>
-  <script type="text/javascript"></script> src="{{asset('frontend/js/popper.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('frontend/js/popper.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('frontend/js/jquery.easing.1.3.js')}}"></script>
   <script type="text/javascript" src="{{asset('frontend/js/jquery.waypoints.min.js')}}"></script>
@@ -135,8 +134,8 @@
   <script type="text/javascript" src="{{asset('frontend/js/jquery.timepicker.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('frontend/js/scrollax.min.js')}}"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script type="text/javascript" src="{{asset('frontend/js/google-map.js')}}"></script>
-  <script type="text/javascript" src="{{asset('frontend/js/main.js')}}"></script>
+  <script src="{{asset('frontend/js/google-map.js')}}"></script>
+  <script src="{{asset('frontend/js/main.js')}}"></script>
     
   </body>
 </html>
