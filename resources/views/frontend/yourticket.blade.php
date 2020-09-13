@@ -1,9 +1,9 @@
 @extends('master')
 @section('contact')
 
-<div class="col-lg-12 col-md-6 mt-0 mt-md-5 d-flex mt-5">
+<div class="col-lg-12 col-md-6 mt-0 mt-md-5 d-flex mt-5 ml-auto p-2">
            
-   
+       
        <section class="ftco-section ftco-no-pb ftco-no-pt">
         <div class="container mt-5"> 
          <div class="row">
