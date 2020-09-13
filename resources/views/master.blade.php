@@ -39,10 +39,15 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="{{ route('homepage') }}" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="{{ route('aboutpage') }}" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
-            <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li>
-            <li class="nav-item"><a href="{{ route('yourticketpage') }}" class="nav-link">Your Ticket</a></li>
+           <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
+            <li class="nav-item"><a href="{{ route('yourticketpage') }}" class="nav-link">Bus Ticket</a></li>
             <li class="nav-item"><a href="{{ route ('contactpage') }}" class="nav-link">Contact</a></li>
+            <span class="float-right d-xl-block d-lg-block d-md-block d-none">
+            <a href="{{route('loginpage')}}" class=" text-decoration-none loginLink ml-right"> Login |</a>
+              </span>
+              <span class="float-right d-xl-block d-lg-block d-md-block d-none">
+            <a href="{{route('registerpage')}}" class=" text-decoration-none loginLink ml-right"> Register</a>
+              </span>
           </ul>
         </div>
       </div>
