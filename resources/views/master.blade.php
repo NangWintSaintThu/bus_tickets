@@ -39,8 +39,8 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="{{ route('homepage') }}" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="{{ route('aboutpage') }}" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
-            <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li>
+          {{--   <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
+            <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li> --}}
             <li class="nav-item"><a href="{{ route('yourticketpage') }}" class="nav-link">Your Ticket</a></li>
             <li class="nav-item"><a href="{{ route ('contactpage') }}" class="nav-link">Contact</a></li>
           </ul>
@@ -49,7 +49,7 @@
     </nav>
     <!-- END nav -->
     
-     @yield('contact')
+     @yield('content')
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">

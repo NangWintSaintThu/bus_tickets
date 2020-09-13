@@ -1,5 +1,5 @@
 @extends('master')
-@section('contact')
+@section('content')
 
 <div class="col-lg-12 col-md-6 mt-0 mt-md-5 d-flex mt-5">
            

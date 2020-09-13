@@ -1,5 +1,5 @@
 @extends('master')
-@section('contact')
+@section('content')
 
 <div class="hero-wrap" style="background-image: url('{{ asset('frontend/img/bg-1.jpg')}}');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
@@ -21,7 +21,7 @@
           </div>
           <div class="col-lg-2 col"></div>
           <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
-            <form action="#" class="request-form ftco-animate">
+            <form action="{{route('aboutpage')}}" class="request-form ftco-animate">
               <h2>Make your Booking</h2>
               <div class="form-group">
                 {{-- <label for="" class="label">Leaving From</label>
