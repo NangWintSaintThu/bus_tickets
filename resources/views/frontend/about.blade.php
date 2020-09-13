@@ -5,9 +5,11 @@
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center">
           <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end"> --}}
-       <div class="" style="background-color"; >
+      <div class="col-lg-12 col-md-6 mt-0 mt-md-5 d-flex mt-5">
+           
+   
        <section class="ftco-section ftco-no-pb ftco-no-pt">
-        <div class="container mt-5">
+        <div class="container mt-5"> 
          <div class="row">
           <div class="col-md-12">
             <div class="search-wrap-1 ftco-animate mb-5">
@@ -38,7 +40,7 @@
                           <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                     <select class="form-control">
                         <option>Select Location</option>
-                        <option>Tachlike</option>
+                        <option>Tachileik</option>
                         <option>Kyaing Tong</option>
                         <option>Min Phate</option>
                         <option>Ta la</option>

@@ -1,6 +1,12 @@
 @extends('master')
 @section('contact')
-<div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
+
+<div class="col-lg-12 col-md-6 mt-0 mt-md-5 d-flex mt-5">
+           
+   
+       <section class="ftco-section ftco-no-pb ftco-no-pt">
+        <div class="container mt-5"> 
+         <div class="row">
             <form action="#" class="request-form ftco-animate">
               <h2>Make your Booking</h2>
               <div class="form-group">

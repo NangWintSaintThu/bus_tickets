@@ -21,6 +21,13 @@ class PageController extends Controller
 		return view('frontend.yourticket');
 }
 
+     
+
+     public function contact($value='')
+	{
+		return view('frontend.contact');
+}
+
     
      public function routefun($value='')
     {

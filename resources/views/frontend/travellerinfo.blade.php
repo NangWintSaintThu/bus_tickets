@@ -1,6 +1,6 @@
 @extends('master')
 @section('contact') 
-<div class="container-fluid">
+<div class="container-fluid mt-5">
 <div class="row">
         <div class="col-md-12 mb-3">
             <h1 class="h3 mb-0 text-gray-800 d-inline-block">Traveller Information</h1>
