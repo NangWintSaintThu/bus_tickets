@@ -19,7 +19,7 @@
                        <th>Price</th>
                        <th>Bus_Type</th>
                        <th>Seat</th>
-                        <th>Actions</th>
+                       <th>Actions</th>
                      </tr>
                      
                     {{--  <tbody>
