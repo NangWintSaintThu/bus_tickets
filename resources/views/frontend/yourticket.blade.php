@@ -15,7 +15,7 @@
                  <span class="form-label">Leaving from</span>
                    <select class="form-control">
                     <option>Select Location</option>
-                      <option>Tachlike</option>
+                      <option>Tachileik</option>
                       <option>Kyaing Tong</option>
                       <option>Min Phate</option>
                       <option>Ta la</option>
@@ -26,7 +26,7 @@
                 <span class="form-label">Going To</span>
                    <select class="form-control">
                     <option>Select Location</option>
-                      <option>Tachlike</option>
+                      <option>Tachileik</option>
                       <option>Kyaing Tong</option>
                       <option>Min Phate</option>
                       <option>Ta la</option>
