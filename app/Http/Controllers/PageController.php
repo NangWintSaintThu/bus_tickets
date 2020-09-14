@@ -27,7 +27,7 @@ class PageController extends Controller
      public function contact($value='')
 	{
 		return view('frontend.contact');
-<<<<<<< HEAD
+
 }
       public function login($value='')
 	{
@@ -37,9 +37,7 @@ class PageController extends Controller
 	{
 		return view('frontend.register');
 }
-=======
-    }
->>>>>>> 59f5ad2faa485a0198433cf3a2df6cb237d3cbfc
+
 
     
      public function routefun($value='')
@@ -62,5 +60,5 @@ class PageController extends Controller
 	{
 		return view('frontend.bookingdetail');
 	}
-//>>>>>>> 522ea2ef5ea673dfa244edde9fc54f375587f03c
+
 }
