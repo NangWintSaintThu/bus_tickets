@@ -1,0 +1,21 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class UserTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $user = new User;
+        $user->name ='Admin';
+        $user->email = 'admin@gmail.com';
+        $user->password = Hash::make('123456789');
+        $user->save();
+        $user->assignRole('Admin');
+    }
+}
