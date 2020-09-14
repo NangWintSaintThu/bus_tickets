@@ -15,7 +15,7 @@ class BookingdetailController extends Controller
     public function index()
     {
         $bookingdetails=Bookingdetail::all();
-        return view('backend.bookingdetails.bookingdetaillist');
+        return view('backend.bookingdetails.index');
     }
 
     /**

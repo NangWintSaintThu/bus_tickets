@@ -6,8 +6,10 @@
     <!-- Page Heading -->
   	<div class="row">
   		<div class="col-md-12 mb-3">
-    		<h1 class="h3 mb-0 text-gray-800 d-inline-block">Traveller Information</h1>
-    		
+    		<h1 class="h3 mb-0 text-gray-800 d-inline-block">Traveller List</h1>
+    		{{-- <div class="text-right">
+                  <a href="{{route('bus_types.create')}}" class="btn btn-secondary" >Add New</a>
+                </div> --}}
   		</div>
   	</div>
     
@@ -17,10 +19,9 @@
     			<thead class="thead-dark">
     				<tr>
     					<th>No</th>
-    					<th>Voucher No</th>
-    					<th>User</th>
-    					<th>Total</th>
-    					<th>Actions</th>
+    					<th>User No</th>
+    					<th>Phone No</th>
+    					<th>Address</th>
     				</tr>
     			</thead>
     		{{-- 	<tbody>
@@ -46,4 +47,4 @@
     </div>
 
  	</div>
-@endsection
+    @endsection

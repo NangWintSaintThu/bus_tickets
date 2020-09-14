@@ -34,6 +34,6 @@ class CreateTravellerInfosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('traveller_infos');
+        Schema::dropIfExists('travellerinfos');
     }
 }
