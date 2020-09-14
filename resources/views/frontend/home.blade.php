@@ -23,6 +23,7 @@
           <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
             <form action="{{route('searchpage')}}" class="request-form ftco-animate">
               <h2>Make your Booking</h2>
+
               <div class="form-group">
                 {{-- <label for="" class="label">Leaving From</label>
                 <input type="text" class="form-control" placeholder="City, Airport, Station, etc"> --}}
@@ -36,6 +37,7 @@
                       
                     </select>
               </div>
+              <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
               <div class="form-group">
                 <span class="form-label">Going To</span>
                    <select class="form-control">
@@ -75,7 +77,9 @@
               </div> 
               
               <div class="form-group">
-                <input type="submit" value="Search Now" class="btn btn-primary py-3 px-4">
+                <a href="{{ route('searchpage') }}" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Search Now</a>
+                {{-- <a href="{{route('searchpage')}}" class="btn btn-success btn-search text-my mt-4" data-message="Please select arrival place and departure place." role="button">Search Now</a> --}}
+                
               </div>
             </form>
           </div>

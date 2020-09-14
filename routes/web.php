@@ -20,7 +20,9 @@ Route::get('register','PageController@register')->name('registerpage');
 Route::get('yourticket','PageController@yourticket')->name('yourticketpage');
 Route::get('contact','PageController@contact')->name('contactpage');
 Route::get('route', 'PageController@routefun')->name('routepage');
-Route::get('search','PageController@searchfun')->name('searchpage');
+Route::get('search','PageController@search')->name('searchpage');
+Route::get('selectseat','PageController@selectseat')->name('selectseatpage');
+
 
 Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
 
@@ -29,11 +31,11 @@ Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetail
 
 
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
-//<<<<<<< HEAD
+
 Route::resource('routes', 'RouteController');
-//=======
+
 Route::resource('travellerinfos','TravellerInfoController');
 Route::resource('bookingdetails','BookingdetailController');
 
 
-//>>>>>>> 522ea2ef5ea673dfa244edde9fc54f375587f03c
+
