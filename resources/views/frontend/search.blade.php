@@ -5,6 +5,12 @@
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center">
           <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end"> --}}
+ <div class="jumbotron jumbotron-fluid subtitle">
+      <div class="container">
+        
+      </div>
+  </div>
+  
       <div class="col-lg-12 col-md-6 mt-0 mt-md-5 d-flex mt-5">
            
    

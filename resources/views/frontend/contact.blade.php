@@ -7,8 +7,13 @@
   </div> --}}
   
   <!-- Content -->
+  <div class="jumbotron jumbotron-fluid subtitle">
+      <div class="container">
+   </div>
+  </div>
+  
   <div class="container my-5">
-     <h1 class="text-center text-white">Contact Us</h1>
+     <h1 class="text-center text-dark">Contact Us</h1>
     <div class="row justify-content-center">
       <div class="col-5">
         
