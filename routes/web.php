@@ -34,6 +34,12 @@ Route::resource('routes', 'RouteController');
 //=======
 Route::resource('travellerinfos','TravellerInfoController');
 Route::resource('bookingdetails','BookingdetailController');
+Route::resource('buscompanies','BusCompanyController');
+Route::resource('bustypes','BusTypeController');
+Route::resource('cities','CityController');
+
+
+
 
 
 //>>>>>>> 522ea2ef5ea673dfa244edde9fc54f375587f03c

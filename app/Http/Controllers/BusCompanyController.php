@@ -14,7 +14,8 @@ class BusCompanyController extends Controller
      */
     public function index()
     {
-        //
+        $buscompaines=BusCompany::all();
+        return view('backend.buscompanies.index');
     }
 
     /**

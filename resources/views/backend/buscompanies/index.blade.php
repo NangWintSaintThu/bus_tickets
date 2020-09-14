@@ -4,7 +4,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Route List</h1>
+            <h1 class="h3 mb-0 text-gray-800">Bus Company</h1>
             <a href="#" class="btn btn-info float-right">Add New</a>
           </div>
               <div class="row">
@@ -13,13 +13,11 @@
                    <thead class="thead-dark">
                      <tr>
                        <th>No</th>
-                       <th>Departure_Station</th>
-                       <th>Arrival_Station</th>
-                       <th>Departure_Time</th>
-                       <th>Price</th>
-                       <th>Bus_Type</th>
-                       <th>Seat</th>
-                       <th>Actions</th>
+                       <th>Name</th>
+                       <th>Phone No</th>
+                       <th>Logo</th>
+                       <th>Owner Name</th>
+                       <th>Address</th>
                      </tr>
                      
                     {{--  <tbody>
