@@ -49,7 +49,7 @@
     </nav>
     <!-- END nav -->
     
-     @yield('contact')
+     @yield('content')
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">

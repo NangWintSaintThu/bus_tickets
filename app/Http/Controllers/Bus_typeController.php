@@ -15,9 +15,9 @@ class Bus_typeController extends Controller
     public function index()
     {
         
-        $buses=City::all();
+    $bus_types=Bus_type::all();
        //dd($items);
-       return view('backend.buses.index',compact('buses'));
+       return view('backend.bus_types.index');
     }
 
     /**

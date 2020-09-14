@@ -23,27 +23,28 @@
             <div class="img" style="background-image: url(backend/images/bus.jpg);"></div>
           </div>
         </div>
+        
         <ul class="list-unstyled components mb-5">
           <li class="active">
             <a href="{{route('dashboardpage')}}"><span class="fa fa-home mr-3"></span> Home</a>
           </li>
           <li>
-              <a href="{{route('travellerinfopage')}}"><span class="fa fa-book mr-3 notif"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a>
+              <a href="{{route('travellerinfos.index')}}"><span class="fa fa-book mr-3 notif"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a>
           </li>
           <li>
-            <a href="{{route('bookingdetailpage')}}"><span class="fa fa-pencil mr-3"></span>Booking Detail</a>
+            <a href="{{route('bookingdetails.index')}}"><span class="fa fa-pencil mr-3"></span>Booking Detail</a>
           </li>
           <li>
             <a href="{{route('routepage')}}"><span class="fa fa-book mr-3"></span> Route </a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-cog mr-3"></span> Settings</a>
+            <a href="{{route('cities.index')}}"><span class="fa fa-cog mr-3"></span>City</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-support mr-3"></span> Support</a>
+            <a href="{{route('bus_types.index')}}"><span class="fa fa-support mr-3"></span>Bus_Type</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-sign-out mr-3"></span> Sign Out</a>
+            <a href="{{route('buscompany.index')}}"><span class="fa fa-sign-out mr-3"></span>Bus Company</a>
           </li>
         </ul>
 
@@ -52,7 +53,7 @@
         <!-- Page Content  -->
       
     </div>
-
+@yield('content')
     <script src="{{asset('backend/js/jquery.min.js')}}"></script>
     <script src="{{asset('backend/js/popper.js')}}"></script>
     <script src="{{asset('backend/js/bootstrap.min.js')}}"></script>

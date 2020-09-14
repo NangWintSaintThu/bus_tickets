@@ -18,23 +18,25 @@ Route::get('about','PageController@about')->name('aboutpage');
 Route::get('yourticket','PageController@yourticket')->name('yourticketpage');
 Route::get('route', 'PageController@routefun')->name('routepage');
 
-Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
+/*Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
 
-Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');
+Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');*/
 
 
 
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
-
+//Route::get('city','PageController@cityfun')->name('citypage');
+//Route::get('bustype','PageController@bustypefun')->name('bustypepage');
+//Route::get('buscompany','PageController@buscompanyfun')->name('buscompanypage');
 
 
 Route::resource('cities','CityController');
 Route::resource('bus_types','Bus_typeController');
-
+Route::resource('buscompany','BusCompanyController');
 
 
 Route::resource('routes', 'RouteController');
 
 Route::resource('travellerinfos','TravellerInfoController');
 Route::resource('bookingdetails','BookingdetailController');
-
+Route::resource('buscompanies','BusCompanyController');

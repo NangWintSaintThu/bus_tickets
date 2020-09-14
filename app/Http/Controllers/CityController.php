@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Route;
-
-
-
 use App\City;
 use Illuminate\Http\Request;
 
@@ -21,9 +18,9 @@ class CityController extends Controller
 
        $cities=City::all();
        //dd($items);
-       return view('backend.cities.index',compact('cities'));
+    return view('backend.cities.index');
 
-        //
+        
 
     }
 
@@ -35,7 +32,7 @@ class CityController extends Controller
     public function create()
     {
 
-       return view('backend.cities.create');
+       //return view('backend.cities.create');
 
         //
 

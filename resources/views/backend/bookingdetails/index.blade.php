@@ -1,9 +1,10 @@
-@extends('master')
+@extends('backendtemplate')
 @section('content') 
+         
 <div class="container-fluid">
 <div class="row">
         <div class="col-md-12 mb-3">
-            <h1 class="h3 mb-0 text-gray-800 d-inline-block">Traveller Information</h1>
+            <h1 class="h3 mb-0 text-gray-800 d-inline-block">Booking Detail Information</h1>
             
         </div>
     </div>
@@ -15,13 +16,16 @@
     			<thead class="thead-dark">
     				<tr>
     					<th>id</th>
-    					<th>user_id</th>
-    					<th>phone_no</th>
-    					<th>address</th>
+    					<th>travellerinfo_id</th>
+    					<th>route_id</th>
+    					<th>no_people</th>
+              <th>total</th>
+              <th>seat_no</th>
+              <th>departure_date</th>
     					
     				</tr>
     			</thead>
-    		{{-- 	<tbody>
+    	<!-- 	{{-- 	<tbody>
     				@php $i=1; @endphp
     				@foreach($order as $order)
     				<tr>
@@ -38,10 +42,10 @@
     					</td>
     				</tr>
     				@endforeach
-    			</tbody> --}}
+    			</tbody> --}} -->
     		</table>
     	</div>
     </div>
 
  	</div>
-  @endsection 
+   @endsection

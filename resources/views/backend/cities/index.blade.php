@@ -6,9 +6,10 @@
           <div class="d-sm-flex align-items-center justify-content-between mb-3">
             <h1 class="h3 mb-0 text-gray-800">City List</h1>
                 <div class="text-right">
-                  <a href="{{route('cities.create')}}" class="btn btn-secondary" >Add New</a>
+                  <a href="{{-- {{route('cities.create')}} --}}" class="btn btn-secondary" >Add New</a>
                 </div>
           	</div>
+          </div>
          <table class="table table-bordered">
             <thead class="thead-dark">
               <tr>
@@ -16,7 +17,7 @@
                 <th>Name</th>
               </tr>
               </thead>
-             <tbody>
+             {{-- <tbody>
               @php $i=1; @endphp
               @foreach($cities as $city)
                <tr>
@@ -24,7 +25,7 @@
                  <td>{{$city->name}}</td>
               </tr>
                @endforeach
-             </tbody>
+             </tbody>  --}}
            </table>
 
             
