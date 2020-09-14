@@ -28,9 +28,9 @@
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Bus<span>Reservation</span></a>
+    <nav class="navbar navbar-expand-lg navbar-info ftco_navbar bg-warning ftco-navbar-light" id="ftco-navbar">
+      <div class="container ">
+        <a class="navbar-brand" href="{{asset('frontend/img/icon.jpg')}}">Bus<span>Reservation</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
@@ -39,14 +39,26 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="{{ route('homepage') }}" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="{{ route('aboutpage') }}" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
-            <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li>
+
+           <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
+            
+
+          {{--   <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
+            <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li> --}}
             <li class="nav-item"><a href="{{ route('yourticketpage') }}" class="nav-link">Your Ticket</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+
+            <li class="nav-item"><a href="{{ route ('contactpage') }}" class="nav-link">Contact</a></li>
+            <span class="float-right d-xl-block d-lg-block d-md-block d-none">
+            <a href="{{route('loginpage')}}" class=" text-decoration-none loginLink ml-right"> Login |</a>
+              </span>
+              <span class="float-right d-xl-block d-lg-block d-md-block d-none">
+            <a href="{{route('registerpage')}}" class=" text-decoration-none loginLink ml-right"> Register</a>
+              </span>
           </ul>
         </div>
       </div>
     </nav>
+ 
     <!-- END nav -->
     
      @yield('content')

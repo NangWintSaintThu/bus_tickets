@@ -1,7 +1,7 @@
 @extends('master')
-@section('contact')
+@section('content')
 
-<div class="hero-wrap" style="background-image: url('{{ asset('frontend/img/background.jpg')}});" data-stellar-background-ratio="0.5">
+<div class="hero-wrap" style="background-image: url('{{ asset('frontend/img/bg-1.jpg')}}');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-start align-items-center">
@@ -21,7 +21,7 @@
           </div>
           <div class="col-lg-2 col"></div>
           <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
-            <form action="#" class="request-form ftco-animate">
+            <form action="{{route('searchpage')}}" class="request-form ftco-animate">
               <h2>Make your Booking</h2>
               <div class="form-group">
                 {{-- <label for="" class="label">Leaving From</label>
@@ -31,8 +31,8 @@
                     <option>Select Location</option>
                       <option>Tachlike</option>
                       <option>Kyaing Tong</option>
-                      <option>Min Phate</option>
-                      <option>Ta la</option>
+                      <option>Mong Phyak</option>
+                      <option>Tar Lay</option>
                       
                     </select>
               </div>
@@ -43,7 +43,7 @@
                       <option>Tachlike</option>
                       <option>Kyaing Tong</option>
                       <option>Min Phate</option>
-                      <option>Ta la</option>
+                      <option>Tar Lay</option>
                     </select>
                 {{-- <label for="" class="label">Going To</label>
                 <input type="text" class="form-control" placeholder="City, Airport, Station, etc"> --}}
@@ -142,7 +142,7 @@
       </div>
     </section>
 
-    <section class="ftco-section">
+    {{-- <section class="ftco-section">
       <div class="container-fluid px-4">
         <div class="row justify-content-center">
           <div class="col-md-12 heading-section text-center ftco-animate mb-5">
@@ -298,7 +298,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
     <section class="ftco-section services-section img" style="background-image: url(images/bg_2.jpg);">
       <div class="overlay"></div>
@@ -350,7 +350,7 @@
       </div>
     </section>
 
-    <section class="ftco-section testimony-section">
+   {{--  <section class="ftco-section testimony-section">
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
@@ -439,7 +439,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
     <section class="ftco-section">
       <div class="container">

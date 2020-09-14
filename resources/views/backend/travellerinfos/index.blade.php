@@ -19,10 +19,9 @@
     			<thead class="thead-dark">
     				<tr>
     					<th>No</th>
-    					<th>Voucher No</th>
-    					<th>User</th>
-    					<th>Total</th>
-    					<th>Actions</th>
+    					<th>User No</th>
+    					<th>Phone No</th>
+    					<th>Address</th>
     				</tr>
     			</thead>
     		{{-- 	<tbody>

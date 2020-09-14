@@ -1,6 +1,19 @@
 @extends('master')
-@section('contact')
-<div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
+@section('content')
+
+
+<div class="jumbotron jumbotron-fluid subtitle">
+      <div class="container">
+        
+      </div>
+  </div>
+  
+<div class="col-lg-12 col-md-6 mt-0 mt-md-5 d-flex mt-5 ml-auto p-2">
+           
+       
+       <section class="ftco-section ftco-no-pb ftco-no-pt">
+        <div class="container mt-5"> 
+         <div class="row">
             <form action="#" class="request-form ftco-animate">
               <h2>Make your Booking</h2>
               <div class="form-group">
@@ -9,7 +22,7 @@
                  <span class="form-label">Leaving from</span>
                    <select class="form-control">
                     <option>Select Location</option>
-                      <option>Tachlike</option>
+                      <option>Tachileik</option>
                       <option>Kyaing Tong</option>
                       <option>Min Phate</option>
                       <option>Ta la</option>
@@ -20,7 +33,7 @@
                 <span class="form-label">Going To</span>
                    <select class="form-control">
                     <option>Select Location</option>
-                      <option>Tachlike</option>
+                      <option>Tachileik</option>
                       <option>Kyaing Tong</option>
                       <option>Min Phate</option>
                       <option>Ta la</option>

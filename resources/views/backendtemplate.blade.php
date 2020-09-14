@@ -14,6 +14,7 @@
     
     <div class="wrapper d-flex align-items-stretch">
       <nav id="sidebar">
+        
        {{--  <div class="custom-menu">
           <button type="button" id="sidebarCollapse" class="btn btn-primary">
           </button>
@@ -26,18 +27,23 @@
         
         <ul class="list-unstyled components mb-5">
           <li class="active">
-            <a href="{{route('dashboardpage')}}"><span class="fa fa-home mr-3"></span> Home</a>
+            <a href="{{route('homepage')}}"><span class="fa fa-home mr-3"></span> Home</a>
           </li>
           <li>
+<<<<<<< HEAD
               <a href="{{route('travellerinfos.index')}}"><span class="fa fa-book mr-3 notif"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a>
+=======
+              <a href="{{route('travellerinfos.index')}}"><span class="fa fa-users mr-3 "><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a>
+>>>>>>> 13d5b2f869014f84ed7a1a1fcbabfa4ef6401040
           </li>
           <li>
             <a href="{{route('bookingdetails.index')}}"><span class="fa fa-pencil mr-3"></span>Booking Detail</a>
           </li>
           <li>
-            <a href="{{route('routepage')}}"><span class="fa fa-book mr-3"></span> Route </a>
+            <a href="{{route('routepage')}}"><span class="fa fa-road mr-3"></span> Route </a>
           </li>
           <li>
+<<<<<<< HEAD
             <a href="{{route('cities.index')}}"><span class="fa fa-cog mr-3"></span>City</a>
           </li>
           <li>
@@ -45,6 +51,15 @@
           </li>
           <li>
             <a href="{{route('buscompany.index')}}"><span class="fa fa-sign-out mr-3"></span>Bus Company</a>
+=======
+            <a href="#"><span class="fa fa-building mr-3"></span>Bus Company</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-arrows-h mr-3"></span>City</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-bus mr-3"></span>Bus Type</a>
+>>>>>>> 13d5b2f869014f84ed7a1a1fcbabfa4ef6401040
           </li>
         </ul>
 
@@ -53,7 +68,11 @@
         <!-- Page Content  -->
       
     </div>
+<<<<<<< HEAD
 @yield('content')
+=======
+    
+>>>>>>> 13d5b2f869014f84ed7a1a1fcbabfa4ef6401040
     <script src="{{asset('backend/js/jquery.min.js')}}"></script>
     <script src="{{asset('backend/js/popper.js')}}"></script>
     <script src="{{asset('backend/js/bootstrap.min.js')}}"></script>
