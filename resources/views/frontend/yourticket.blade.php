@@ -1,6 +1,13 @@
 @extends('master')
 @section('content')
 
+
+<div class="jumbotron jumbotron-fluid subtitle">
+      <div class="container">
+        
+      </div>
+  </div>
+  
 <div class="col-lg-12 col-md-6 mt-0 mt-md-5 d-flex mt-5 ml-auto p-2">
            
        

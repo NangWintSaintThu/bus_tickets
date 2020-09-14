@@ -1,14 +1,15 @@
 @extends('master')
-@section('contact')
+@section('content')
 	<div class="jumbotron jumbotron-fluid subtitle">
   		<div class="container">
-    		<h1 class="text-center text-white"> Login </h1>
+    		
   		</div>
 	</div>
 	
 	<!-- Content -->
-	<div class="container my-5">
 
+	<div class="container my-5">
+       <h1 class="text-center text-dark"> Login </h1>
 		<div class="row justify-content-center">
 			<div class="col-5">
 				
