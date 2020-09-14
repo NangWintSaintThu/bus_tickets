@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Route::get('/', 'PageController@home')->name('homepage');
+//frontendအပိုင်းor(customerအပိုင်း)
 Route::get('/','PageController@home')->name('homepage');
 Route::get('about','PageController@about')->name('aboutpage');
 Route::get('login','PageController@login')->name('loginpage');
@@ -22,12 +22,12 @@ Route::get('contact','PageController@contact')->name('contactpage');
 Route::get('route', 'PageController@routefun')->name('routepage');
 Route::get('search','PageController@searchfun')->name('searchpage');
 
-Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
+// Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
 
 Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');
 
 
-
+//backendအပိုင်းor(adminအပိုင်း)
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
 //<<<<<<< HEAD
 Route::resource('routes', 'RouteController');

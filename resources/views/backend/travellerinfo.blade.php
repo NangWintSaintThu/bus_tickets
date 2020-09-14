@@ -29,7 +29,7 @@
             <a href="#"><span class="fa fa-home mr-3"></span> Home</a>
           </li>
           <li>
-              <a href="{{route('travellerinfopage')}}"><span class="fa fa-book mr-3 notif"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a>
+              <a href="{{route('travellerinfos.index')}}"><span class="fa fa-book mr-3 notif"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a>
           </li>
           <li>
             <a href="{{route('bookingdetailpage')}}"><span class="fa fa-pencil mr-3"></span>Booking Detail</a>
