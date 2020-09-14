@@ -1,14 +1,14 @@
 @extends('master')
-@section('contact')
-  <div class="jumbotron jumbotron-fluid subtitle">
+@section('content')
+  {{-- <div class="jumbotron jumbotron-fluid subtitle">
       <div class="container">
         <h1 class="text-center text-white">Contact Us</h1>
       </div>
-  </div>
+  </div> --}}
   
   <!-- Content -->
   <div class="container my-5">
-
+     <h1 class="text-center text-white">Contact Us</h1>
     <div class="row justify-content-center">
       <div class="col-5">
         
@@ -31,11 +31,12 @@
                 <label class="small mb-1" for="inputPassword">Password</label>
                 <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" name="password" />
               </div>
-          </div>
-              
               <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
                 
                 <button type="submit" class="btn btn-secondary mainfullbtncolor btn-block">Login</button>
               </div>
+          </div>
+              
+              
              </div>
-  @endsection
+ @endsection

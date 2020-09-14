@@ -19,9 +19,9 @@
     					<th>travellerinfo_id</th>
     					<th>route_id</th>
     					<th>no_people</th>
-              <th>total</th>
-              <th>seat_no</th>
-              <th>departure_date</th>
+                        <th>total</th>
+                        <th>seat_no</th>
+                        <th>departure_date</th>
     					
     				</tr>
     			</thead>

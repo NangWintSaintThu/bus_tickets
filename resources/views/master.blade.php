@@ -58,6 +58,7 @@
         </div>
       </div>
     </nav>
+ 
     <!-- END nav -->
     
      @yield('content')
