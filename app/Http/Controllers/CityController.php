@@ -15,18 +15,12 @@ class CityController extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
+
 
        $cities=City::all();
        //dd($items);
-    return view('backend.cities.index');
+    return view('backend.cities.index',compact('cities'));
 
-        
-
-=======
-         $cities=City::all();
-        return view('backend.cities.index');
->>>>>>> 41f9ba8f7281fed02011c24edefab6fd86550459
     }
 
     /**
@@ -37,7 +31,7 @@ class CityController extends Controller
     public function create()
     {
 
-       //return view('backend.cities.create');
+       return view('backend.cities.create');
 
         //
 
@@ -51,7 +45,14 @@ class CityController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            "name"=>'required'
+        ]);
+        $city=new City;
+        $city->name=$request->name;
+        $city->save();
 
+        return redirect()->route('cities.index');
 
     }
 
@@ -74,7 +75,7 @@ class CityController extends Controller
      */
     public function edit(City $city)
     {
-
+        return view('backend.cities.edit',compact('city'));
     }
 
     /**
@@ -86,6 +87,14 @@ class CityController extends Controller
      */
     public function update(Request $request, City $city)
     {
+         $request->validate([
+            "name"=>'required'
+        ]);
+    
+        $city->name=$request->name;
+        $city->save();
+
+        return redirect()->route('cities.index');
 
     }
 
@@ -97,6 +106,7 @@ class CityController extends Controller
      */
     public function destroy(City $city)
     {
-        //
+        $city->delete();
+        return redirect()->route('cities.index');
     }
 }

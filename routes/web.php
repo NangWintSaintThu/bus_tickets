@@ -1,4 +1,4 @@
- <?php
+<?php
 
 use Illuminate\Support\Facades\Route;
 
@@ -22,30 +22,13 @@ Route::get('contact','PageController@contact')->name('contactpage');
 Route::get('route', 'PageController@routefun')->name('routepage');
 Route::get('search','PageController@search')->name('searchpage');
 Route::get('selectseat','PageController@selectseat')->name('selectseatpage');
-
-
-/*Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
-*/// Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
-
-
 Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');
 
 
 //backendအပိုင်းor(adminအပိုင်း)
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
 
-//Route::get('city','PageController@cityfun')->name('citypage');
-//Route::get('bustype','PageController@bustypefun')->name('bustypepage');
-//Route::get('buscompany','PageController@buscompanyfun')->name('buscompanypage');
-
-
-Route::resource('cities','CityController');
-Route::resource('bus_types','Bus_typeController');
-Route::resource('buscompany','BusCompanyController');
-
-
 Route::resource('routes', 'RouteController');
-
 Route::resource('travellerinfos','TravellerInfoController');
 Route::resource('bookingdetails','BookingdetailController');
 Route::resource('buscompanies','BusCompanyController');
@@ -53,11 +36,7 @@ Route::resource('buscompanies','BusCompanyController');
 Route::resource('bustypes','BusTypeController');
 Route::resource('cities','CityController');
 
-
-
-
-
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

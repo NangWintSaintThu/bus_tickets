@@ -12,7 +12,7 @@
            
        
        <section class="ftco-section ftco-no-pb ftco-no-pt">
-        <div class="container mt-5"> 
+        <div class="container my-5"> 
          <div class="row">
             <form action="#" class="request-form ftco-animate">
               <h2>Make your Booking</h2>

@@ -75,7 +75,7 @@ class PageController extends Controller
 
 	public function travellerinfo($value='')
 	{
-		return view('backend.traveller_infos.index');
+		return view('backend.travellerinfos.index');
 	}
 
 	public function bookingdetail($value='')
