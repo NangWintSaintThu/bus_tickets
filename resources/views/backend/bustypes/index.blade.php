@@ -18,7 +18,7 @@
                      
                     <tbody>
                       @php $i=1; @endphp
-                      @foreach($routes as $route)
+                      @foreach($bustypes as $bustype)
                        <tr>
                          <td>{{$i++}}</td>
                          <td>{{$bustype->name}}</td>

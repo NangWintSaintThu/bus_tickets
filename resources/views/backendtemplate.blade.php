@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <title>SB Admin 2 - Dashboard</title>
 
@@ -95,7 +96,7 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      <{{-- li class="nav-item">
         <a class="nav-link collapsed" href="{{route('cities.index')}}" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
           <span>City</span>
@@ -113,7 +114,22 @@
           </div>
         </div>
       </li>
-
+ --}}
+ <li class="nav-item">
+        <a class="nav-link" href="{{route('homepage')}}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{route('buscompanies.index')}}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Bus Company</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{route('cities.index')}}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>City</span></a>
+      </li>
       <!-- Nav Item - Charts -->
       <li class="nav-item">
         <a class="nav-link" href="{{route('bustypes.index')}}">

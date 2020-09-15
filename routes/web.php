@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 //frontendအပိုင်းor(customerအပိုင်း)
 Route::get('/','PageController@home')->name('homepage');
 Route::get('about','PageController@about')->name('aboutpage');
-Route::get('login','PageController@login')->name('loginpage');
-Route::get('register','PageController@register')->name('registerpage');
+Route::get('loginpage','PageController@login')->name('loginpage');
+Route::get('registerpage','PageController@register')->name('registerpage');
 Route::get('yourticket','PageController@yourticket')->name('yourticketpage');
 Route::get('contact','PageController@contact')->name('contactpage');
 Route::get('route', 'PageController@routefun')->name('routepage');

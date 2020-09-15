@@ -100,6 +100,7 @@ class BusTypeController extends Controller
      */
     public function destroy(BusType $busType)
     {
-        //
+         $bustype->delete();
+        return redirect()->route('bustypes.index');
     }
 }

@@ -27,7 +27,7 @@
               <div class="form-group">
                 {{-- <label for="" class="label">Leaving From</label>
                 <input type="text" class="form-control" placeholder="City, Airport, Station, etc"> --}}
-                 <span class="form-label">Leaving from</span>
+                 {{-- <span class="form-label">Leaving from</span>
                    <select class="form-control">
                     <option>Select Location</option>
                       <option>Tachlike</option>
@@ -35,8 +35,21 @@
                       <option>Mong Phyak</option>
                       <option>Tar Lay</option>
                       
-                    </select>
+                    </select> --}}
+                  {{-- </div> --}}
+                    <label for="inputPhoto" class="col-sm-2 col-form-label">Leaving From</label>
+              <div class="col-sm-5">
+                <select name="city" id="city" class="form-control">
+                  <optgroup label="Choose City">
+                @foreach($city as $cities)
+                  <option value="{{$cities->id}}">{{$cities->name}}</option>
+                @endforeach 
+              </optgroup>
+                </select>
+                <span class="text-danger">{{ $errors->first('city') }}</span>
               </div>
+            </div>
+            
               <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
               <div class="form-group">
                 <span class="form-label">Going To</span>

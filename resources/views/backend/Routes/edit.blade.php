@@ -8,7 +8,7 @@
         </div>
               <div class="row">
               	<div class="col-md-12">
-              		<form action="{{route('routes.update',$rout->id)}}" method="post" enctype="multipart/form-data">
+              		<form action="{{route('routes.update',$route->id)}}" method="post" enctype="multipart/form-data">
               			@csrf
                         <div class="form-group row">
                                 <label for="inputtime" class="col-sm-2 col-form-label">Departure_Station</label>
