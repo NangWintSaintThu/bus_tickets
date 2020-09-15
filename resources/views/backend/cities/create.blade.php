@@ -15,13 +15,13 @@
             		<form action="{{route('cities.store')}}" method="post" enctype="multipart/form-data">
             			@csrf
   
-  <div class="form-group row {{ $errors->has('id') ? 'has-error' : '' }}">
+ {{--  <div class="form-group row {{ $errors->has('id') ? 'has-error' : '' }}">
               <label for="inputid" class="col-sm-2 col-form-label">Id</label>
               <div class="col-sm-5">
                 <input type="text" id="inputid" name="id" class="d-block">
                 <span class="text-danger">{{ $errors->first('id') }}</span>
               </div>
-            </div>
+            </div> --}}
             <div class="form-group row {{ $errors->has('name') ? 'has-error' : '' }}">
               <label for="inputname" class="col-sm-2 col-form-label">Name</label>
               <div class="col-sm-5">

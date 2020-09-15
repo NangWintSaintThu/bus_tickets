@@ -15,16 +15,16 @@
             		<form action="{{route('cities.update',$city->id)}}" method="post" enctype="multipart/form-data">
             			@csrf
             			@method('PUT')
-  <div class="form-group row">
+ {{--  <div class="form-group row">
     <label for="inputid" class="col-sm-2 col-form-label" >Id</label>
     <div class="col-sm-10">
       <input type="id" class="form-control" id="inputid" name="id" value="{{$city->id}}">
     </div>
-  </div>
+  </div> --}}
   <div class="form-group row">
     <label for="inputname" class="col-sm-2 col-form-label" >Name</label>
     <div class="col-sm-10">
-      <input type="name" class="form-control" id="inputname" name="name"value="{{$city->name}}">
+      <input type="name" class="form-control" id="inputname" name="name" value="{{$city->name}}">
     </div>
   </div>
   

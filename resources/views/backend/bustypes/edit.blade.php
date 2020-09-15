@@ -15,12 +15,12 @@
                 <form action="{{route('bustypes.update',$bustype->id)}}" method="post" enctype="multipart/form-data">
                   @csrf
                   @method('PUT')
-  <div class="form-group row">
+ {{--  <div class="form-group row">
     <label for="inputid" class="col-sm-2 col-form-label" >Id</label>
     <div class="col-sm-10">
       <input type="id" class="form-control" id="inputid" name="id" value="{{$bustype->id}}">
     </div>
-  </div>
+  </div> --}}
   <div class="form-group row">
     <label for="inputname" class="col-sm-2 col-form-label" >Name</label>
     <div class="col-sm-10">

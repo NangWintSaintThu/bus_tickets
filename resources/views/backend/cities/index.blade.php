@@ -15,18 +15,19 @@
                      <tr>
                        <th>No</th>
                        <th>Name</th>
+                       <th>Actions</th>
                      </tr>
                      
-                    {{--  <tbody>
+                     <tbody>
                       @php $i=1; @endphp
-                      @foreach($routes as $route)
+                      @foreach($cities as $city)
                        <tr>
                          <td>{{$i++}}</td>
-                         <td>{{$subcategory->name}}</td>
+                         <td>{{$city->name}}</td>
                          <td>
-                            <a href="{{route('routes.edit',$route->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
+                            <a href="{{route('cities.edit',$city->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
 
-                            <form action="{{route('routes.destroy',$route->id)}}" method="POST" class="d-inline-block">
+                            <form action="{{route('cities.destroy',$city->id)}}" method="POST" class="d-inline-block">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-outline-danger "><i class="fas fa-trash"></i></button>
@@ -36,7 +37,7 @@
                     </tr>
                     @php $i++; @endphp
                     @endforeach
-                     </tbody> --}}
+                     </tbody>
                    </thead>
                </table>
               </div>

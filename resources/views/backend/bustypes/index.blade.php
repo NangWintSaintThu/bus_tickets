@@ -16,16 +16,16 @@
                        <th>Name</th>
                      </tr>
                      
-                    {{--  <tbody>
+                    <tbody>
                       @php $i=1; @endphp
                       @foreach($routes as $route)
                        <tr>
                          <td>{{$i++}}</td>
-                         <td>{{$subcategory->name}}</td>
+                         <td>{{$bustype->name}}</td>
                          <td>
-                            <a href="{{route('routes.edit',$route->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
+                            <a href="{{route('bustypes.edit',$bustype->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
 
-                            <form action="{{route('routes.destroy',$route->id)}}" method="POST" class="d-inline-block">
+                            <form action="{{route('bustypes.destroy',$bustype->id)}}" method="POST" class="d-inline-block">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-outline-danger "><i class="fas fa-trash"></i></button>
@@ -35,7 +35,7 @@
                     </tr>
                     @php $i++; @endphp
                     @endforeach
-                     </tbody> --}}
+                     </tbody> 
                    </thead>
                </table>
               </div>

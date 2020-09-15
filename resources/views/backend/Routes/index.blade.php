@@ -22,12 +22,17 @@
                        <th>Actions</th>
                      </tr>
                      
-                    {{--  <tbody>
+                     <tbody>
                       @php $i=1; @endphp
                       @foreach($routes as $route)
                        <tr>
                          <td>{{$i++}}</td>
-                         <td>{{$subcategory->name}}</td>
+                         <td>{{$route->departure_station}}</td>
+                         <td>{{$route->arrival_station}}</td>
+                         <td>{{$route->departure_time}}</td>
+                         <td>{{$route->price}}</td>
+                         <td>{{$route->bus_type_id}}</td>
+                         <td>{{$route->seat}}</td>
                          <td>
                             <a href="{{route('routes.edit',$route->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
 

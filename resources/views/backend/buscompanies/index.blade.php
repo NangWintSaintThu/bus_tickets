@@ -24,16 +24,21 @@
                        <th>Address</th>
                      </tr>
                      
-                    {{--  <tbody>
+                     <tbody>
                       @php $i=1; @endphp
-                      @foreach($routes as $route)
+                      @foreach($buscompanies as $buscompany)
                        <tr>
                          <td>{{$i++}}</td>
-                         <td>{{$subcategory->name}}</td>
-                         <td>
-                            <a href="{{route('routes.edit',$route->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
+                         <td>{{$buscompany->name}}</td>
+                         <td>{{$buscompany->phone_no}}</td>
+                         <td><img src='{{$buscompany->logo}}' width="50" height="50"></td>
+                         <td>{{$buscompany->owner_name}}</td>
+                         <td>{{$buscompany->address}}</td>
 
-                            <form action="{{route('routes.destroy',$route->id)}}" method="POST" class="d-inline-block">
+                         <td>
+                            <a href="{{route('buscompanies.edit',$buscompany->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
+
+                            <form action="{{route('buscompanies.destroy',$buscompany->id)}}" method="POST" class="d-inline-block">
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-outline-danger "><i class="fas fa-trash"></i></button>

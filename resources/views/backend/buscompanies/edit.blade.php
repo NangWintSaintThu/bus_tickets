@@ -15,19 +15,56 @@
             		<form action="{{route('buscompanies.update',$buscompanies->id)}}" method="post" enctype="multipart/form-data">
             			@csrf
             			@method('PUT')
-  <div class="form-group row">
+  {{-- <div class="form-group row">
     <label for="inputid" class="col-sm-2 col-form-label" >Id</label>
     <div class="col-sm-10">
       <input type="id" class="form-control" id="inputid" name="id" value="{{$buscompanies->id}}">
     </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputname" class="col-sm-2 col-form-label" >Name</label>
-    <div class="col-sm-10">
-      <input type="name" class="form-control" id="inputname" name="name" value="{{$buscompanies->name}}">
-    </div>
-  </div>
-  
+  </div> --}}
+ {{--  <div class="form-group row {{ $errors->has('name') ? 'has-error' : '' }}">
+              <label for="inputname" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-5">
+                <input type="text" id="inputname" name="name" class="d-block" value="{{$buscompanies->name}}">
+                <span class="text-danger">{{ $errors->first('name') }}</span>
+              </div>
+            </div> --}}
+            <div class="form-group row {{ $errors->has('name') ? 'has-error' : '' }}">
+              <label for="inputname" class="col-sm-2 col-form-label">Name</label>
+              <div class="col-sm-5">
+                <input type="text" id="inputname" name="name" class="d-block" {{$buscompany->name}}>
+                <span class="text-danger">{{ $errors->first('name') }}</span>
+              </div>
+            </div>
+            <div class="form-group row {{ $errors->has('phoneno') ? 'has-error' : '' }}">
+              <label for="inputpno" class="col-sm-2 col-form-label">Phone No</label>
+              <div class="col-sm-5">
+                <input type="text" id="inputpno" name="phoneno" class="d-block"  {{$buscompany->phone_no}}>
+                <span class="text-danger">{{ $errors->first('phoneno') }}</span>
+              </div>
+            </div>
+            <div class="form-group row {{ $errors->has('logo') ? 'has-error' : '' }}">
+              <label for="inputlogo" class="col-sm-2 col-form-label">Logo</label>
+              <div class="col-sm-5">
+                <input type="text" id="inputlogo" name="logo" class="d-block" >
+                <img src=" {{asset($buscompany->logo)}}" class="img-fluid w-5">
+                <input type="hidden" name="oldlogo" value=" {{$buscompany->logo}}">
+                <span class="text-danger">{{ $errors->first('logo') }}</span>
+              </div>
+            </div>
+            <div class="form-group row {{ $errors->has('owner') ? 'has-error' : '' }}">
+              <label for="inputowner" class="col-sm-2 col-form-label">Owner Name</label>
+              <div class="col-sm-5">
+                <input type="text" id="inputowner" name="owner" class="d-block" value=" {{$buscompany->owner_name}}">
+                <span class="text-danger">{{ $errors->first('owner') }}</span>
+              </div>
+            </div>
+            <div class="form-group row {{ $errors->has('address') ? 'has-error' : '' }}">
+              <label for="inputaddress" class="col-sm-2 col-form-label">Address</label>
+              <div class="col-sm-5">
+                <input type="text" id="inputaddress" name="address" class="d-block" value=" {{$buscompany->address}}">
+                <span class="text-danger">{{ $errors->first('address') }}</span>
+              </div>
+            </div>
   
    <div class="form-group row">
     <div class="col-sm-10">
