@@ -57,3 +57,7 @@ Route::resource('cities','CityController');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
