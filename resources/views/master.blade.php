@@ -37,7 +37,7 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="{{ route('homepage') }}" class="nav-link">Home</a></li>
+            <li class="nav-item "><a href="{{ route('homepage') }}" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="{{ route('aboutpage') }}" class="nav-link">About</a></li>
 
            <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
@@ -63,7 +63,7 @@
     
      @yield('content')
 
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <footer class="ftco-footer ftco-bg-dark ftco-section mt-5">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">

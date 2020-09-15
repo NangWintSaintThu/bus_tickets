@@ -17,6 +17,11 @@ class PageController extends Controller
 		return view('frontend.about');
     }
 
+     public function selectseat($value='')
+	{
+		return view('frontend.selectseat');
+    }
+
      
       public function yourticket($value='')
 	{
@@ -45,7 +50,7 @@ class PageController extends Controller
         return view ('backend.routes.index') ;   
     }
 
-     public function searchfun($value='')
+     public function search($value='')
     {
         return view ('frontend.search') ;   
     }
