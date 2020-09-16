@@ -20,10 +20,14 @@ Route::get('registerpage','PageController@register')->name('registerpage');
 Route::get('yourticket','PageController@yourticket')->name('yourticketpage');
 Route::get('contact','PageController@contact')->name('contactpage');
 Route::get('route', 'PageController@routefun')->name('routepage');
+
 Route::get('search','PageController@searchfun')->name('searchpage');
 //Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
 //Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
 Route::get('search','PageController@search')->name('searchpage');
+
+Route::post('search','PageController@search')->name('searchpage');
+
 Route::get('selectseat','PageController@selectseat')->name('selectseatpage');
 Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');
 

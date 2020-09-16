@@ -1,14 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\City;
+use App\BusCompany;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function home($value='')
 	{
-		return view('frontend.home');
+        $cities=City::all();
+		return view('frontend.home',compact('cities'));
     }
 
 
@@ -50,9 +52,17 @@ class PageController extends Controller
         return view ('backend.routes.index') ;   
     }
 
-     public function search($value='')
+     public function search(Request $request)
     {
-        return view ('frontend.search') ;   
+        //dd($request);
+        $city=City::find($request->id);
+        $city_name=$request->city_name;
+        $city_date=$request->city_date;
+        $city_seat=$request->city_seat;
+        $city_time=$request->city_time;
+
+
+        return view ('frontend.search',compact('city','city_name','city_date','city_seat','city_time')) ;   
     }
      public function cityfun($value='')
     {
@@ -69,7 +79,7 @@ class PageController extends Controller
     public function buscompanyfun($value='')
     {
        
-        return view ('backend.routes.index') ;
+        return view ('backend.buscompanies.index') ;
         
     }
 

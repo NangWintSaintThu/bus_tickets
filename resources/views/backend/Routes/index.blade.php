@@ -50,7 +50,7 @@
                     </tr>
                     @php $i++; @endphp
                     @endforeach
-                     </tbody> --}}
+                     </tbody> 
                    </thead>
                </table>
               </div>
