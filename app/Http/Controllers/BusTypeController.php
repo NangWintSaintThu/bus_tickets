@@ -25,8 +25,9 @@ class BusTypeController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.bustypes.create');
     }
+    
 
     /**
      * Store a newly created resource in storage.
@@ -36,7 +37,17 @@ class BusTypeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $request->validate([
+         
+         "id" => 'required',
+         "name" => 'required',
+         ]);
+        $bustype=new Bus_type;
+        $bustype->id=$request->id;
+        $bustype->name=$request->name;
+        $bustype->save();
+        //redirect
+        return redirect()->route('bustypes.index');
     }
 
     /**
@@ -58,7 +69,7 @@ class BusTypeController extends Controller
      */
     public function edit(BusType $busType)
     {
-        //
+         return view('backend.bustypes.edit',compact('bustype'));
     }
 
     /**
@@ -70,7 +81,15 @@ class BusTypeController extends Controller
      */
     public function update(Request $request, BusType $busType)
     {
-        //
+         $request->validate([
+         "id" => 'required',
+         "name" => 'required',
+         ]);
+         $bustype->id=$request->id;
+         $bustype->name=$request->name;
+         $bustype->save();
+        //redirect
+        return redirect()->route('bustypes.index');
     }
 
     /**
@@ -81,6 +100,7 @@ class BusTypeController extends Controller
      */
     public function destroy(BusType $busType)
     {
-        //
+         $bustype->delete();
+        return redirect()->route('bustypes.index');
     }
 }

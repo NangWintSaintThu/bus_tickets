@@ -24,13 +24,13 @@
     		<table class="table table-bordered">
     			<thead class="thead-dark">
     				<tr>
-    					<th>id</th>
-    					<th>travellerinfo_id</th>
-    					<th>route_id</th>
-    					<th>no_people</th>
-                        <th>total</th>
-                        <th>seat_no</th>
-                        <th>departure_date</th>
+    					<th>No</th>
+    					<th>Traveller</th>
+    					<th>Route</th>
+    					<th>No People</th>
+                        <th>Total</th>
+                        <th>Seat No</th>
+                        <th>Departure Date</th>
     					
     				</tr>
     			</thead>
