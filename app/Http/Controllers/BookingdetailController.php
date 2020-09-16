@@ -44,13 +44,15 @@ class BookingdetailController extends Controller
         foreach ($mycartArr as $row) {
             $total += $row->price * $row->qty;
         }
-          $order = new Order;
-        $order->voucherno=$voucherno;
-        $order->orderdate = date('Y-m-d');
-        $order->note = $request->note;
-        $order->total=$total;
-        $order->user_id = 1;
-        $order->save();
+        $bookingdetail = new Bookingdetail;
+        $bookingdetail->travellerinfo_id=$travellerinfo;
+        $bookingdetail->route_id = $route;
+        $bookingdetail->no_people=$nopeople;
+        $bookingdetail->total=$total;
+        $bookingdetail->seat_no =$seatno;
+        $bookingdetail->departure_date =$departuredate;
+
+        $bookingdetail->save();
 
         foreach ($mycartArr as $row) {
             $order->items()->attach($row->id,['qty'=>$row->qty]);

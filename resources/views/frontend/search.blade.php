@@ -61,6 +61,10 @@
                   <input type="text" class="form-control" id="book_pick_date" placeholder="Date">
                         </div>
                       </div>
+                       <div class="form-group">
+                <label for="" class="label">Pick-up time</label>
+                <input type="text" class="form-control" id="time_pick" placeholder="Time" name="city_time">
+              </div> 
                    
                   <div class="col-lg align-items-end">
                     <div class="form-group">

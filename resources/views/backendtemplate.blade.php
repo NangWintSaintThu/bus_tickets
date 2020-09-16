@@ -48,7 +48,7 @@
       </li>
 
       <!-- Divider -->
-      <hr class="sidebar-divider">
+      {{-- <hr class="sidebar-divider">
 
       <!-- Heading -->
       <div class="sidebar-heading">
@@ -117,43 +117,43 @@
  --}}
  <li class="nav-item">
         <a class="nav-link" href="{{route('homepage')}}">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <i class="fas fa-home"></i>
           <span>Home</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('buscompanies.index')}}">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <i class="fas fa-building"></i>
           <span>Bus Company</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('cities.index')}}">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <i class="fas fa-city"></i>
           <span>City</span></a>
       </li>
       <!-- Nav Item - Charts -->
       <li class="nav-item">
         <a class="nav-link" href="{{route('bustypes.index')}}">
-          <i class="fas fa-fw fa-chart-area"></i>
+          <i class="fas fa-bus"></i>
           <span>Bus Type</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="{{route('routes.index')}}">
-          <i class="fas fa-fw fa-table"></i>
+          <i class="fas fa-road"></i>
           <span>Route</span></a>
       </li>
 {{--       Nav Item -Route
                             --}}      
         <li class="nav-item">
         <a class="nav-link" href="{{route('travellerinfos.index')}}">
-          <i class="fas fa-fw fa-table"></i>
+          <i class="fas fa-users"></i>
           <span>Traveller</span></a>
       </li>
 
        <li class="nav-item">
         <a class="nav-link" href="{{route('bookingdetails.index')}}">
-          <i class="fas fa-fw fa-table"></i>
+          <i class="fas fa-book"></i>
           <span>Book Detail</span></a>
       </li>
 
