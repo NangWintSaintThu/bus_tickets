@@ -52,7 +52,10 @@ Route::resource('buscompanies','BusCompanyController');
 
 Route::resource('bustypes','BusTypeController');
 Route::resource('cities','CityController');
+  
 
+  //woehlaing
+Route::get('larlar', 'BackendController@larlarfun')->name('larlarpage');
 
 
 

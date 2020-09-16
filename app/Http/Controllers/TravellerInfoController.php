@@ -15,12 +15,11 @@ class TravellerInfoController extends Controller
     public function index()
     {
         $travellerinfos=TravellerInfo::all();
-<<<<<<< HEAD
+
         return view('backend.travellerinfos.index');
-=======
+
         return view('backend.travellerinfos.travellerinfolist',compact('travellerinfos'));
->>>>>>> 41f9ba8f7281fed02011c24edefab6fd86550459
-    }
+}
 
     /**
      * Show the form for creating a new resource.
