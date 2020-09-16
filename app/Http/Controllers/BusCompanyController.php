@@ -30,6 +30,7 @@ class BusCompanyController extends Controller
      */
     public function create()
     {
+
          return view('backend.buscompanies.create');
     }
 
@@ -50,9 +51,9 @@ class BusCompanyController extends Controller
         ]);
          $imageName = time().'.'.$request->logo->extension();
 
-    $request->logo->move(public_path('backend/itemimg'),$imageName);
+    $request->logo->move(public_path('backend/buscompanyimg'),$imageName);
 
-    $path = 'backend/itemimg/'.$imageName;
+    $path = 'backend/buscompanyimg/'.$imageName;
 
 
         $buscompany=new BusCompany;

@@ -61,6 +61,10 @@
                   <input type="text" class="form-control" id="book_pick_date" placeholder="Date">
                         </div>
                       </div>
+                       <div class="form-group">
+                <label for="" class="label">Pick-up time</label>
+                <input type="text" class="form-control" id="time_pick" placeholder="Time" name="city_time">
+              </div> 
                    
                   <div class="col-lg align-items-end">
                     <div class="form-group">
@@ -97,7 +101,7 @@
     </section>
   </div>
 
-    <div class="container ">  
+   {{--  <div class="container ">  
          <div class="row mt-3">
           <div class=" col-md-4 ">
             <h4>Time</h4>
@@ -117,6 +121,6 @@
   </label>
 </div>
 </div>
-</div>
+</div> --}}
 
     @endsection   

@@ -21,10 +21,11 @@
           </div>
           <div class="col-lg-2 col"></div>
           <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
-            <form action="{{route('searchpage')}}" class="request-form ftco-animate">
+            <form action="{{route('searchpage')}}" class="request-form ftco-animate" method="post">
+              @csrf
               <h2>Make your Booking</h2>
 
-              <div class="form-group">
+              
                 {{-- <label for="" class="label">Leaving From</label>
                 <input type="text" class="form-control" placeholder="City, Airport, Station, etc"> --}}
                  {{-- <span class="form-label">Leaving from</span>
@@ -37,29 +38,37 @@
                       
                     </select> --}}
                   {{-- </div> --}}
-                    <label for="inputPhoto" class="col-sm-2 col-form-label">Leaving From</label>
-              <div class="col-sm-5">
-                <select name="city" id="city" class="form-control">
+                   {{-- <label for="inputPhoto" class="col-sm-2 col-form-label">Leaving From</label> --}}
+                <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
+              <div class="form-group">
+                <span class="form-label">Leaving From</span>
+                <select name="name" id="city" class="form-control">
                   <optgroup label="Choose City">
-                @foreach($city as $cities)
-                  <option value="{{$cities->id}}">{{$cities->name}}</option>
+                @foreach($cities as $city)
+                  <option placeholder=" Choose City" value="{{$city->id}}">{{$city->name}}</option>
                 @endforeach 
               </optgroup>
                 </select>
                 <span class="text-danger">{{ $errors->first('city') }}</span>
+                   
+                {{-- <label for="" class="label">Going To</label>
+                <input type="text" class="form-control" placeholder="City, Airport, Station, etc"> --}}
+
               </div>
-            </div>
+             
             
               <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
               <div class="form-group">
                 <span class="form-label">Going To</span>
-                   <select class="form-control">
-                    <option>Select Location</option>
-                      <option>Tachlike</option>
-                      <option>Kyaing Tong</option>
-                      <option>Min Phate</option>
-                      <option>Tar Lay</option>
-                    </select>
+                <select name="name" id="city" class="form-control">
+                  <optgroup label="Choose City">
+                @foreach($cities as $city)
+                  <option value="{{$city->id}}">{{$city->name}}</option>
+                @endforeach 
+              </optgroup>
+                </select>
+                <span class="text-danger">{{ $errors->first('city') }}</span>
+                   
                 {{-- <label for="" class="label">Going To</label>
                 <input type="text" class="form-control" placeholder="City, Airport, Station, etc"> --}}
 
@@ -67,12 +76,12 @@
               <div class="d-flex">
                 <div class="form-group mr-2">
                   <label for="" class="label">Departure date</label>
-                  <input type="text" class="form-control" id="book_pick_date" placeholder="Date">
+                  <input type="text" class="form-control" id="book_pick_date" placeholder="Date" name="date">
                 </div>
                 <div class="form-group ml-2">
                   {{-- <label for="" class="label">Number of seat</label> --}}
                   <span class="form-label">Number of seat</span>
-                    <select class="form-control">
+                    <select class="form-control" name="seat">
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -86,11 +95,11 @@
               </div>
               <div class="form-group">
                 <label for="" class="label">Pick-up time</label>
-                <input type="text" class="form-control" id="time_pick" placeholder="Time">
+                <input type="text" class="form-control" id="time_pick" placeholder="Time" name="city_time">
               </div> 
               
               <div class="form-group">
-                <a href="{{ route('searchpage') }}" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Search Now</a>
+                <button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Search Now</button>
                 {{-- <a href="{{route('searchpage')}}" class="btn btn-success btn-search text-my mt-4" data-message="Please select arrival place and departure place." role="button">Search Now</a> --}}
                 
               </div>
