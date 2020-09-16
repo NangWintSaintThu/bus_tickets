@@ -13,7 +13,7 @@
    <h1 class="text-center text-dark"> Create Account </h1>
 		<div class="row justify-content-center">
 			<div class="col-8">
-				<form action="signin" method="POST">
+				<form action="{{route('homepage')}}" method="POST">
 		      		<div class="form-row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -57,7 +57,7 @@
 		  		</form>
 
 		  		<div class=" mt-3 text-center ">
-		  			<a href="{{rotue('loginpage')}}" class="loginLink text-decoration-none">Have an account? Go to login</a>
+		  			<a href="{{route('loginpage')}}" class="loginLink text-decoration-none">Have an account? Go to login</a>
 		  		</div>
 			</div>
 		</div>

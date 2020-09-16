@@ -84,7 +84,7 @@
                   <div class="col-lg align-self-end">
                     <div class="form-group">
                       <div class="form-field">
-                        <input type="submit" value="Search Now" class="form-control btn btn-primary">
+                        <a href="{{route('selectseatpage')}}" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Search Now</a>
                       </div>
                     </div>
                   </div>
@@ -96,4 +96,27 @@
       </div>
     </section>
   </div>
+
+    <div class="container ">  
+         <div class="row mt-3">
+          <div class=" col-md-4 ">
+            <h4>Time</h4>
+  <input class="time-option" type="radio" name="time-option" id="time-option" value="time-option" checked>
+  <label class="time-option" for="time-option">
+    8:00AM
+  </label>
+<br>
+  <input class="time-option" type="radio" name="time-option" id="time-option" value="time-option" checked>
+  <label class="time-option" for="time-option">
+    7:00AM
+  </label>
+<br>
+  <input class="time-option" type="radio" name="time-option" id="time-option" value="time-option" checked>
+  <label class="time-option" for="time-option">
+    12:00AM
+  </label>
+</div>
+</div>
+</div>
+
     @endsection   

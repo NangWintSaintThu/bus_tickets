@@ -16,9 +16,14 @@ class TravellerInfoController extends Controller
     {
         $travellerinfos=TravellerInfo::all();
 
+
         return view('backend.travellerinfos.index');
 
         //return view('backend.travellerinfos.travellerinfolist',compact('travellerinfos'));
+
+        // return view('backend.travellerinfos.index');
+
+        return view('backend.travellerinfos.travellerinfolist',compact('travellerinfos'));
 
     }
 

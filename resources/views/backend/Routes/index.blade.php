@@ -5,7 +5,11 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Route List</h1>
+
             <a href="#" class="btn btn-secondary float-right">Add New</a>
+
+            <a href="{{route('routes.create')}}" class="btn btn-info float-right">Add New</a>
+
           </div>
               <div class="row">
                 <div class="col-md-12"> 
@@ -13,21 +17,26 @@
                    <thead class="thead-dark">
                      <tr>
                        <th>No</th>
-                       <th>Departure_Station</th>
-                       <th>Arrival_Station</th>
-                       <th>Departure_Time</th>
+                       <th>Departure Station</th>
+                       <th>Arrival Station</th>
+                       <th>Departure Time</th>
                        <th>Price</th>
-                       <th>Bus_Type</th>
+                       <th>Bus Type</th>
                        <th>Seat</th>
                        <th>Actions</th>
                      </tr>
                      
-                    {{--  <tbody>
+                     <tbody>
                       @php $i=1; @endphp
                       @foreach($routes as $route)
                        <tr>
                          <td>{{$i++}}</td>
-                         <td>{{$subcategory->name}}</td>
+                         <td>{{$route->departure_station}}</td>
+                         <td>{{$route->arrival_station}}</td>
+                         <td>{{$route->departure_time}}</td>
+                         <td>{{$route->price}}</td>
+                         <td>{{$route->bus_type_id}}</td>
+                         <td>{{$route->seat}}</td>
                          <td>
                             <a href="{{route('routes.edit',$route->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
 
