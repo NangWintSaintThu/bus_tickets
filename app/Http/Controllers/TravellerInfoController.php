@@ -24,9 +24,7 @@ class TravellerInfoController extends Controller
 
         // return view('backend.travellerinfos.index');
 
-        return view('backend.travellerinfos.travellerinfolist',compact('travellerinfos'));
-
-    }
+     
 
 
     /**

@@ -21,12 +21,6 @@ class CityController extends Controller
        //dd($items);
     return view('backend.cities.index',compact('cities'));
 
-
-
-         $cities=City::all();
-        return view('backend.cities.index');
- 
-
     }
 
     /**

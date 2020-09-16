@@ -55,14 +55,26 @@ class PageController extends Controller
      public function search(Request $request)
     {
         //dd($request);
-        $city=City::find($request->id);
-        $city_name=$request->city_name;
+      //for city
+        $cities=City::all();
+        $leavingfrom=$request->leavingfrom;
+        $goingto=$request->goingto;
         $city_date=$request->city_date;
         $city_seat=$request->city_seat;
         $city_time=$request->city_time;
 
 
-        return view ('frontend.search',compact('city','city_name','city_date','city_seat','city_time')) ;   
+        return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ; 
+
+       // for route
+        /* $routes=Route::all();
+        $route_name=$request->route_name;
+        $route_=$request->city_date;
+        $city_seat=$request->city_seat;
+        $city_time=$request->city_time;
+
+
+        return view ('frontend.search',compact('cities','city_name','city_date','city_seat','city_time')) ;*/   
     }
      public function cityfun($value='')
     {

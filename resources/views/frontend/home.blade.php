@@ -81,7 +81,8 @@
                 <div class="form-group ml-2">
                   {{-- <label for="" class="label">Number of seat</label> --}}
                   <span class="form-label">Number of seat</span>
-                    <select class="form-control" name="seat">
+                    <select class="form-control" name="city_seat">
+                      
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
