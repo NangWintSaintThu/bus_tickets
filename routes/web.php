@@ -22,40 +22,29 @@ Route::get('contact','PageController@contact')->name('contactpage');
 Route::get('route', 'PageController@routefun')->name('routepage');
 Route::get('search','PageController@searchfun')->name('searchpage');
 
-<<<<<<< HEAD
-/*Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
-=======
-// Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
->>>>>>> 13d5b2f869014f84ed7a1a1fcbabfa4ef6401040
+//<<<<<<< HEAD
+//Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
+//=======
+//Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
+//>>>>>>> 13d5b2f869014f84ed7a1a1fcbabfa4ef6401040
 
-Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');*/
+Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');
 
-
-//backendအပိုင်းor(adminအပိုင်း)
+  //backendအပိုင်းor(adminအပိုင်း)
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
 //Route::get('city','PageController@cityfun')->name('citypage');
 //Route::get('bustype','PageController@bustypefun')->name('bustypepage');
 //Route::get('buscompany','PageController@buscompanyfun')->name('buscompanypage');
-
-
 Route::resource('cities','CityController');
 Route::resource('bus_types','Bus_typeController');
 Route::resource('buscompany','BusCompanyController');
-
-
 Route::resource('routes', 'RouteController');
-
 Route::resource('travellerinfos','TravellerInfoController');
 Route::resource('bookingdetails','BookingdetailController');
 Route::resource('buscompanies','BusCompanyController');
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 Route::resource('bustypes','BusTypeController');
 Route::resource('cities','CityController');
-
-
-
-
-
->>>>>>> 522ea2ef5ea673dfa244edde9fc54f375587f03c
->>>>>> 41f9ba8f7281fed02011c24edefab6fd86550459
+//>>>>>>> 522ea2ef5ea673dfa244edde9fc54f375587f03c
+//>>>>>> 41f9ba8f7281fed02011c24edefab6fd86550459

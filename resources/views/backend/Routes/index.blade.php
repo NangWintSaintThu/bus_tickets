@@ -5,7 +5,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Route List</h1>
-            <a href="#" class="btn btn-info float-right">Add New</a>
+            <a href="#" class="btn btn-secondary float-right">Add New</a>
           </div>
               <div class="row">
                 <div class="col-md-12"> 

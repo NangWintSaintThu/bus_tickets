@@ -1,9 +1,9 @@
 @extends('master')
 @section('content') 
-<<<<<<< HEAD
+
          
 <div class="container-fluid">
-=======
+
  <div class="jumbotron jumbotron-fluid subtitle">
         <div class="container">
             
@@ -11,7 +11,7 @@
     </div>
     
 <div class="container-fluid mt-5">
->>>>>>> 13d5b2f869014f84ed7a1a1fcbabfa4ef6401040
+
 <div class="row">
         <div class="col-md-12 mb-3">
             <h1 class="h3 mb-0 text-gray-800 d-inline-block">Booking Detail Information</h1>

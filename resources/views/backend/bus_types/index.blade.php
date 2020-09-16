@@ -5,11 +5,10 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-3">
             <h1 class="h3 mb-0 text-gray-800">Bus_type List</h1>
-                <div class="text-right">
-                  <a href="{{-- {{route('bus_types.create')}} --}}" class="btn btn-secondary" >Add New</a>
+            <a href="{{-- {{route('bus_types.create')}} --}}" class="btn btn-secondary float-right">Add New</a>
                 </div>
-      </div>
-    </div>
+         <div class="row">
+         <div class="col-md-12">
          <table class="table table-bordered">
             <thead class="thead-dark">
               <tr>
@@ -28,6 +27,7 @@
                @endforeach
              </tbody> --}}
            </table>
-
+</div>
+</div>
             
 @endsection
