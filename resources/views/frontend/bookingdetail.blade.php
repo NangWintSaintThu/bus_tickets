@@ -25,7 +25,7 @@
                         <th>Departure Date</th>
     					</tr>
     			</thead>
-    	<!-- 	{{-- 	<tbody>
+    		<tbody>
     				@php $i=1; @endphp
     				@foreach($order as $order)
     				<tr>
@@ -42,7 +42,7 @@
     					</td>
     				</tr>
     				@endforeach
-    			</tbody> --}} -->
+    			</tbody> 
     		</table>
     	</div>
     </div>

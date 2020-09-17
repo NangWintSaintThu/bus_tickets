@@ -28,6 +28,11 @@ Route::post('search','PageController@search')->name('searchpage');
 Route::get('selectseat','PageController@selectseat')->name('selectseatpage');
 Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');
 //backendအပိုင်းor(adminအပိုင်း)
+<<<<<<< HEAD
+Route::middleware('role:Admin')->group(function(){
+
+Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
+=======
 Route::middleware('role:Admin')->group(function () {
 //backendအပိုင်းor(adminအပိုင်း)
 
@@ -38,16 +43,41 @@ Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage')
 Route::resource('cities','CityController');
 Route::resource('bus_types','Bus_typeController');
 Route::resource('buscompany','BusCompanyController');
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3cf997fc174dc1261d7cc6242a1ce6c0b6aa9f03
+>>>>>>> 7a6ac40e7c711a234dc0227111b1a44a532126a1
 Route::resource('routes', 'RouteController');
-Route::resource('travellerinfos','TravellerInfoController');
-Route::resource('bookingdetails','BookingdetailController');
 Route::resource('buscompanies','BusCompanyController');
 Route::resource('bustypes','BusTypeController');
 Route::resource('cities','CityController');
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+});
+
+Route::resource('travellerinfos','TravellerInfoController');
+Route::resource('bookingdetails','BookingdetailController');
+=======
+<<<<<<< HEAD
+});
+=======
+  
+
+
+
+
+>>>>>>> 7a6ac40e7c711a234dc0227111b1a44a532126a1
 
 });
 Route::resource('bustypes','BusTypeController');
 Route::resource('cities','CityController');
+<<<<<<< HEAD
+=======
+>>>>>>> 88c7850dbf8e1056349025da450c104a69a522c6
+>>>>>>> 3cf997fc174dc1261d7cc6242a1ce6c0b6aa9f03
+>>>>>>> 7a6ac40e7c711a234dc0227111b1a44a532126a1
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
