@@ -66,10 +66,7 @@
 					          <a href="" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Select seat</a>
 							<hr>
 
-							<li>
-						<h4 class="text-primary">မိုးကောင်းကင်</h4>
 							
-							</li>
 							<h4 class="text-primary">မိုးကောင်းကင်</h4>
 							
 							<div class="section">

@@ -21,7 +21,9 @@
 			       <div class="form-group row {{ $errors->has('departure') ? 'has-error' : '' }}">
 			        <label for="inputdeparture" class="col-sm-2 col-form-label">Departure Station</label>
 			        <div class="col-sm-5">
-			          <input type="text" id="inputdeparture" name="departure" class="d-block">
+			        	@foreach($routes as $route)
+			          <input type="text" id="inputdeparture" name="departurestation" class="d-block" value='{{ $departurestation}}'>
+                         @endforeach
 			          <span class="text-danger">{{ $errors->first('departure') }}</span>
 			        </div>
 			      </div>
@@ -29,7 +31,7 @@
 			      <div class="form-group row {{ $errors->has('arrival') ? 'has-error' : '' }}">
 			        <label for="inputArrival" class="col-sm-2 col-form-label">Arrival Station</label>
 			        <div class="col-sm-5">
-			          <input type="text" id="inputArrival" name="arrival" class="d-block">
+			          <input type="text" id="inputArrival" name="arrivalstation" class="d-block" value='{{$arrivalstation}}'>
 			          <span class="text-danger">{{ $errors->first('arrival') }}</span>
 			        </div>
 			      </div>
@@ -37,7 +39,7 @@
 			      <div class="form-group row {{ $errors->has('depTime') ? 'has-error' : '' }}">
 			        <label for="inputdepTime" class="col-sm-2 col-form-label">Departure Time</label>
 			        <div class="col-sm-5">
-			          <input type="time" id="inputdepTime" name="depTime" class="d-block">
+			          <input type="time" id="inputdepTime" name="route_time" class="d-block" value='{{$route_time}}'>
 			          <span class="text-danger">{{ $errors->first('depTime') }}</span>
 			        </div>
 			      </div>
@@ -45,7 +47,7 @@
 			      <div class="form-group row {{ $errors->has('price') ? 'has-error' : '' }}">
 			        <label for="inputPrice" class="col-sm-2 col-form-label">Price</label>
 			        <div class="col-sm-5">
-			          <input type="text" id="inputArrival" name="price" class="d-block">
+			          <input type="text" id="inputArrival" name="route_price" class="d-block" value='{{$route_price}}'>
 			          <span class="text-danger">{{ $errors->first('price') }}</span>
 			        </div>
 			      </div>
@@ -53,7 +55,7 @@
 			      <div class="form-group row {{ $errors->has('bustype') ? 'has-error' : '' }}">
 			        <label for="inputbustype" class="col-sm-2 col-form-label">Bus Type Id</label>
 			        <div class="col-sm-5">
-			          <input type="text" id="inputbustype" name="bustype" class="d-block">
+			          <input type="text" id="inputbustype" name="route_bustype" class="d-block" value='{{$route_bustype}}'>
 			          <span class="text-danger">{{ $errors->first('bustype') }}</span>
 			        </div>
 			      </div>
@@ -61,7 +63,7 @@
 			      <div class="form-group row {{ $errors->has('seat') ? 'has-error' : '' }}">
 			        <label for="inputseat" class="col-sm-2 col-form-label">Seat</label>
 			        <div class="col-sm-5">
-			          <input type="text" id="inputseat" name="seat" class="d-block">
+			          <input type="text" id="inputseat" name="route_seat" class="d-block" value='{{$route_seat}}'>
 			          <span class="text-danger">{{ $errors->first('seat') }}</span>
 			        </div>
 			      </div>

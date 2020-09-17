@@ -41,7 +41,7 @@
                    {{-- <label for="inputPhoto" class="col-sm-2 col-form-label">Leaving From</label> --}}
                 <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
               <div class="form-group">
-                <span class="form-label">Leaving From</span>
+                <span class="form-label ">Leaving From</span>
                 <select name="name" id="city" class="form-control">
                   <optgroup label="Choose City">
                 @foreach($cities as $city)
@@ -111,46 +111,35 @@
     </div>
 
     
-
-    <section class="ftco-section services-section ftco-no-pt ftco-no-pb">
+     <section class="ftco-section services-section img bg-primary" style="background-image: url(images/bg_2.jpg);">
+   
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-12 heading-section text-center ftco-animate mb-5">
             
-            <h2 class="mb-2">Our Services</h2>
+            <h2 class="mb-2">Buy bus tickets in 3 easy steps</h2>
           </div>
         </div>
         <div class="row d-flex">
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+          {{-- <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services">
               <div class="media-body py-md-4">
                 <div class="d-flex mb-3 align-items-center">
                   <div class="icon"><span class="flaticon-customer-support"></span></div>
-                  <h3 class="heading mb-0 pl-3">24/7 Car Support</h3>
+                  <h3 class="heading mb-0 pl-3">Search</h3>
                 </div>
-                <p>A small river named Duden flows by their place and supplies it with you</p>
+                <p>Choose your origin,destination,journey dates and search for buses</p>
               </div>
             </div>      
-          </div>
+          </div> --}}
           <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services">
               <div class="media-body py-md-4">
                 <div class="d-flex mb-3 align-items-center">
                   <div class="icon"><span class="flaticon-route"></span></div>
-                  <h3 class="heading mb-0 pl-3">Lots of location</h3>
+                  <h3 class="heading mb-0 pl-3">Search</h3>
                 </div>
-                <p>A small river named Duden flows by their place and supplies it with you</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services">
-              <div class="media-body py-md-4">
-                <div class="d-flex mb-3 align-items-center">
-                  <div class="icon"><span class="flaticon-online-booking"></span></div>
-                  <h3 class="heading mb-0 pl-3">Reservation</h3>
-                </div>
-                <p>A small river named Duden flows by their place and supplies it with you</p>
+                <p>Choose your origin,destination,journey dates and search for buses</p>
               </div>
             </div>      
           </div>
@@ -159,9 +148,20 @@
               <div class="media-body py-md-4">
                 <div class="d-flex mb-3 align-items-center">
                   <div class="icon"><span class="flaticon-rent"></span></div>
-                  <h3 class="heading mb-0 pl-3">Rental Cars</h3>
+                  <h3 class="heading mb-0 pl-3">Select</h3>
                 </div>
-                <p>A small river named Duden flows by their place and supplies it with you</p>
+                <p>Select your desired trip and choose your seats</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services">
+              <div class="media-body py-md-4">
+                <div class="d-flex mb-3 align-items-center">
+                  <div class="icon"><span class="flaticon-"></span></div>
+                  <h3 class="heading mb-0 pl-3">Payment</h3>
+                </div>
+                <p>Pay for the tickets Credit Cards or cash</p>
               </div>
             </div>      
           </div>
@@ -327,7 +327,7 @@
       </div>
     </section> --}}
 
-    <section class="ftco-section services-section img" style="background-image: url(images/bg_2.jpg);">
+    {{-- <section class="ftco-section services-section img" style="background-image: url(images/bg_2.jpg);">
       <div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center mb-5">
@@ -375,7 +375,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
    {{--  <section class="ftco-section testimony-section">
       <div class="container">
@@ -472,8 +472,8 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Blog</span>
-            <h2>Recent Blog</h2>
+            
+            <h2>Our Bus List</h2>
           </div>
         </div>
         <div class="row d-flex">
@@ -483,12 +483,11 @@
               </a>
               <div class="text pt-4">
                 <div class="meta mb-3">
-                  <div><a href="#">July. 24, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                  <h4>ရွှေရေကန်</h4>
+                   <p>Bus No:WW</p>
+                  <p>Price:5300Ks</p>
+                  <div><button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book Now</button></div>
                 </div>
-                <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
             </div>
           </div>
@@ -498,27 +497,56 @@
               </a>
               <div class="text pt-4">
                 <div class="meta mb-3">
-                  <div><a href="#">July. 24, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                  <h4>ရွှေမြို့တော်</h4>
+                  <hr>
+                  <p>Bus No:WW</p>
+                  <p>Price:5300Ks</p>
+                  <div><button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book Now</button></div>
                 </div>
-                <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
             </div>
           </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text pt-4">
+                <div class="meta mb-3">
+                  <h4>မိုးကောင်းကင်</h4>
+                   <p>Bus No:WW</p>
+                  <p>Price:5300Ks</p>
+                  <div><button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book Now</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text pt-4">
+                <div class="meta mb-3">
+                  <h4>ဆမ်လောင်</h4>
+                   <p>Bus No:WW</p>
+                  <p>Price:5300Ks</p>
+                  <div><button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book Now</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry">
               <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
               </a>
               <div class="text pt-4">
                 <div class="meta mb-3">
-                  <div><a href="#">July. 24, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                  <h4>တော်ဝင်</h4>
+                   <p>Bus No:WW</p>
+                  <p>Price:5300Ks</p>
+                  <div><button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book Now</button></div>
                 </div>
-                <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
             </div>
           </div>

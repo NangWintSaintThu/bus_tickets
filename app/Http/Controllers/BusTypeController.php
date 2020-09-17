@@ -15,7 +15,7 @@ class BusTypeController extends Controller
     public function index()
     {
          $bustypes=BusType::all();
-        return view('backend.bustypes.index');
+        return view('backend.bustypes.index',compact('bustypes'));
     }
 
     /**

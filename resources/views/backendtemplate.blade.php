@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-
   <title>SB Admin 2 - Dashboard</title>
-
   <!-- Custom fonts for this template-->
   <link href="{{asset('backend/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
   <!-- Custom styles for this template-->
   <link href="{{asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
-   <link href="{{asset('backend/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
+  <link href="{{asset('backend/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 </head>
-
 <body id="page-top">
-
-  <!-- Page Wrapper -->
+<!-- Page Wrapper -->
   <div id="wrapper">
-
-    <!-- Sidebar -->
+<!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-      <!-- Sidebar - Brand -->
+<!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
         <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
       </a>
-
-      <!-- Divider -->
+<!-- Divider -->
       <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
+<!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
 
+<!-- Divider -->
+      <hr class="sidebar-divider">
+<!-- Heading -->
+
+
       <!-- Divider -->
       {{-- <hr class="sidebar-divider">
 
       <!-- Heading -->
+
       <div class="sidebar-heading">
         Interface
       </div>
@@ -96,7 +91,7 @@
       </div> --}}
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <{{-- li class="nav-item">
+      {{-- li class="nav-item">
         <a class="nav-link collapsed" href="{{route('cities.index')}}" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
           <i class="fas fa-fw fa-folder"></i>
           <span>City</span>
@@ -437,6 +432,11 @@
           <li class="active">
             <a href="{{route('homepage')}}"><span class="fa fa-home mr-3"></span> Home</a>
           </li>
+
+           <li>
+           <a href="{{route('travellerinfos.index')}}"><span class="fa fa-book mr-3 notif"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a> 
+          </li> 
+
           <li>
 
 
@@ -447,6 +447,7 @@
             <a href="{{route('travellerinfos.index')}}"><span class="fa fa-book mr-3"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a>
 
           </li>
+
           <li>
             <a href="{{route('bookingdetails.index')}}"><span class="fa fa-pencil mr-3"></span>Booking Detail</a>
           </li>
@@ -455,7 +456,10 @@
           </li>
           <li>
 
+           <a href="{{route('cities.index')}}"><span class="fa fa-cog mr-3"></span>City</a>
+
             <a href="{{route('cities.index')}}"><span class="fa fa-cog mr-3"></span>City</a>
+
           </li>
           <li>
           <li>
@@ -470,6 +474,15 @@
 
             <a href="#"><span class="fa fa-bus mr-3"></span>Bus Type</a>
 
+
+
+            <a href="{{route('buscompany.index')}}"><span class="fa fa-sign-out mr-3"></span>Bus Company</a>
+         </li>
+          </ul>
+        </nav>
+        @yield('content')
+<!-- Page Content  -->
+      </div>
 
             <a href="{{route('buscompanies.index')}}"><span class="fa fa-building mr-3"></span>Bus Company</a>
           </li>
@@ -496,12 +509,11 @@
 
 
  
-=======
     
     
     
     
->>>>>>> d40fd50556d1d9a75c379341ce8d22a832f656d2
+
     <script src="{{asset('backend/js/jquery.min.js')}}"></script>
     <script src="{{asset('backend/js/popper.js')}}"></script>
     <script src="{{asset('backend/js/bootstrap.min.js')}}"></script>
