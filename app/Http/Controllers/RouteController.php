@@ -27,7 +27,8 @@ class RouteController extends Controller
      */
     public function create()
     {
-              return view('backend.routes.create');
+              $cities=City::all();
+       return view('backend.routes.create',compact('cities'));
     }
 
     /**

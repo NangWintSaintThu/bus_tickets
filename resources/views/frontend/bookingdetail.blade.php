@@ -1,25 +1,17 @@
 @extends('master')
 @section('content') 
-
-         
 <div class="container-fluid">
-
- <div class="jumbotron jumbotron-fluid subtitle">
+<div class="jumbotron jumbotron-fluid subtitle">
         <div class="container">
-            
-        </div>
+            </div>
     </div>
-    
-<div class="container-fluid mt-5">
-<div class="row">
-        <div class="col-md-12 mb-3">
+    <div class="container-fluid mt-5">
+    <div class="row">
+    <div class="col-md-12 mb-3">
             <h1 class="h3 mb-0 text-gray-800 d-inline-block">Booking Detail Information</h1>
-            
-        </div>
+            </div>
     </div>
-	
-    
-    <div class="row m-2">
+	<div class="row m-2">
     	<div class="col-md-12">
     		<table class="table table-bordered">
     			<thead class="thead-dark">
@@ -31,8 +23,7 @@
                         <th>Total</th>
                         <th>Seat No</th>
                         <th>Departure Date</th>
-    					
-    				</tr>
+    					</tr>
     			</thead>
     	<!-- 	{{-- 	<tbody>
     				@php $i=1; @endphp
@@ -55,6 +46,5 @@
     		</table>
     	</div>
     </div>
-
- 	</div>
+</div>
    @endsection

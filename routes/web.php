@@ -20,16 +20,34 @@ Route::get('registerpage','PageController@register')->name('registerpage');
 Route::get('yourticket','PageController@yourticket')->name('yourticketpage');
 Route::get('contact','PageController@contact')->name('contactpage');
 Route::get('route', 'PageController@routefun')->name('routepage');
+
+Route::get('search','PageController@searchfun')->name('searchpage');
+//Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
+//Route::get('travellerinfo', 'PageController@travellerinfo')->name('travellerinfopage');
+Route::get('search','PageController@search')->name('searchpage');
+
 Route::post('search','PageController@search')->name('searchpage');
+
 Route::get('selectseat','PageController@selectseat')->name('selectseatpage');
 Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');
 
+<<<<<<< HEAD
 
 //backendအပိုင်းor(adminအပိုင်း)
 Route::middleware('role:Admin')->group(function () {
 	
 
+=======
+  //backendအပိုင်းor(adminအပိုင်း)
+>>>>>>> 88c7850dbf8e1056349025da450c104a69a522c6
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
+
+//Route::get('city','PageController@cityfun')->name('citypage');
+//Route::get('bustype','PageController@bustypefun')->name('bustypepage');
+//Route::get('buscompany','PageController@buscompanyfun')->name('buscompanypage');
+Route::resource('cities','CityController');
+Route::resource('bus_types','Bus_typeController');
+Route::resource('buscompany','BusCompanyController');
 
 Route::resource('routes', 'RouteController');
 Route::resource('travellerinfos','TravellerInfoController');
@@ -38,9 +56,21 @@ Route::resource('buscompanies','BusCompanyController');
 
 Route::resource('bustypes','BusTypeController');
 Route::resource('cities','CityController');
+<<<<<<< HEAD
 });
+=======
+  
+
+
+
+
+
+Route::resource('bustypes','BusTypeController');
+Route::resource('cities','CityController');
+>>>>>>> 88c7850dbf8e1056349025da450c104a69a522c6
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 

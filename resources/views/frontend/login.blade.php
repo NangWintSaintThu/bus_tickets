@@ -2,18 +2,22 @@
 @section('content')
 	<div class="jumbotron jumbotron-fluid subtitle">
   		<div class="container">
-    		
+    		<h1 class="text-center text-white"> Login </h1>
   		</div>
 	</div>
 	
 	<!-- Content -->
-
 	<div class="container my-5">
-       <h1 class="text-center text-dark"> Login </h1>
+
 		<div class="row justify-content-center">
 			<div class="col-5">
+
+				<form method="POST" action="{{ route('loginpage') }}">
+                   @csrf
+
 				
                    <form action="signin" method="POST">
+
 		      		<div class="form-group">
 		      			<label class="small mb-1" for="inputEmailAddress">Email</label>
 		      			<input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Enter email address" name="email" />
@@ -42,7 +46,7 @@
 		      		</div>
 
 
-		  		
+		  		</form>
 
 		  		<div class=" mt-3 text-center ">
 		  			<a href="{{route('registerpage')}}" class="loginLink text-decoration-none">Need an account? Sign Up!</a>
