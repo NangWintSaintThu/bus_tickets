@@ -1,7 +1,11 @@
 @extends('backendtemplate')
 @section('content')
+
+
+
          
   <div class="container-fluid">
+
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -32,8 +36,7 @@
                          <td><img src="{{$buscompany->logo}}" width="50" height="50"></td>
                          <td>{{$buscompany->owner_name}}</td>
                          <td>{{$buscompany->address}}</td>
-
-                         <td>
+                        <td>
                             <a href="{{route('buscompanies.edit',$buscompany->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
 
                             <form action="{{route('buscompanies.destroy',$buscompany->id)}}" method="POST" class="d-inline-block">

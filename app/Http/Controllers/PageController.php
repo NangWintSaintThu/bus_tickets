@@ -69,6 +69,11 @@ class PageController extends Controller
     {
         //dd($request);
 
+<<<<<<< HEAD
+=======
+      //for city
+
+>>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
         $cities=City::all();
         $leavingfrom=$request->leavingfrom;
         $goingto=$request->goingto;
@@ -76,7 +81,15 @@ class PageController extends Controller
         $city_seat=$request->city_seat;
         $city_time=$request->city_time;
 
+<<<<<<< HEAD
 //dd($city_date);  
+=======
+//dd($city_date);
+
+
+        return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;   
+
+>>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
         return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ; 
 
        // for route
