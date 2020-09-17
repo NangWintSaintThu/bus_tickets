@@ -11,4 +11,10 @@ class BackendController extends Controller
         return view ('backend.dashboard') ;
         
     }
+
+     public function larlarfun($value='')
+    {
+        return view ('backend.larlar') ;
+        
+    }
 }

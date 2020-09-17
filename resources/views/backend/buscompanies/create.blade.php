@@ -50,11 +50,11 @@
                 <span class="text-danger">{{ $errors->first('logo') }}</span>
               </div>
             </div>
-            <div class="form-group row {{ $errors->has('owner') ? 'has-error' : '' }}">
+            <div class="form-group row {{ $errors->has('ownername') ? 'has-error' : '' }}">
               <label for="inputowner" class="col-sm-2 col-form-label">Owner Name</label>
               <div class="col-sm-5">
-                <input type="text" id="inputowner" name="owner" class="d-block">
-                <span class="text-danger">{{ $errors->first('owner') }}</span>
+                <input type="text" id="inputowner" name="ownername" class="d-block">
+                <span class="text-danger">{{ $errors->first('ownername') }}</span>
               </div>
             </div>
             <div class="form-group row {{ $errors->has('address') ? 'has-error' : '' }}">

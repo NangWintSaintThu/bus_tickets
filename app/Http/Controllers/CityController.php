@@ -18,13 +18,14 @@ class CityController extends Controller
 
        //$cities=City::all();
        //dd($items);
+
        //return view('backend.cities.index');
 
 
 
        $cities=City::all();
        //dd($items);
-    return view('backend.cities.index',compact('cities'));
+       return view('backend.cities.index',compact('cities'));
 
 
     }

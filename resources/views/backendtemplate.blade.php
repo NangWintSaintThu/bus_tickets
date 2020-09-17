@@ -45,13 +45,13 @@
       {{-- <hr class="sidebar-divider">
 
       <!-- Heading -->
->>>>>>> cd193c94a4c74ae0aaa388c449e29895a5433a7f
+
       <div class="sidebar-heading">
         Interface
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+     {{--  <li class="nav-item">
         <a class="nav-link collapsed" href="{{route('homepage')}}" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
           <span>Home</span>
@@ -80,10 +80,10 @@
             <a class="collapse-item" href="utilities-other.html">Other</a>
           </div>
         </div>
-      </li>
+      </li> --}}
 
       <!-- Divider -->
-      <hr class="sidebar-divider">
+      {{-- <hr class="sidebar-divider">
 
       <!-- Heading -->
       <div class="sidebar-heading">
@@ -432,16 +432,22 @@
           <li class="active">
             <a href="{{route('homepage')}}"><span class="fa fa-home mr-3"></span> Home</a>
           </li>
-<<<<<<< HEAD
+
            <li>
            <a href="{{route('travellerinfos.index')}}"><span class="fa fa-book mr-3 notif"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a> 
           </li> 
-=======
+
           <li>
 
+
+              <a href="{{route('travellerinfos.index')}}"><span class="fa fa-book mr-3 notif"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a>
+
+             
+
             <a href="{{route('travellerinfos.index')}}"><span class="fa fa-book mr-3"><small class="d-flex align-items-center justify-content-center"></small></span>Traveller Info</a>
+
           </li>
->>>>>>> d40fd50556d1d9a75c379341ce8d22a832f656d2
+
           <li>
             <a href="{{route('bookingdetails.index')}}"><span class="fa fa-pencil mr-3"></span>Booking Detail</a>
           </li>
@@ -449,15 +455,27 @@
             <a href="{{route('routes.index')}}"><span class="fa fa-road mr-3"></span> Route </a>
           </li>
           <li>
-<<<<<<< HEAD
+
            <a href="{{route('cities.index')}}"><span class="fa fa-cog mr-3"></span>City</a>
-=======
+
             <a href="{{route('cities.index')}}"><span class="fa fa-cog mr-3"></span>City</a>
->>>>>>> d40fd50556d1d9a75c379341ce8d22a832f656d2
+
           </li>
           <li>
           <li>
-<<<<<<< HEAD
+
+            <a href="{{route('buscompany.index')}}"><span class="fa fa-sign-out mr-3"></span>Bus Company</a>
+
+          </li>
+          <li>
+            <a href="{{route('cities.index')}}"><span class="fa fa-arrows-h mr-3"></span>City</a>
+          </li>
+          <li>
+
+            <a href="#"><span class="fa fa-bus mr-3"></span>Bus Type</a>
+
+
+
             <a href="{{route('buscompany.index')}}"><span class="fa fa-sign-out mr-3"></span>Bus Company</a>
          </li>
           </ul>
@@ -465,28 +483,37 @@
         @yield('content')
 <!-- Page Content  -->
       </div>
-=======
+
             <a href="{{route('buscompanies.index')}}"><span class="fa fa-building mr-3"></span>Bus Company</a>
           </li>
           <li>
+
             <a href="{{route('bustypes.index')}}"><span class="fa fa-bus mr-3"></span>Bus Type</a>
 
           </li>
         </ul>
 
       </nav>
+
+       
+
+
       
 @yield('content')
+
 
       <!-- Page Content  -->
       
     </div>
     
+
+
+ 
     
     
     
     
->>>>>>> d40fd50556d1d9a75c379341ce8d22a832f656d2
+
     <script src="{{asset('backend/js/jquery.min.js')}}"></script>
     <script src="{{asset('backend/js/popper.js')}}"></script>
     <script src="{{asset('backend/js/bootstrap.min.js')}}"></script>

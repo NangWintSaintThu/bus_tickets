@@ -11,26 +11,26 @@
               		<form action="{{route('routes.update',$route->id)}}" method="post" enctype="multipart/form-data">
               			@csrf
                         <div class="form-group row">
-                                <label for="inputtime" class="col-sm-2 col-form-label">Departure_Station</label>
+                                <label for="inputtime" class="col-sm-2 col-form-label" >Departure_Station</label>
                                  <div class="col-sm-10">
-                                  <input type="departure_station" class="form-control" id="inputstation" name="departure_station" value="{{$route->departure_station}}">
-                                  <span class="text-danger">{{$errors->first('departure_station')}}</span>
+                                  <input type="departure_station" class="form-control" id="inputstation" name="departurestation" value="{{$route->departure_station}}">
+                                  <span class="text-danger">{{$errors->first('departurestation')}}</span>
                              </div>
                   
                              </div>
                              <div class="form-group row">
                                 <label for="inputtime" class="col-sm-2 col-form-label">Arrival_Station</label>
                                  <div class="col-sm-10">
-                                  <input type="arrival_station" class="file" id="inputphoto" name="arrival_station" value="{{$route->arrival_station}}">
-                                  <span class="text-danger">{{$errors->first('arrival_station')}}</span>
+                                  <input type="arrival_station" class="file" id="inputphoto" name="arrivalstation" value="{{$route->arrival_station}}">
+                                  <span class="text-danger">{{$errors->first('arrivalstation')}}</span>
                              </div>
                              </div>
 
                               <div class="form-group row">
                                 <label for="inputphoto" class="col-sm-2 col-form-label">Departure_Time</label>
                                  <div class="col-sm-10">
-                                  <input type="departure_time" class="file" id="inputtime" name="departure_time" value="{{$route->departure_time}}">
-                                  <span class="text-danger">{{$errors->first('departure_time')}}</span>
+                                  <input type="departure_time" class="file" id="inputtime" name="departuretime" value="{{$route->departure_time}}">
+                                  <span class="text-danger">{{$errors->first('departuretime')}}</span>
                              </div>
                              </div>
 
@@ -43,18 +43,18 @@
                              </div>
 
                               <div class="form-group row">
-                                <label for="inputbus" class="col-sm-2 col-form-label">Bus_Type</label>
+                                <label for="inputbus" class="col-sm-2 col-form-label">Bus Type</label>
                                  <div class="col-sm-10">
-                                  <input type="bus" class="file" id="inputbus" name="bus">
-                                  <span class="text-danger">{{$errors->first('arrival_station')}}</span>
+                                  <input type="text" class="file" id="inputbus" name="bustypeid">
+                                  <span class="text-danger">{{$errors->first('bustypeid')}}</span>
                              </div>
                              </div>
 
                               <div class="form-group row">
                                 <label for="inputseat" class="col-sm-2 col-form-label">Seat</label>
                                  <div class="col-sm-10">
-                                  <input type="arrival_station" class="file" id="inputseat" name="seat" value="{{$route->seat}}">
-                                  <span class="text-danger">{{$errors->first('seat')}}</span>
+                                  <input type="arrival_station" class="file" id="inputseat" name="busseat" value="{{$route->seat}}">
+                                  <span class="text-danger">{{$errors->first('busseat')}}</span>
                              </div>
                              </div>
 

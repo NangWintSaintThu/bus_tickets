@@ -27,7 +27,8 @@ class RouteController extends Controller
      */
     public function create()
     {
-              return view('backend.routes.create');
+              $cities=City::all();
+       return view('backend.routes.create',compact('cities'));
     }
 
     /**
@@ -45,7 +46,7 @@ class RouteController extends Controller
             "departuretime"=>'required',
             "price"=>'required',
             "bustypeid"=>'required',
-            "seat"=>'required'
+            "busseat"=>'required'
 
         ]);
         
@@ -57,7 +58,7 @@ class RouteController extends Controller
         $route->departure_time=$request->departuretime;
         $route->price=$request->price;
         $route->bus_type_id=$request->bustypeid;
-        $route->seat=$request->seat;
+        $route->seat=$request->busseat;
         $route->save();
 
         return redirect()->route('routes.index');
@@ -102,19 +103,17 @@ class RouteController extends Controller
             "departuretime"=>'required',
             "price"=>'required',
             "bustypeid"=>'required',
-            "seat"=>'required'
+            "busseat"=>'required'
 
         ]);
         
-
-        $route=new Route;
         $route->name=$request->name;
         $route->departure_station=$request->departurestation;
         $route->arrival_station=$request->arrivalstation;
         $route->departure_time=$request->departuretime;
         $route->price=$request->price;
         $route->bus_type_id=$request->bustypeid;
-        $route->seat=$request->seat;
+        $route->seat=$request->busseat;
         $route->save();
 
         return redirect()->route('routes.index');

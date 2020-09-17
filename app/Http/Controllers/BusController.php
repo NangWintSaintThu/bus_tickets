@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\TravellerInfo;
+use App\Bus;
 use Illuminate\Http\Request;
 
-class TravellerInfoController extends Controller
+class BusController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,24 +14,8 @@ class TravellerInfoController extends Controller
      */
     public function index()
     {
-        $travellerinfos=TravellerInfo::all();
-
-
-        return view('backend.travellerinfos.index');
-
-
-        //return view('backend.travellerinfos.travellerinfolist',compact('travellerinfos'));
-
-        // return view('backend.travellerinfos.index');
-
-
-        return view('backend.travellerinfos.travellerinfolist',compact('travellerinfos'));
-}
-
-        // return view('backend.travellerinfos.index');
-
-     
-
+        //
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -57,10 +41,10 @@ class TravellerInfoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\TravellerInfo  $travellerInfo
+     * @param  \App\Bus  $bus
      * @return \Illuminate\Http\Response
      */
-    public function show(TravellerInfo $travellerInfo)
+    public function show(Bus $bus)
     {
         //
     }
@@ -68,10 +52,10 @@ class TravellerInfoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\TravellerInfo  $travellerInfo
+     * @param  \App\Bus  $bus
      * @return \Illuminate\Http\Response
      */
-    public function edit(TravellerInfo $travellerInfo)
+    public function edit(Bus $bus)
     {
         //
     }
@@ -80,10 +64,10 @@ class TravellerInfoController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\TravellerInfo  $travellerInfo
+     * @param  \App\Bus  $bus
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, TravellerInfo $travellerInfo)
+    public function update(Request $request, Bus $bus)
     {
         //
     }
@@ -91,10 +75,10 @@ class TravellerInfoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\TravellerInfo  $travellerInfo
+     * @param  \App\Bus  $bus
      * @return \Illuminate\Http\Response
      */
-    public function destroy(TravellerInfo $travellerInfo)
+    public function destroy(Bus $bus)
     {
         //
     }
