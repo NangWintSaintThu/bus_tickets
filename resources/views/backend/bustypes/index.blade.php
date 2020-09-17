@@ -1,8 +1,7 @@
 @extends('backendtemplate')
 @section('content')
   <div class="container-fluid">
-
-          <!-- Page Heading -->
+  <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Bus Type</h1>
             <a href="{{route('bustypes.create')}}" class="btn btn-info float-right">Add New</a>
