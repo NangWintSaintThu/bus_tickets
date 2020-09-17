@@ -1,9 +1,6 @@
 @extends('backendtemplate')
 @section('content')
-
-
-
-            
+         
   <div class="container-fluid">
 
           <!-- Page Heading -->
@@ -22,6 +19,7 @@
                        <th>Logo</th>
                        <th>Owner Name</th>
                        <th>Address</th>
+                       <th>Actions</th>
                      </tr>
                      
                      <tbody>
@@ -31,7 +29,7 @@
                          <td>{{$i++}}</td>
                          <td>{{$buscompany->name}}</td>
                          <td>{{$buscompany->phone_no}}</td>
-                         <td><img src='{{$buscompany->logo}}' width="50" height="50"></td>
+                         <td><img src="{{$buscompany->logo}}" width="50" height="50"></td>
                          <td>{{$buscompany->owner_name}}</td>
                          <td>{{$buscompany->address}}</td>
 
@@ -48,13 +46,14 @@
                     </tr>
                     @php $i++; @endphp
                     @endforeach
-                     </tbody> --}}
+                     </tbody>
                    </thead>
                </table>
               </div>
            </div>
 
   
+
 
 
 @endsection

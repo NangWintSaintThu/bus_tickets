@@ -22,13 +22,13 @@
                 <span class="text-danger">{{ $errors->first('id') }}</span>
               </div>
             </div> --}}
-            <div class="form-group row {{ $errors->has('name') ? 'has-error' : '' }}">
+            {{-- <div class="form-group row {{ $errors->has('name') ? 'has-error' : '' }}">
               <label for="inputname" class="col-sm-2 col-form-label">Name</label>
               <div class="col-sm-5">
                 <input type="text" id="inputname" name="name" class="d-block">
                 <span class="text-danger">{{ $errors->first('name') }}</span>
               </div>
-            </div>
+            </div> --}}
             <div class="form-group row {{ $errors->has('name') ? 'has-error' : '' }}">
               <label for="inputname" class="col-sm-2 col-form-label">Name</label>
               <div class="col-sm-5">
@@ -46,15 +46,15 @@
             <div class="form-group row {{ $errors->has('logo') ? 'has-error' : '' }}">
               <label for="inputlogo" class="col-sm-2 col-form-label">Logo</label>
               <div class="col-sm-5">
-                <input type="text" id="inputlogo" name="logo" class="d-block">
+                <input type="file" id="inputlogo" name="logo" class="d-block">
                 <span class="text-danger">{{ $errors->first('logo') }}</span>
               </div>
             </div>
-            <div class="form-group row {{ $errors->has('owner') ? 'has-error' : '' }}">
+            <div class="form-group row {{ $errors->has('ownername') ? 'has-error' : '' }}">
               <label for="inputowner" class="col-sm-2 col-form-label">Owner Name</label>
               <div class="col-sm-5">
-                <input type="text" id="inputowner" name="owner" class="d-block">
-                <span class="text-danger">{{ $errors->first('owner') }}</span>
+                <input type="text" id="inputowner" name="ownername" class="d-block">
+                <span class="text-danger">{{ $errors->first('ownername') }}</span>
               </div>
             </div>
             <div class="form-group row {{ $errors->has('address') ? 'has-error' : '' }}">

@@ -15,11 +15,25 @@ class BusCompanyController extends Controller
     public function index()
     {
 
-         $buscompanies=BusCompany::all();
+
+       $buscompanies=BusCompany::all();
        //dd($items);
-       return view('backend.buscompanies.index');
+       return view('backend.buscompanies.index',compact('buscompanies'));
 
         
+
+         $buscompanies=BusCompany::all();
+       //dd($items);
+
+       return view('backend.buscompanies.index');
+
+        $buscompaines=BusCompany::all();
+        return view('backend.buscompanies.index');
+
+       return view('backend.buscompanies.index',compact('buscompanies'));
+
+        
+
 
     }
 
@@ -30,6 +44,7 @@ class BusCompanyController extends Controller
      */
     public function create()
     {
+
          return view('backend.buscompanies.create');
     }
 
@@ -41,7 +56,29 @@ class BusCompanyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $request->validate([
+            "name"=>'required',
+            "phoneno"=>'required',
+            "logo"=>'required',
+            "ownername"=>'required',
+            "address"=>'required'
+        ]);
+         $imageName = time().'.'.$request->logo->extension();
+
+    $request->logo->move(public_path('backend/buscompanyimg'),$imageName);
+
+    $path = 'backend/buscompanyimg/'.$imageName;
+
+
+        $buscompany=new BusCompany;
+        $buscompany->name=$request->name;
+        $buscompany->phone_no=$request->phoneno;
+        $buscompany->logo=$path;
+        $buscompany->owner_name=$request->ownername;
+        $buscompany->address=$request->address;
+        $buscompany->save();
+
+        return redirect()->route('buscompanies.index');
     }
 
     /**
@@ -63,7 +100,7 @@ class BusCompanyController extends Controller
      */
     public function edit(BusCompany $busCompany)
     {
-        //
+         return view('backend.buscompanies.edit',compact('buscompanies'));
     }
 
     /**
@@ -75,7 +112,27 @@ class BusCompanyController extends Controller
      */
     public function update(Request $request, BusCompany $busCompany)
     {
-        //
+         $request->validate([
+            "name"=>'required',
+            "phoneno"=>'required',
+            "logo"=>'required',
+            "ownername"=>'required',
+            "address"=>'required'
+        ]);
+         $imageName = time().'.'.$request->logo->extension();
+
+    $request->logo->move(public_path('backend/buscompanyimg'),$imageName);
+
+    $path = 'backend/buscompanyimg/'.$imageName;
+
+        $buscompany->name=$request->name;
+        $buscompany->phone_no=$request->phoneno;
+        $buscompany->logo=$path;
+        $buscompany->owner_name=$request->ownername;
+        $buscompany->address=$request->address;
+        $buscompany->save();
+
+        return redirect()->route('buscompanies.index');
     }
 
     /**
@@ -86,6 +143,7 @@ class BusCompanyController extends Controller
      */
     public function destroy(BusCompany $busCompany)
     {
-        //
+         $buscompany->delete();
+        return redirect()->route('buscompanies.index');
     }
 }

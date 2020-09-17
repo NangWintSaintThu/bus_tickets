@@ -15,7 +15,7 @@ class BookingdetailController extends Controller
     public function index()
     {
         $bookingdetails=Bookingdetail::all();
-        return view('backend.bookingdetails.index');
+        return view('backend.bookingdetails.index',compact('bookingdetails'));
     }
 
     /**
@@ -36,7 +36,30 @@ class BookingdetailController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $mycart = $request->mycart;
+        $mycartArr = json_decode($mycart);
+        $voucherno = uniqid();
+        $total=0;
+
+        foreach ($mycartArr as $row) {
+            $total += $row->price * $row->qty;
+        }
+        $bookingdetail = new Bookingdetail;
+        $bookingdetail->travellerinfo_id=$travellerinfo;
+        $bookingdetail->route_id = $route;
+        $bookingdetail->no_people=$nopeople;
+        $bookingdetail->total=$total;
+        $bookingdetail->seat_no =$seatno;
+        $bookingdetail->departure_date =$departuredate;
+
+        $bookingdetail->save();
+
+        foreach ($mycartArr as $row) {
+            $order->items()->attach($row->id,['qty'=>$row->qty]);
+        }
+        return "Order Success!!";
+
+
     }
 
     /**

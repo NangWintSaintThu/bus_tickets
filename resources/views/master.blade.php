@@ -4,9 +4,14 @@
     <title>Autoroad - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 
+   {{--  <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+     
     <link rel="stylesheet" href="{{asset('frontend/css/open-iconic-bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/animate.css')}}">
     
@@ -37,17 +42,17 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item "><a href="{{ route('homepage') }}" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="{{ route('aboutpage') }}" class="nav-link">About</a></li>
+            <li class="nav-item "><a href="{{route('homepage')}}" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="{{route('aboutpage')}}" class="nav-link">About</a></li>
 
-           <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
+           <li class="nav-item"><a href="{{route('bookingdetailpage')}}" class="nav-link">Book Detail</a></li>
             
 
           {{--   <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
             <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li> --}}
-            <li class="nav-item"><a href="{{ route('yourticketpage') }}" class="nav-link">Your Ticket</a></li>
+            <li class="nav-item"><a href="{{route('yourticketpage')}}" class="nav-link">Your Ticket</a></li>
 
-            <li class="nav-item"><a href="{{ route ('contactpage') }}" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="{{route('contactpage')}}" class="nav-link">Contact</a></li>
             <span class="float-right d-xl-block d-lg-block d-md-block d-none">
             <a href="{{route('loginpage')}}" class=" text-decoration-none loginLink ml-right"> Login |</a>
               </span>

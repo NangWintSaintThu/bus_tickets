@@ -15,7 +15,7 @@ class BusTypeController extends Controller
     public function index()
     {
          $bustypes=BusType::all();
-        return view('backend.bustypes.index');
+        return view('backend.bustypes.index',compact('bustypes'));
     }
 
     /**
@@ -39,11 +39,11 @@ class BusTypeController extends Controller
     {
          $request->validate([
          
-         "id" => 'required',
+         //"id" => 'required',
          "name" => 'required',
          ]);
-        $bustype=new Bus_type;
-        $bustype->id=$request->id;
+        $bustype=new BusType;
+        //$bustype->id=$request->id;
         $bustype->name=$request->name;
         $bustype->save();
         //redirect
@@ -69,7 +69,7 @@ class BusTypeController extends Controller
      */
     public function edit(BusType $busType)
     {
-         return view('backend.bustypes.edit',compact('bustype'));
+         return view('backend.bustypes.edit');
     }
 
     /**
@@ -82,10 +82,10 @@ class BusTypeController extends Controller
     public function update(Request $request, BusType $busType)
     {
          $request->validate([
-         "id" => 'required',
+         //"id" => 'required',
          "name" => 'required',
          ]);
-         $bustype->id=$request->id;
+         //$bustype->id=$request->id;
          $bustype->name=$request->name;
          $bustype->save();
         //redirect
@@ -100,6 +100,7 @@ class BusTypeController extends Controller
      */
     public function destroy(BusType $busType)
     {
-        //
+         $bustype->delete();
+        return redirect()->route('bustypes.index');
     }
 }

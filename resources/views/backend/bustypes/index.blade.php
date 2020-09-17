@@ -14,11 +14,12 @@
                      <tr>
                        <th>No</th>
                        <th>Name</th>
+                       <th>Actions</th>
                      </tr>
                      
                     <tbody>
                       @php $i=1; @endphp
-                      @foreach($routes as $route)
+                      @foreach($bustypes as $bustype)
                        <tr>
                          <td>{{$i++}}</td>
                          <td>{{$bustype->name}}</td>
