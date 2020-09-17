@@ -32,30 +32,18 @@ Route::get('selectseat','PageController@selectseat')->name('selectseatpage');
 Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');
 
   //backendအပိုင်းor(adminအပိုင်း)
+Route::middleware('auth')->group(function(){
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
-
-//Route::get('city','PageController@cityfun')->name('citypage');
-//Route::get('bustype','PageController@bustypefun')->name('bustypepage');
-//Route::get('buscompany','PageController@buscompanyfun')->name('buscompanypage');
 Route::resource('cities','CityController');
-Route::resource('bus_types','Bus_typeController');
-Route::resource('buscompany','BusCompanyController');
-
+Route::resource('bustypes','BusTypeController');
 Route::resource('routes', 'RouteController');
 Route::resource('travellerinfos','TravellerInfoController');
 Route::resource('bookingdetails','BookingdetailController');
 Route::resource('buscompanies','BusCompanyController');
 
-Route::resource('bustypes','BusTypeController');
-Route::resource('cities','CityController');
+
+});
   
-
-
-
-
-
-Route::resource('bustypes','BusTypeController');
-Route::resource('cities','CityController');
 
 Auth::routes();
 

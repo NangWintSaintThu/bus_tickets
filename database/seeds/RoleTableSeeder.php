@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
+
 class RoleTableSeeder extends Seeder
 {
     /**
@@ -17,6 +18,6 @@ class RoleTableSeeder extends Seeder
 
         $role2 = new Role;
         $role2->name = "Admin";
-        $role->save();
+        $role2->save();
     }
 }
