@@ -20,6 +20,18 @@ class PageController extends Controller
 		return view('frontend.about');
     }
 
+     public function busroutefun(Request $request)
+  {
+    $cities=City::all();
+        $leavingfrom=$request->leavingfrom;
+        $goingto=$request->goingto;
+       
+
+//dd($city_date);  
+        return view ('frontend.busroute',compact('cities','leavingfrom','goingto')) ; 
+    //return view('frontend.busroute',compact('busroute'));
+    }
+
      public function selectseat($value='')
 	{
 		return view('frontend.selectseat');
@@ -57,8 +69,16 @@ class PageController extends Controller
     {
         //dd($request);
 
+<<<<<<< HEAD
       //for city
 
+=======
+<<<<<<< HEAD
+=======
+      //for city
+
+>>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
+>>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
         $cities=City::all();
         $leavingfrom=$request->leavingfrom;
         $goingto=$request->goingto;
@@ -66,8 +86,19 @@ class PageController extends Controller
         $city_seat=$request->city_seat;
         $city_time=$request->city_time;
 
+<<<<<<< HEAD
+//dd($city_date);  
+=======
 //dd($city_date);
 
+<<<<<<< HEAD
+=======
+
+        return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;   
+
+>>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
+        return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ; 
+>>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
 
         return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;   
        // for route
@@ -81,7 +112,11 @@ class PageController extends Controller
         $city_seat=$request->city_seat;
        
 
+<<<<<<< HEAD
         return view ('frontend.search',compact('routes','route_name','departure_station','arrival_station','route_time','route_price','route_bustype','route_seat')) ;  
+=======
+        return view ('frontend.search',compact('routes','route_name','depaturestation','arrivalstation','route_time','route_price','route_bustype','route_seat')) ;  
+>>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
 
     }
      public function cityfun($value='')
