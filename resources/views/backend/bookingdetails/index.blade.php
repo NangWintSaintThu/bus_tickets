@@ -11,6 +11,7 @@
 	
     
     <div class="row m-2">
+<<<<<<< HEAD
     	<div class="col-md-12">
     		<table class="table table-bordered">
     			<thead class="thead-dark">
@@ -19,12 +20,28 @@
     					<th>travellerinfo_id</th>
     					<th>route_id</th>
     					<th>no_people</th>
-              <th>total</th>
+               <th>total</th>
               <th>seat_no</th>
               <th>departure_date</th>
     					
     				</tr>
     			</thead>
+=======
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>No</th>
+                        <th>User No</th>
+                        <th>Route</th>
+                        <th>No People</th>
+                        <th>Total</th>
+                        <th>Seat No</th>
+                        <th>Departure Date</th>
+                        
+                    </tr>
+                </thead>
+>>>>>>> 3cf997fc174dc1261d7cc6242a1ce6c0b6aa9f03
     	<!-- 	{{-- 	<tbody>
     				@php $i=1; @endphp
     				@foreach($order as $order)

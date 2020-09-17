@@ -14,6 +14,7 @@
                      <tr>
                        <th>No</th>
                        <th>Name</th>
+                       <th>Actions</th>
                      </tr>
                      
                     <tbody>

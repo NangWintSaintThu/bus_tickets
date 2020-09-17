@@ -19,6 +19,7 @@
                        <th>Logo</th>
                        <th>Owner Name</th>
                        <th>Address</th>
+                       <th>Actions</th>
                      </tr>
                      
                      <tbody>

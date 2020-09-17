@@ -20,6 +20,18 @@ class PageController extends Controller
 		return view('frontend.about');
     }
 
+     public function busroutefun(Request $request)
+  {
+    $cities=City::all();
+        $leavingfrom=$request->leavingfrom;
+        $goingto=$request->goingto;
+       
+
+//dd($city_date);  
+        return view ('frontend.busroute',compact('cities','leavingfrom','goingto')) ; 
+    //return view('frontend.busroute',compact('busroute'));
+    }
+
      public function selectseat($value='')
 	{
 		return view('frontend.selectseat',compact('routes'));
@@ -53,10 +65,10 @@ class PageController extends Controller
         return view ('backend.routes.index') ;   
     }
 
-     public function search(Request $request)
+     public function searchfun(Request $request)
     {
         //dd($request);
-      //for city
+
         $cities=City::all();
         $leavingfrom=$request->leavingfrom;
         $goingto=$request->goingto;
@@ -64,7 +76,7 @@ class PageController extends Controller
         $city_seat=$request->city_seat;
         $city_time=$request->city_time;
 
-
+//dd($city_date);  
         return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ; 
 
        // for route
@@ -79,6 +91,7 @@ class PageController extends Controller
        
 
         return view ('frontend.search',compact('routes','route_name','depaturestation','arrivalstation','route_time','route_price','route_bustype','route_seat')) ;  
+
     }
      public function cityfun($value='')
     {
@@ -106,7 +119,7 @@ class PageController extends Controller
 
 	public function bookingdetail($value='')
 	{
-		return view('backend.bookingdetails.index');
+		return view('backend.bookingdetails.bookingdetaillist');
 	}
 
 }
