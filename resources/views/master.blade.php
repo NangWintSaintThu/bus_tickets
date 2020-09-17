@@ -42,7 +42,7 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item "><a href="{{route('homepage')}}" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="{{route('homepage')}}" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="{{route('aboutpage')}}" class="nav-link">About</a></li>
 
            <li class="nav-item"><a href="{{route('bookingdetailpage')}}" class="nav-link">Book Detail</a></li>
