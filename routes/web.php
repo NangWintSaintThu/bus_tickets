@@ -26,15 +26,17 @@ Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetail
 
 
 //backendအပိုင်းor(adminအပိုင်း)
+Route::middleware('role:Admin')->group(function(){
+
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
-
 Route::resource('routes', 'RouteController');
-Route::resource('travellerinfos','TravellerInfoController');
-Route::resource('bookingdetails','BookingdetailController');
 Route::resource('buscompanies','BusCompanyController');
-
 Route::resource('bustypes','BusTypeController');
 Route::resource('cities','CityController');
+});
+
+Route::resource('travellerinfos','TravellerInfoController');
+Route::resource('bookingdetails','BookingdetailController');
 
 Auth::routes();
 
