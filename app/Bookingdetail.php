@@ -12,8 +12,8 @@ class Bookingdetail extends Model
      public function travellerinfo($value='')
   {
   	return $this->belongsTo('App\TravellerInfo','travellerinfolist');
-                ->withPivot('qty')
-                ->withTimestamps();
+                //->withPivot('qty');
+                //->withTimestamps();
   }
 
   public function route($value='')

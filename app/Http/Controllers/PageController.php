@@ -55,14 +55,16 @@ class PageController extends Controller
      public function search(Request $request)
     {
         //dd($request);
-        $city=City::find($request->id);
-        $city_name=$request->city_name;
+        $cities=City::all();
+        $leavingfrom=$request->leavingfrom;
+        $goingto=$request->goingto;
         $city_date=$request->city_date;
         $city_seat=$request->city_seat;
         $city_time=$request->city_time;
 
+//dd($city_date);
 
-        return view ('frontend.search',compact('city','city_name','city_date','city_seat','city_time')) ;   
+        return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;   
     }
      public function cityfun($value='')
     {
@@ -73,7 +75,7 @@ class PageController extends Controller
     public function bustypefun($value='')
     {
        
-        return view ('backend.routes.index') ;
+        return view ('backend.bustypes.index') ;
         
     }
     public function buscompanyfun($value='')
@@ -90,7 +92,7 @@ class PageController extends Controller
 
 	public function bookingdetail($value='')
 	{
-		return view('backend.bookingdetails.index');
+		return view('backend.bookingdetails.bookingdetaillist');
 	}
 
 }

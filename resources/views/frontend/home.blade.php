@@ -42,7 +42,7 @@
                 <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
               <div class="form-group">
                 <span class="form-label">Leaving From</span>
-                <select name="name" id="city" class="form-control">
+                <select name="leavingfrom" id="city" class="form-control">
                   <optgroup label="Choose City">
                 @foreach($cities as $city)
                   <option placeholder=" Choose City" value="{{$city->id}}">{{$city->name}}</option>
@@ -60,7 +60,7 @@
               <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
               <div class="form-group">
                 <span class="form-label">Going To</span>
-                <select name="name" id="city" class="form-control">
+                <select name="goingto" id="city" class="form-control">
                   <optgroup label="Choose City">
                 @foreach($cities as $city)
                   <option value="{{$city->id}}">{{$city->name}}</option>
@@ -76,12 +76,13 @@
               <div class="d-flex">
                 <div class="form-group mr-2">
                   <label for="" class="label">Departure date</label>
-                  <input type="text" class="form-control" id="book_pick_date" placeholder="Date" name="date">
+                  <input type="text" class="form-control" id="book_pick_date" placeholder="Date" name="city_date">
                 </div>
                 <div class="form-group ml-2">
                   {{-- <label for="" class="label">Number of seat</label> --}}
                   <span class="form-label">Number of seat</span>
-                    <select class="form-control" name="seat">
+                    <select class="form-control" name="city_seat">
+                     
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
