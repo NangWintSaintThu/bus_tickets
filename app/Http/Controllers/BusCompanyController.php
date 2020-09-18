@@ -20,7 +20,7 @@ class BusCompanyController extends Controller
        //dd($items);
 
        //return view('backend.buscompanies.index');
-
+            
        return view('backend.buscompanies.index',compact('buscompanies'));
 
 

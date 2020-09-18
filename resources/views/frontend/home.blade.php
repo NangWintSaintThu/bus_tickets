@@ -2,6 +2,7 @@
 @section('content')
 
 <div class="hero-wrap" style="background-image: url('{{ asset('frontend/img/bg-1.jpg')}}');" data-stellar-background-ratio="0.5">
+<<<<<<< HEAD
   <div class="overlay"></div>
   <div class="container">
     <div class="row no-gutters slider-text justify-content-start align-items-center">
@@ -16,11 +17,41 @@
         <form action="{{route('searchpage')}}" class="request-form ftco-animate" method="post">
           @csrf
           <h2>Make your Booking</h2>
+=======
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text justify-content-start align-items-center">
+          <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
+            <div class="text">
+              <h1 class="mb-4">Wellcome <span>To Bus Reservation</span> </h1>
+             
+            </div>
+          </div>
+          <div class="col-lg-2 col"></div>
+          <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
+            <form action="{{route('searchpage')}}" class="request-form ftco-animate" method="post">
+              @csrf
+              <h2>Make your Booking</h2>
+
+            
+                <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
+              <div class="form-group">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
 
 
           <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
           <div class="form-group">
 
+<<<<<<< HEAD
+=======
+>>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
+>>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
+                <span class="form-label ">Leaving From</span>
+                <select name="name" id="city" class="form-control">
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
 
             <span class="form-label">Leaving From</span>
             <select name="leavingfrom" id="city" class="form-control">
@@ -43,8 +74,35 @@
                 <option value="{{$city->id}}">{{$city->name}}</option>
                 @endforeach 
               </optgroup>
+<<<<<<< HEAD
             </select>
             <span class="text-danger">{{ $errors->first('city') }}</span>
+=======
+                </select>
+                <span class="text-danger">{{ $errors->first('city') }}</span>
+                   
+               
+
+              </div>
+              <div class="d-flex">
+                <div class="form-group mr-2">
+                  <label for="" class="label">Departure date</label>
+                  <input type="text" class="form-control" id="book_pick_date" placeholder="Date" name="city_date">
+                </div>
+                <div class="form-group ml-2">
+                  {{-- <label for="" class="label">Number of seat</label> --}}
+                  <span class="form-label">Number of seat</span>
+                    <select class="form-control" name="city_seat">
+<<<<<<< HEAD
+                     
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+                     
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
 
 
 
@@ -66,6 +124,19 @@
               <option>6</option>
             </select>
 
+<<<<<<< HEAD
+=======
+>>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
+>>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
+>>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                    </select>
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
 
           </div>
         </div>
@@ -77,6 +148,100 @@
         <div class="form-group">
           <button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Search Now</button>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <section class="ftco-section">
+=======
+<<<<<<< HEAD
+   
+    <section class="ftco-section">
+=======
+<<<<<<< HEAD
+    <section class="ftco-section">
+=======
+    {{-- <section class="ftco-section">
+      <div class="container-fluid px-4">
+        <div class="row justify-content-center">
+          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+            <span class="subheading">What we offer</span>
+            <h2 class="mb-2">Choose Your Car</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="car-wrap ftco-animate">
+              <div class="img d-flex align-items-end" style="background-image: url(images/car-1.jpg);">
+                <div class="price-wrap d-flex">
+                  <span class="rate">$25</span>
+                  <p class="from-day">
+                    <span>From</span>
+                    <span>/Day</span>
+                  </p>
+                </div>
+              </div>
+              <div class="text p-4 text-center">
+                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
+                <span>Audi</span>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="car-wrap ftco-animate">
+              <div class="img d-flex align-items-end" style="background-image: url(images/car-2.jpg);">
+                <div class="price-wrap d-flex">
+                  <span class="rate">$25</span>
+                  <p class="from-day">
+                    <span>From</span>
+                    <span>/Day</span>
+                  </p>
+                </div>
+              </div>
+              <div class="text p-4 text-center">
+                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
+                <span>Ford</span>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="car-wrap ftco-animate">
+              <div class="img d-flex align-items-end" style="background-image: url(images/car-3.jpg);">
+                <div class="price-wrap d-flex">
+                  <span class="rate">$25</span>
+                  <p class="from-day">
+                    <span>From</span>
+                    <span>/Day</span>
+                  </p>
+                </div>
+              </div>
+              <div class="text p-4 text-center">
+                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
+                <span>Cheverolet</span>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="car-wrap ftco-animate">
+              <div class="img d-flex align-items-end" style="background-image: url(images/car-4.jpg);">
+                <div class="price-wrap d-flex">
+                  <span class="rate">$25</span>
+                  <p class="from-day">
+                    <span>From</span>
+                    <span>/Day</span>
+                  </p>
+                </div>
+              </div>
+              <div class="text p-4 text-center">
+                <h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
+                <span>Mercedes</span>
+                <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-black btn-outline-black mr-1">Book now</a> <a href="#" class="btn btn-black btn-outline-black ml-1">Details</a></p>
+              </div>
+            </div>
+          </div>
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
 
         </div>
 
@@ -97,15 +262,43 @@
     </div>
     <div class="row d-flex">
 
+<<<<<<< HEAD
       <div class="col-md-3 d-flex align-self-stretch ftco-animate">
         <div class="media block-6 services">
           <div class="media-body py-md-4">
             <div class="d-flex mb-3 align-items-center">
               <div class="icon"><span class="flaticon-route"></span></div>
               <h3 class="heading mb-0 pl-3">Search</h3>
+=======
+    {{-- <section class="ftco-section">
+>>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
+>>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
+>>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            
+            <h2>Our Bus List</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="" class="block-20" style="background-image: url({{asset('frontend/img/background.jpg')}});">
+              </a>
+              <div class="text pt-4">
+                <div class="meta mb-3">
+                  <h4>ရွှေရေကန်</h4>
+                   <p>Bus No:WW</p>
+                  <p>Price:5300Ks</p>
+                  <div><button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book Now</button></div>
+                </div>
+              </div>
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
             </div>
             <p>Choose your origin,destination,journey dates and search for buses</p>
           </div>
+<<<<<<< HEAD
         </div>      
       </div>
       <div class="col-md-3 d-flex align-self-stretch ftco-animate">
@@ -114,9 +307,51 @@
             <div class="d-flex mb-3 align-items-center">
               <div class="icon"><span class="flaticon-rent"></span></div>
               <h3 class="heading mb-0 pl-3">Select</h3>
+=======
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+<<<<<<< HEAD
+              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text pt-4">
+=======
+<<<<<<< HEAD
+              <a href="" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text pt-4">
+=======
+               <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a> 
+               <div class="text pt-4">
+>>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
+>>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
+                <div class="meta mb-3">
+                  <h4>ရွှေမြို့တော်</h4>
+                  <hr>
+                  <p>Bus No:WW</p>
+                  <p>Price:5300Ks</p>
+                  <div><button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book Now</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text pt-4">
+                <div class="meta mb-3">
+                  <h4>မိုးကောင်းကင်</h4>
+                   <p>Bus No:WW</p>
+                  <p>Price:5300Ks</p>
+                  <div><button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book Now</button></div>
+                </div>
+              </div>
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
             </div>
             <p>Select your desired trip and choose your seats</p>
           </div>
+<<<<<<< HEAD
         </div>      
       </div>
       <div class="col-md-3 d-flex align-self-stretch ftco-animate">
@@ -125,6 +360,21 @@
             <div class="d-flex mb-3 align-items-center">
               <div class="icon"><span class="flaticon-"></span></div>
               <h3 class="heading mb-0 pl-3">Payment</h3>
+=======
+         
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <a href="" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text pt-4">
+                <div class="meta mb-3">
+                  <h4>ဆမ်လောင်</h4>
+                   <p>Bus No:WW</p>
+                  <p>Price:5300Ks</p>
+                  <div><button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book Now</button></div>
+                </div>
+              </div>
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
             </div>
             <p>Pay for the tickets Credit Cards or cash</p>
           </div>
@@ -134,6 +384,7 @@
   </div>
 </section>
 
+<<<<<<< HEAD
 
 
 <section class="ftco-section">
@@ -189,3 +440,32 @@
     </form>
   </section> 
   @endsection   
+=======
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+              <a href="" class="block-20" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="text pt-4">
+                <div class="meta mb-3">
+                  <h4>တော်ဝင်</h4>
+                   <p>Bus No:WW</p>
+                  <p>Price:5300Ks</p>
+                  <div><button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Book Now</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<<<<<<< HEAD
+    </section> 
+=======
+<<<<<<< HEAD
+    </form>
+    </section> 
+=======
+    </section>  
+>>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
+>>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
+    @endsection   
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4

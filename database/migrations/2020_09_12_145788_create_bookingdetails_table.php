@@ -23,15 +23,15 @@ class CreateBookingdetailsTable extends Migration
             $table->date('departure_date');
             $table->timestamps();
 
-           // $table->foreign('travellerinfo_id')
-           //          ->references('id')
-           //          ->on('travellerinfos')
-           //          ->onDelete('cascade');
+           $table->foreign('travellerinfo_id')
+                     ->references('id')
+                   ->on('travellerinfos')
+                    ->onDelete('cascade');
 
-           // $table->foreign('route_id')
-           //          ->references('id')
-           //          ->on('routes')
-           //          ->onDelete('cascade');
+            $table->foreign('route_id')
+                     ->references('id')
+                     ->on('routes')
+                    ->onDelete('cascade');
         });
     }
 
