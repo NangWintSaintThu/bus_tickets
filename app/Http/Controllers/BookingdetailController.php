@@ -57,7 +57,7 @@ class BookingdetailController extends Controller
         foreach ($mycartArr as $row) {
             $order->items()->attach($row->id,['qty'=>$row->qty]);
         }
-        return "Order Success!!";
+        return "Booking Successful!!";
 
 
     }

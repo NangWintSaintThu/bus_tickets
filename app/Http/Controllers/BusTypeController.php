@@ -82,13 +82,13 @@ class BusTypeController extends Controller
     public function update(Request $request, BusType $busType)
     {
          $request->validate([
-         //"id" => 'required',
+         "id" => 'required',
          "name" => 'required',
          ]);
-         //$bustype->id=$request->id;
+         $bustype->id=$request->id;
          $bustype->name=$request->name;
          $bustype->save();
-        //redirect
+        redirect
         return redirect()->route('bustypes.index');
     }
 

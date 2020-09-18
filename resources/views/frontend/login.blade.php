@@ -2,8 +2,11 @@
 @section('content')
 	<div class="jumbotron jumbotron-fluid subtitle">
   		<div class="container">
+    	</div>
+
     		<h1 class="text-center text-white"> Login </h1>
   		</div>
+
 	</div>
 	
 	<!-- Content -->
@@ -37,18 +40,20 @@
 		          		</div>
 
 		          		<a class="small" href="#">Forgot Password?</a>
-
-		      		</div>
-		      		
+                      </div>
 		      		<div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
 		        		
 		        		<button type="submit" class="btn btn-secondary mainfullbtncolor btn-block">Login</button>
 		      		</div>
 
+		      		<div class=" mt-3 text-center ">
+
+
 
 		  		</form>
 
 		  		<div class=" mt-3 text-center ">
+
 		  			<a href="{{route('registerpage')}}" class="loginLink text-decoration-none">Need an account? Sign Up!</a>
 		  		</div>
 			</div>
