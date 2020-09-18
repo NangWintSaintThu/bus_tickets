@@ -27,7 +27,14 @@ class PageController extends Controller
 
      public function selectseat($value='')
 	{
+<<<<<<< HEAD
 		return view('frontend.selectseat');
+=======
+
+		return view('frontend.selectseat'/*,compact('search')*/);
+		return view('frontend.selectseat');
+
+>>>>>>> 939d146fb1dc4046e3cf1dc27338fc38addc3f5b
     }
 
      
@@ -70,17 +77,34 @@ class PageController extends Controller
      public function searchfun(Request $request)
     {
 
+<<<<<<< HEAD
+=======
+        //dd($request);
+
+
+
+      //for city
+>>>>>>> 939d146fb1dc4046e3cf1dc27338fc38addc3f5b
         $cities=City::all();
         $leavingfrom=$request->leavingfrom;
         $goingto=$request->goingto;
         $city_date=$request->city_date;
         $city_seat=$request->city_seat;
         $city_time=$request->city_time;
+<<<<<<< HEAD
 
 
         return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;   
 
 
+=======
+ return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;  
+//dd($city_date);  
+//dd($city_date);
+
+         // for route
+        //dd($request);
+>>>>>>> 939d146fb1dc4046e3cf1dc27338fc38addc3f5b
         $routes=Route::all();
         $departure_station=$request->depature_station;
         $arrival_station=$request->arrival_station;
