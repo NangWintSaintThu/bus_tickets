@@ -74,16 +74,33 @@
 										</optgroup>
 									</select>
 								</div>
-
+    
 								<div class="form-group">
 									<label class="small mb-1" for="inputEmailAddress">Departure Date</label>
-									<input class="form-control py-4" id="inputDeparture DateAddress" type="text"  name="city_date" value='
+									<input class="form-control py-4" id="date"   value='
 									{{$city_date}}'>
 								</div>
 								<div class="form-group">
-									<label class="small mb-1" for="inputEmailAddress">No of Seat</label>
-									<input class="form-control py-4" id="inputDeparture DateAddress" type="text"  name="city_seat" value="{{$city_seat}}">
+									<label class="small mb-1" for="inputEmailAddress">Number of Seat</label>
+									{{-- <input class="form-control py-4" id="seat"  value='{{$city_seat}}'> <select name="city_seat" id="" class="form-control"> --}}
+										<div class="form-field">
+                        <div class="select-wrap">
+                          <select name="city_seat" id="" class="form-control">
+                           <option class="selected">{{$city_seat}}</option>
+                           <option value="">1</option>
+                           <option value="">2</option>
+                           <option value="">3</option>
+                           <option value="">4</option>
+                           <option value="">5</option>
+                           <option value="">6</option>
+
+                         </select>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 								<div class="form-group">
 									<label class="small mb-1" for="inputEmailAddress">Seat Number</label>
 									<input class="form-control py-4" id="inputDeparture DateAddress" type="text" name="seatno" value="">

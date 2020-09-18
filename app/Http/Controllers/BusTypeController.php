@@ -88,7 +88,7 @@ class BusTypeController extends Controller
          $bustype->id=$request->id;
          $bustype->name=$request->name;
          $bustype->save();
-        redirect
+        
         return redirect()->route('bustypes.index');
     }
 

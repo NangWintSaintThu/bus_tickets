@@ -51,11 +51,10 @@
           {{--   <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
             <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li> --}}
            {{--  <li class="nav-item"><a href="{{route('busroutepage')}}" class="nav-link">Bus Route</a></li> --}}
-<<<<<<< HEAD
             <li class="nav-item"><a href="{{route('yourticketpage')}}" class="nav-link">Your Ticket</a></li>
-=======
+
             <li class="nav-item"><a href="{{route('bookpage')}}" class="nav-link">Booking Detail</a></li>
->>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
+
 
             <li class="nav-item"><a href="{{route('contactpage')}}" class="nav-link">Contact</a></li>
             <span class="float-right d-xl-block d-lg-block d-md-block d-none">
