@@ -5,7 +5,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-3">
             <h1 class="h3 mb-0 text-gray-800">Bus_type List</h1>
-            <a href="{{-- {{route('bus_types.create')}} --}}" class="btn btn-secondary float-right">Add New</a>
+            <a href=" {{route('bus_types.create')}}" class="btn btn-secondary float-right">Add New</a>
                 </div>
          <div class="row">
          <div class="col-md-12">

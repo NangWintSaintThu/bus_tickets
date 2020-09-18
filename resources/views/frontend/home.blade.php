@@ -7,7 +7,7 @@
         <div class="row no-gutters slider-text justify-content-start align-items-center">
           <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
             <div class="text">
-              <h1 class="mb-4">Wellcome <span>To Bus REservation</span> </h1>
+              <h1 class="mb-4">Wellcome <span>To Bus Reservation</span> </h1>
              
             </div>
           </div>
@@ -20,25 +20,10 @@
             
                 <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
               <div class="form-group">
-<<<<<<< HEAD
 
                 <span class="form-label">Leaving From</span>
                 <select name="leavingfrom" id="city" class="form-control">
-=======
-<<<<<<< HEAD
 
-                <span class="form-label">Leaving From</span>
-                <select name="leavingfrom" id="city" class="form-control">
-=======
- 
-                <span class="form-label">Leaving From</span>
-                <select name="leavingfrom" id="city" class="form-control">
-
->>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
-                <span class="form-label ">Leaving From</span>
-                <select name="name" id="city" class="form-control">
-
->>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
                   <optgroup label="Choose City">
                 @foreach($cities as $city)
                   <option placeholder=" Choose City" value="{{$city->id}}">{{$city->name}}</option>
@@ -75,20 +60,7 @@
                   {{-- <label for="" class="label">Number of seat</label> --}}
                   <span class="form-label">Number of seat</span>
                     <select class="form-control" name="city_seat">
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-                     
-
-=======
-
-                     
-
                       
-
->>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
->>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
