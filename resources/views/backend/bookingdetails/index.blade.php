@@ -11,7 +11,6 @@
 	
     
     <div class="row m-2">
-<<<<<<< HEAD
     	<div class="col-md-12">
     		<table class="table table-bordered">
     			<thead class="thead-dark">
@@ -26,7 +25,6 @@
     					
     				</tr>
     			</thead>
-=======
         <div class="col-md-12">
             <table class="table table-bordered">
                 <thead class="thead-dark">
@@ -41,8 +39,7 @@
                         
                     </tr>
                 </thead>
->>>>>>> 3cf997fc174dc1261d7cc6242a1ce6c0b6aa9f03
-    	<!-- 	{{-- 	<tbody>
+    	<tbody>
     				@php $i=1; @endphp
     				@foreach($order as $order)
     				<tr>
@@ -59,7 +56,7 @@
     					</td>
     				</tr>
     				@endforeach
-    			</tbody> --}} -->
+    			</tbody> 
     		</table>
     	</div>
     </div>
