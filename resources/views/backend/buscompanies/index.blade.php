@@ -33,7 +33,7 @@
                          <td>{{$i++}}</td>
                          <td>{{$buscompany->name}}</td>
                          <td>{{$buscompany->phone_no}}</td>
-                         <td><img src="{{$buscompany->logo}}" width="50" height="50"></td>
+                         <td><img src="{{asset($buscompany->logo)}}" width="50" height="50"></td>
                          <td>{{$buscompany->owner_name}}</td>
                          <td>{{$buscompany->address}}</td>
                         <td>

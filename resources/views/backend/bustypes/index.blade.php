@@ -13,7 +13,11 @@
                      <tr>
                        <th>No</th>
                        <th>Name</th>
+<<<<<<< HEAD
                        
+=======
+                       <th>Logo</th>
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
                        <th>Actions</th>
                      </tr>
                      
@@ -23,7 +27,12 @@
                        <tr>
                          <td>{{$i++}}</td>
                          <td>{{$bustype->name}}</td>
+<<<<<<< HEAD
                          <td>    
+=======
+                          <td><img src="{{asset($bustype->logo)}}" width="50" height="50"></td>
+                         <td>
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
                             <a href="{{route('bustypes.edit',$bustype->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
 
                             <form action="{{route('bustypes.destroy',$bustype->id)}}" method="POST" class="d-inline-block">

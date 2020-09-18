@@ -88,7 +88,10 @@ class BusCompanyController extends Controller
     public function edit(BusCompany $buscompany)
     {
          return view('backend.buscompanies.edit',compact('buscompany'));
+<<<<<<< HEAD
          
+=======
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
     }
 
     /**
@@ -98,7 +101,7 @@ class BusCompanyController extends Controller
      * @param  \App\BusCompany  $busCompany
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, BusCompany $busCompany)
+    public function update(Request $request, BusCompany $buscompany)
     {
          $request->validate([
             "name"=>'required',

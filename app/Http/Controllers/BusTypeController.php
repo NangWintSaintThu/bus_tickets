@@ -41,10 +41,19 @@ class BusTypeController extends Controller
          
          //"id" => 'required',
          "name" => 'required',
+          "logo"=>'required'
          ]);
+
+    $imageName = time().'.'.$request->logo->extension();
+
+    $request->logo->move(public_path('backend/bustypeimg'),$imageName);
+
+    $path = 'backend/bustypeimg/'.$imageName;
+
         $bustype=new BusType;
         //$bustype->id=$request->id;
         $bustype->name=$request->name;
+        $bustype->logo=$path;
         $bustype->save();
         //redirect
         return redirect()->route('bustypes.index');
@@ -79,16 +88,33 @@ class BusTypeController extends Controller
      * @param  \App\BusType  $busType
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, BusType $busType)
+    public function update(Request $request, BusType $bustype)
     {
-         $request->validate([
-         "id" => 'required',
+        $request->validate([
+         
+         //"id" => 'required',
          "name" => 'required',
+          "logo"=>'required'
          ]);
+<<<<<<< HEAD
          $bustype->id=$request->id;
          $bustype->name=$request->name;
          $bustype->save();
        
+=======
+
+    $imageName = time().'.'.$request->logo->extension();
+
+    $request->logo->move(public_path('backend/bustypeimg'),$imageName);
+
+    $path = 'backend/bustypeimg/'.$imageName;
+
+        //$bustype->id=$request->bus_id;
+        $bustype->name=$request->name;
+        $bustype->logo=$path;
+        $bustype->save();
+        //redirect
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
         return redirect()->route('bustypes.index');
     }
 
