@@ -580,49 +580,73 @@
               </div>
             </div>
           </div> --}}
-
-<!-- Discount Item -->
-    <div class="row mt-5">
-      <h1>Our Bus List/h1>
-    </div>
-        <!-- Disocunt Item -->
-        <div class="row">
-      <div class="col-12">
-        <div class="MultiCarousel" data-bustypes="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
-          @foreach($bustypes as $bustype)
-                     <div class="MultiCarousel-inner">
-                    <div class="bustype">
-                      <a href="{{route('itemdetailpage',$bustype->id)}}">
-                        <div class="pad15">
-                          <img src="{{asset($bustype->photo)}}" class="img-fluid">
-                            <p class="text-truncate">{{$bustype->name}}</p>
-                            <p class="bustype-price">
-                              <strike>{{$bustype->discount}} Ks </strike> 
-                              <span class="d-block">{{$bustype->price}} Ks</span>
-                            </p>
-
-                            <div class="star-rating">
-                  <ul class="list-inline">
-                    <li class="list-inline-bustype"><i class='bx bxs-star' ></i></li>
-                    <li class="list-inline-bustype"><i class='bx bxs-star' ></i></li>
-                    <li class="list-inline-bustype"><i class='bx bxs-star' ></i></li>
-                    <li class="list-inline-bustype"><i class='bx bxs-star' ></i></li>
-                    <li class="list-inline-bustype"><i class='bx bxs-star-half' ></i></li>
-                  </ul>
-                </div>
-
-                <a href="#" class="addtocartBtn text-decoration-none btn_add_to_cart" data-id='{{$bustype->id}}' dabustypeta-name='{{$bustype->name}}' data-photo='{{$bustype->photo}}' data-price='{{$bustype->price}}' data-discount='{{$bustype->discount}}'>Add to Cart</abustype
-                        </div>
-                    </a>
-                    </div>
-                </div>
-                @endforeach
-                <button class="btn btnMain leftLst"><</button>
-                <button class="btn btnMain rightLst">></button>
-            </div>
+<div id="speakers" class="mt-5">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-7">
+          <h2 class="secondary text-uppercase">Popular Route</h2>
+         
         </div>
-    </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+          <div class="speaker">
+            <img src="{{asset('frontend/tclimg/img1.jpg')}}" class="img-fluid" width="300px" height="350px">
+        </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+          <div class="speaker">
+            <img src="{{asset('frontend/tclimg/img6.jpg')}}" class="img-fluid" width="300px" height="350px">
+        </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+          <div class="speaker">
+            <img src="{{asset('frontend/tclimg/img9.jpg')}}" class="img-fluid" width="300px" height="350px">
+          </div>
+        </div>
+      </div>
+        {{-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+          <div class="speaker">
+            <img src="image/speakers/4.jpg" class="img-fluid">
+        </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+          <div class="speaker">
+            <img src="image/speakers/5.jpg" class="img-fluid">
+        </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+          <div class="speaker">
+            <img src="image/speakers/6.jpg" class="img-fluid">
+            </div>
+        </div> --}}
+        </div>
 
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-7">
+          <h2 class="secondary text-uppercase">Gallery</h2>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+          <div class="speaker">
+            <img src="{{asset('frontend/buscarimg/bus1.jpg')}}" class="img-fluid" width="300px" height="350px">
+        </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+          <div class="speaker">
+            <img src="{{asset('frontend/buscarimg/bus2.jpg')}}" class="img-fluid" width="300px" height="350px">
+        </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+          <div class="speaker">
+            <img src="{{asset('frontend/buscarimg/bus3.jpg')}}" class="img-fluid" width="300px" height="350px">
+          </div>
+        </div>
+      </div>
+    </div>
+  
         </div>
         </div>
       </div>
