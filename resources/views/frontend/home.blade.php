@@ -41,14 +41,35 @@
                    {{-- <label for="inputPhoto" class="col-sm-2 col-form-label">Leaving From</label> --}}
                 <span class="text-danger">{{$errors->first('please select departure place ')}}</span>
               <div class="form-group">
+<<<<<<< HEAD
  
                 <span class="form-label">Leaving From</span>
                 <select name="leavingfrom" id="city" class="form-control">
+=======
+<<<<<<< HEAD
+
+                <span class="form-label">Leaving From</span>
+                <select name="leavingfrom" id="city" class="form-control">
+
+                  <optgroup label="Choose City">
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
+>>>>>>> 06572089af81a55337e729c191ebe7aca854cfcf
 
                 <span class="form-label ">Leaving From</span>
                 <select name="name" id="city" class="form-control">
 
+<<<<<<< HEAD
                   <optgroup label="Choose City">
+=======
+            <span class="form-label">Leaving From</span>
+            <select name="leavingfrom" id="city" class="form-control">
+              <optgroup label="Choose City">
+>>>>>>> 4be3acbf68bee97b3775f5a8e1d876e63989a7b1
+>>>>>>> 06572089af81a55337e729c191ebe7aca854cfcf
                 @foreach($cities as $city)
                   <option placeholder=" Choose City" value="{{$city->id}}">{{$city->name}}</option>
                 @endforeach 
@@ -87,11 +108,49 @@
                   {{-- <label for="" class="label">Number of seat</label> --}}
                   <span class="form-label">Number of seat</span>
                     <select class="form-control" name="city_seat">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                      
+=======
+<<<<<<< HEAD
+                     
+
+=======
+<<<<<<< HEAD
+>>>>>>> 06572089af81a55337e729c191ebe7aca854cfcf
 
                      
 
                       
 
+<<<<<<< HEAD
+=======
+          </div>
+          <div class="d-flex">
+            <div class="form-group mr-2">
+              <label for="" class="label">Departure date</label>
+              <input type="text" class="form-control" id="book_pick_date" placeholder="Date" name="city_date">
+            </div>
+            <div class="form-group ml-2">
+             {{--  <label for="" class="label">Number of seat</label> --}} 
+              <span class="form-label">Number of seat</span>
+              <select class="form-control" name="city_seat">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+
+<<<<<<< HEAD
+=======
+>>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
+>>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
+>>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
+>>>>>>> 4be3acbf68bee97b3775f5a8e1d876e63989a7b1
+>>>>>>> 06572089af81a55337e729c191ebe7aca854cfcf
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
