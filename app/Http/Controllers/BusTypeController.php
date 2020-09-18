@@ -67,9 +67,9 @@ class BusTypeController extends Controller
      * @param  \App\BusType  $busType
      * @return \Illuminate\Http\Response
      */
-    public function edit(BusType $busType)
+    public function edit(BusType $bustype)
     {
-         return view('backend.bustypes.edit');
+         return view('backend.bustypes.edit',compact('bustype'));
     }
 
     /**
@@ -88,7 +88,7 @@ class BusTypeController extends Controller
          $bustype->id=$request->id;
          $bustype->name=$request->name;
          $bustype->save();
-        redirect
+       
         return redirect()->route('bustypes.index');
     }
 
@@ -98,9 +98,9 @@ class BusTypeController extends Controller
      * @param  \App\BusType  $busType
      * @return \Illuminate\Http\Response
      */
-    public function destroy(BusType $busType)
+    public function destroy(BusType $bustype)
     {
-         $bustype->delete();
+        $bustype->delete();
         return redirect()->route('bustypes.index');
     }
 }

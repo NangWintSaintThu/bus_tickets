@@ -23,18 +23,18 @@
 <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+          <i class="fas fa-bus"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Bus Admin</div>
       </a>
 <!-- Divider -->
       <hr class="sidebar-divider my-0">
 <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      {{-- <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
-      </li>
+      </li> --}}
 
 <!-- Divider -->
       <hr class="sidebar-divider">
@@ -110,11 +110,7 @@
         </div>
       </li>
  --}}
- <li class="nav-item">
-        <a class="nav-link" href="{{route('homepage')}}">
-          <i class="fas fa-home"></i>
-          <span>Home</span></a>
-      </li>
+ 
       <li class="nav-item">
         <a class="nav-link" href="{{route('buscompanies.index')}}">
           <i class="fas fa-building"></i>

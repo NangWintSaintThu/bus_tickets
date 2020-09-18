@@ -54,13 +54,21 @@
 						<div class="row">
 							<div class="col-md-12" >
 								<div class="form-group">
-									<label class="small mb-1" for="input">Leaving From</label>
-									<input class="form-control py-4" id="inputname" type="text" name="leavingfrom" value='{{$city->id}}' @if($city->id==$leavingfrom) {{'selected'}} @endif>{{$city->name}}">
+									<label class="small mb-1" for="inputname">Leaving From</label>
+									<select class="form-control" name="leavingfrom">
+										@foreach($cities as $city)
+										<option placeholder=" Choose City" value="{{$city->id}}" @if($city->id==$leavingfrom) {{'selected'}} @endif>{{$city->name}}</option>
+										@endforeach 
+									</select>
 								</div>
 
 								<div class="form-group">
 									<label class="small mb-1" for="inputname">Going To</label>
-									<input class="form-control py-4" id="inputphonenumber" type="text" name="goingto" value='{{$city->id}}' @if($city->id==$goingto) {{'selected'}} @endif>{{$city->name}}">
+									 <select class="form-control" name="leavingfrom">
+                               @foreach($cities as $city)
+                               <option placeholder=" Choose City" value="{{$city->id}}" @if($city->id==$leavingfrom) {{'selected'}} @endif>{{$city->name}}</option>
+                               @endforeach 
+                             </select>
 								</div>
 
 								<div class="form-group">
@@ -79,12 +87,10 @@
 
 								<div class="form-group">
 									<label class="small mb-1" for="inputEmailAddress">Total</label>
-									<input class="form-control py-4" id="inputDeparture DateAddress" type="text"  name="price" value="{{$bookingdetail->total}}">
+									<input class="form-control py-4" id="inputDeparture DateAddress" type="text"  name="price" value="">
 								</div>
 
 								<button type="submit" class="btn btn-secondary mainfullbtncolor btn-block">Book Now</button>
-
-								<input type="messagebox" name="mesg" value="Booking Successful">
 							</div>
 
 						</table>

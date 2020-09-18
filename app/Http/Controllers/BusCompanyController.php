@@ -22,23 +22,6 @@ class BusCompanyController extends Controller
        //return view('backend.buscompanies.index');
             
        return view('backend.buscompanies.index',compact('buscompanies'));
-
-
-        
-
-        $buscompanies=BusCompany::all();
-       //dd($items);
-
-       return view('backend.buscompanies.index');
-
-        $buscompaines=BusCompany::all();
-        return view('backend.buscompanies.index');
-
-       return view('backend.buscompanies.index',compact('buscompanies'));
-
-        
-
-
     }
 
     /**
@@ -102,9 +85,10 @@ class BusCompanyController extends Controller
      * @param  \App\BusCompany  $busCompany
      * @return \Illuminate\Http\Response
      */
-    public function edit(BusCompany $busCompany)
+    public function edit(BusCompany $buscompany)
     {
-         return view('backend.buscompanies.edit',compact('buscompanies'));
+         return view('backend.buscompanies.edit',compact('buscompany'));
+         
     }
 
     /**
@@ -145,9 +129,10 @@ class BusCompanyController extends Controller
      * @param  \App\BusCompany  $busCompany
      * @return \Illuminate\Http\Response
      */
-    public function destroy(BusCompany $busCompany)
+    public function destroy(BusCompany $buscompany)
     {
          $buscompany->delete();
         return redirect()->route('buscompanies.index');
     }
+
 }

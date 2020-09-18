@@ -24,7 +24,7 @@
   <div class="form-group row">
     <label for="inputname" class="col-sm-2 col-form-label" >Name</label>
     <div class="col-sm-10">
-      <input type="name" class="form-control" id="inputname" name="bus_name" value="{{$bustype->name}}">
+      <input type="name" class="form-control" id="inputname" name="name" value="{{$bustype->name}}">
     </div>
   </div>
   

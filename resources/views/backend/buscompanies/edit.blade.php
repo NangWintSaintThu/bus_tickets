@@ -12,7 +12,7 @@
            </div> 
             <div class="row">
             	<div class="col-md-12">
-            		<form action="{{route('buscompanies.update',$buscompanies->id)}}" method="post" enctype="multipart/form-data">
+            		<form action="{{route('buscompanies.update',$buscompany->id)}}" method="post" enctype="multipart/form-data">
             			@csrf
             			@method('PUT')
   {{-- <div class="form-group row">

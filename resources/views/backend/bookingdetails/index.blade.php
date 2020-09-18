@@ -11,12 +11,10 @@
 	
     
     <div class="row m-2">
-<<<<<<< HEAD
 
-=======
     	<div class="col-md-12">
     		<table class="table table-bordered">
-    			<thead class="thead-dark">
+    			<thead class="thead bg-primary text-light">
     				<tr>
     					<th>id</th>
     					<th>travellerinfo_id</th>
@@ -28,47 +26,11 @@
     					
     				</tr>
     			</thead>
->>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
-        <div class="col-md-12">
-            <table class="table table-bordered">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>No</th>
-                        <th>User No</th>
-                        <th>Route</th>
-                        <th>No People</th>
-                        <th>Total</th>
-                        <th>Seat No</th>
-                        <th>Departure Date</th>
-                        
-                    </tr>
-                </thead>
-<<<<<<< HEAD
-
-    	<!-- 	{{-- 	<tbody>
-=======
-    	<tbody>
->>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
-    				@php $i=1; @endphp
-    				@foreach($order as $order)
-    				<tr>
-    					<td>{{$i++}}</td>
-    					<td>{{$order->voucherno}}</td>
-    					<td>{{$order->user->name}}</td>
-    					<td>{{$order->total}} MMK</td>
-    					<td>
-    						<a href="{{route('orders.show',$order->id)}}" class="btn btn-primary">Detail</a>
-    						<a href="#" class="btn btn-warning">Edit</a>
-                            <a href="#" class="btn btn-success">Confirm</a>
-
-    						<a href="#" class="btn btn-danger">Delete</a>
-    					</td>
-    				</tr>
-    				@endforeach
-    			</tbody> 
-    		</table>
-    	</div>
+            </table>
+        </div>
     </div>
+</div>
 
- 	</div>
+
+    	
    @endsection
