@@ -11,7 +11,24 @@
 	
     
     <div class="row m-2">
+<<<<<<< HEAD
 
+=======
+    	<div class="col-md-12">
+    		<table class="table table-bordered">
+    			<thead class="thead-dark">
+    				<tr>
+    					<th>id</th>
+    					<th>travellerinfo_id</th>
+    					<th>route_id</th>
+    					<th>no_people</th>
+               <th>total</th>
+              <th>seat_no</th>
+              <th>departure_date</th>
+    					
+    				</tr>
+    			</thead>
+>>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
         <div class="col-md-12">
             <table class="table table-bordered">
                 <thead class="thead-dark">
@@ -26,8 +43,12 @@
                         
                     </tr>
                 </thead>
+<<<<<<< HEAD
 
     	<!-- 	{{-- 	<tbody>
+=======
+    	<tbody>
+>>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
     				@php $i=1; @endphp
     				@foreach($order as $order)
     				<tr>
@@ -44,7 +65,7 @@
     					</td>
     				</tr>
     				@endforeach
-    			</tbody> --}} -->
+    			</tbody> 
     		</table>
     	</div>
     </div>
