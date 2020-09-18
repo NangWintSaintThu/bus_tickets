@@ -50,7 +50,7 @@
 
           {{--   <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
             <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li> --}}
-            <li class="nav-item"><a href="{{route('busroutepage')}}" class="nav-link">Bus Route</a></li>
+           {{--  <li class="nav-item"><a href="{{route('busroutepage')}}" class="nav-link">Bus Route</a></li> --}}
             <li class="nav-item"><a href="{{route('yourticketpage')}}" class="nav-link">Your Ticket</a></li>
 
             <li class="nav-item"><a href="{{route('contactpage')}}" class="nav-link">Contact</a></li>
