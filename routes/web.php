@@ -33,7 +33,7 @@ Route::get('selectseat','PageController@selectseat')->name('selectseatpage');
 
 Route::get('book','PageController@book')->name('bookpage');
 
-Route::get('seat','PageController@seatfun')->name('seatpage');
+Route::post('seat','PageController@seatfun')->name('seatpage');
 
 Route::get('bookingdetail', 'PageController@bookingdetail')->name('bookingdetailpage');
 

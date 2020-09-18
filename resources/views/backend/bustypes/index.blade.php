@@ -13,6 +13,7 @@
                      <tr>
                        <th>No</th>
                        <th>Name</th>
+                       <th>Logo</th>
                        <th>Actions</th>
                      </tr>
                      
@@ -22,6 +23,7 @@
                        <tr>
                          <td>{{$i++}}</td>
                          <td>{{$bustype->name}}</td>
+                          <td><img src="{{asset($bustype->logo)}}" width="50" height="50"></td>
                          <td>
                             <a href="{{route('bustypes.edit',$bustype->id)}}" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a>
 

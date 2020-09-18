@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class BusType extends Model
 {
     protected $fillable=[
-      'id','name'
+      'id','name','logo'
     ];
     public function routes($value='')
     {

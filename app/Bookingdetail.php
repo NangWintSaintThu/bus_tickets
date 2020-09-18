@@ -11,13 +11,8 @@ class Bookingdetail extends Model
     ];
      public function travellerinfo($value='')
   {
-<<<<<<< HEAD
 
   	return $this->belongsTo('App\TravellerInfo','bookingdetails')
-=======
-  	
-  	return $this->belongsTo('App\TravellerInfo','travellerinfolist')
->>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
                 ->withPivot('qty')
                 ->withTimestamps();
   }
