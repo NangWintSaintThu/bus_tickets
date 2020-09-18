@@ -38,7 +38,7 @@
               </div>
               <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
                 
-                <button type="submit" class="btn btn-secondary mainfullbtncolor btn-block">Login</button>
+                <button type="submit" class="btn btn-secondary mainfullbtncolor btn-block">Send</button>
               </div>
           </div>
               

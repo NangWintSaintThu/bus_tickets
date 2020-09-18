@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Auth;
 use App\Bookingdetail;
 use Illuminate\Http\Request;
 
@@ -36,16 +36,9 @@ class BookingdetailController extends Controller
      */
     public function store(Request $request)
     {
-         $mycart = $request->mycart;
-        $mycartArr = json_decode($mycart);
-        $voucherno = uniqid();
-        $total=0;
-
-        foreach ($mycartArr as $row) {
-            $total += $row->price * $row->qty;
-        }
+        
         $bookingdetail = new Bookingdetail;
-        $bookingdetail->travellerinfo_id=$travellerinfo;
+        $bookingdetail->travellerinfo_id=Auth::id();
         $bookingdetail->route_id = $route;
         $bookingdetail->no_people=$nopeople;
         $bookingdetail->total=$total;
@@ -53,11 +46,7 @@ class BookingdetailController extends Controller
         $bookingdetail->departure_date =$departuredate;
 
         $bookingdetail->save();
-
-        foreach ($mycartArr as $row) {
-            $order->items()->attach($row->id,['qty'=>$row->qty]);
-        }
-        return "Order Success!!";
+        //return view
 
 
     }

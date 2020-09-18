@@ -16,11 +16,11 @@ class BusCompanyController extends Controller
     {
 
 
-       //$buscompanies=BusCompany::all();
+       $buscompanies=BusCompany::all();
        //dd($items);
 
        //return view('backend.buscompanies.index');
-
+            
        return view('backend.buscompanies.index',compact('buscompanies'));
 
 
