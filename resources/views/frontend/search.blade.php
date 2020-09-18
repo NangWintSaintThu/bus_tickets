@@ -44,7 +44,7 @@
                             <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                             <select class="form-control" name="goingto">
                              @foreach($cities as $city)
-                             <option placeholder=" Choose City" value="{{$city->id}}">{{$city->name}}</option>
+                             <option placeholder=" Choose City" value=" {{$city->id}}">{{$city->name}}</option>
                              @endforeach 
                            </select>
                          </div>

@@ -20,27 +20,27 @@ class PageController extends Controller
 		return view('frontend.about');
     }
 
-     public function busroutefun(Request $request)
-  {
-    $cities=City::all();
-        $leavingfrom=$request->leavingfrom;
-        $goingto=$request->goingto;
-       
-
-//dd($city_date);  
-        return view ('frontend.busroute',compact('cities','leavingfrom','goingto')) ; 
-    //return view('frontend.busroute',compact('busroute'));
-    }
+    
 
      public function selectseat($value='')
 	{
-		return view('frontend.selectseat',compact('routes'));
+		return view('frontend.selectseat'/*,compact('search')*/);
     }
 
      
-      public function yourticket($value='')
+      public function book(Request $request)
 	{
-		return view('frontend.yourticket');
+     $cities=City::all();
+        $id=$request->id;
+        $city_name=$request->city_name;
+        $leavingfrom=$request->leavingfrom;
+        $goingto=$request->goingto;
+        $city_date=$request->city_date;
+        $city_seat=$request->city_seat;
+        $city_time=$request->city_time;
+         $city_total=$request->city_total;
+        return view ('frontend.book',compact('cities','id','city_name','leavingfrom','goingto','city_date','city_seat','city_time','city_total')) ;  
+		
     }
 
   
@@ -69,11 +69,10 @@ class PageController extends Controller
     {
         //dd($request);
 
-<<<<<<< HEAD
-=======
+
       //for city
 
->>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
+
         $cities=City::all();
         $leavingfrom=$request->leavingfrom;
         $goingto=$request->goingto;
@@ -81,15 +80,10 @@ class PageController extends Controller
         $city_seat=$request->city_seat;
         $city_time=$request->city_time;
 
-<<<<<<< HEAD
+
 //dd($city_date);  
-=======
 //dd($city_date);
 
-
-        return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;   
-
->>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
         return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ; 
 
        // for route
