@@ -45,12 +45,14 @@
                             <select class="form-control" name="goingto">
                              @foreach($cities as $city)
 <<<<<<< HEAD
-                             <option placeholder=" Choose City" value=" {{$city->id}}">{{$city->name}}</option>
-                             @endforeach 
-=======
                                <option placeholder=" Choose City" value="{{$city->id}}" @if($city->id==$goingto) {{'selected'}} @endif>{{$city->name}}</option>
                                @endforeach  
->>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
+=======
+
+                               <option placeholder=" Choose City" value="{{$city->id}}" @if($city->id==$goingto) {{'selected'}} @endif>{{$city->name}}</option>
+                               @endforeach  
+
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
                            </select>
                          </div>
                        </div>
@@ -73,7 +75,7 @@
                       <div class="form-field">
                         <div class="select-wrap">
                           <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                          <select name="" id="" class="form-control">
+                          <select name="city_seat" id="" class="form-control">
                            <option class="selected">{{$city_seat}}</option>
                            <option value="">1</option>
                            <option value="">2</option>

@@ -11,16 +11,18 @@
     
     
     <div class="row m-2">
-<<<<<<< HEAD
 
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 
 =======
 >>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
     	<div class="col-md-12">
     		<table class="table table-bordered">
-    			<thead class="thead-dark">
+    			<thead class="thead bg-primary text-light">
     				<tr>
     					<th>id</th>
     					<th>travellerinfo_id</th>
@@ -55,6 +57,10 @@
     					
     				</tr>
     			</thead>
+<<<<<<< HEAD
+            </table>
+        </div>
+=======
 >>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
         <div class="col-md-12">
             <table class="table table-bordered">
@@ -96,7 +102,15 @@
     			</tbody> 
     		</table>
     	</div>
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
     </div>
+</div>
 
+
+<<<<<<< HEAD
+    	
+   @endsection
+=======
 </div>
 @endsection
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17

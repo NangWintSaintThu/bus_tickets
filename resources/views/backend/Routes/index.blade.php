@@ -6,13 +6,13 @@
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Route List</h1>
 
-            <a href="{{route('routes.create')}}" class="btn btn-info float-right">Add New</a>
+            <a href="{{route('routes.create')}}" class="btn btn-primary float-right">Add New</a>
 
           </div>
               <div class="row">
                 <div class="col-md-12"> 
                   <table class="table table-bordered">
-                   <thead class="thead-dark">
+                   <thead class="thead bg-primary text-light">
                      <tr>
                        <th>No</th>
                        <th>Departure Station</th>
