@@ -96,12 +96,12 @@ class BusTypeController extends Controller
          "name" => 'required',
           "logo"=>'required'
          ]);
-<<<<<<< HEAD
+
          $bustype->id=$request->id;
          $bustype->name=$request->name;
          $bustype->save();
        
-=======
+
 
     $imageName = time().'.'.$request->logo->extension();
 
@@ -114,7 +114,7 @@ class BusTypeController extends Controller
         $bustype->logo=$path;
         $bustype->save();
         //redirect
->>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
+
         return redirect()->route('bustypes.index');
     }
 

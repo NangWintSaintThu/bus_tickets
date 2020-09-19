@@ -2,8 +2,7 @@
 @section('content')
 	
 	
-	 </div>
-  <div class="jumbotron jumbotron-fluid subtitle">
+	<div class="jumbotron jumbotron-fluid subtitle">
       <div class="container">
         
       </div>
@@ -11,7 +10,7 @@
   
   <!-- Content -->
   <div class="container my-5">
-    <h1 class="text-center text-white"> Create Account </h1>
+    <h1 class="text-center text-dark">Register</h1>
     <div class="row justify-content-center">
       <div class="col-8">
         <form action="signin" method="POST">
@@ -65,13 +64,11 @@
           </form>
 
           <div class=" mt-3 text-center ">
-            <a href="#" class="loginLink text-decoration-none">Have an account? Go to login</a>
+            <a href="{{route('registerpage')}}" class="loginLink text-decoration-none">Have an account? Go to login</a>
           </div>
       </div>
     </div>
     
-    
-    
-
   </div>
-	@endsection
+
+  	@endsection

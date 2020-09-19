@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\City;
 use App\Route;
 use Illuminate\Http\Request;
 
@@ -53,9 +53,9 @@ class RouteController extends Controller
 
         $route=new Route;
         $route->name=$request->name;
-        $route->departure_station=$request->departurestation;
-        $route->arrival_station=$request->arrivalstation;
-        $route->departure_time=$request->departuretime;
+        $route->departurestation=$request->departurestation;
+        $route->arrivalstation=$request->arrivalstation;
+        $route->departuretime=$request->departuretime;
         $route->price=$request->price;
         $route->bus_type_id=$request->bustypeid;
         $route->seat=$request->busseat;
@@ -108,9 +108,9 @@ class RouteController extends Controller
         ]);
         
         $route->name=$request->name;
-        $route->departure_station=$request->departurestation;
-        $route->arrival_station=$request->arrivalstation;
-        $route->departure_time=$request->departuretime;
+        $route->departurestation=$request->departurestation;
+        $route->arrivalstation=$request->arrivalstation;
+        $route->departuretime=$request->departuretime;
         $route->price=$request->price;
         $route->bus_type_id=$request->bustypeid;
         $route->seat=$request->busseat;

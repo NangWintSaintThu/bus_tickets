@@ -21,9 +21,10 @@
 			       <div class="form-group row {{ $errors->has('departure') ? 'has-error' : '' }}">
 			        <label for="inputdeparture" class="col-sm-2 col-form-label">Departure Station</label>
 			        <div class="col-sm-5">
-			        	@foreach($routes as $route)
-			          <input type="text" id="inputdeparture" name="departurestation" class="d-block" value='{{ $departurestation}}'>
-                         @endforeach
+			        	{{-- @foreach($routes as $route) --}}
+			          <input type="text"{{--  id="inputdeparture" name="depraturestation" class="d-block" value='{{ $depraturestation}}'> --}}
+			          value="{{$route->id}}" @if($route->id==$depraturestation) @endif>{{$route->name}}>
+                        {{--  @endforeach --}}
 			          <span class="text-danger">{{ $errors->first('departure') }}</span>
 			        </div>
 			      </div>

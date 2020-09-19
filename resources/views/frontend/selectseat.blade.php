@@ -27,7 +27,7 @@
                   </ul>
                 </div>
 
-                <a href="{{route('seatpage')}}" class="addtocartBtn text-decoration-none btn_add_to_cart" data-id = '{{$bustype->id}}' data-name = '{{$bustype->name}}' data-photo = '{{$bustype->photo}'>Select Seat</a>
+                <a href="{{route('seatpage')}}" class="addtocartBtn text-decoration-none btn_add_to_cart" data-id = '{{$bustype->id}}' data-name = '{{$bustype->name}}' data-photo = '{{$bustype->photo}}'>Select Seat</a>
 
                         </div>
                     </div>

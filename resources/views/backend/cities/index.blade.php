@@ -1,7 +1,3 @@
-
-
-
-
 @extends('backendtemplate')
 @section('content')
   <div class="container-fluid">

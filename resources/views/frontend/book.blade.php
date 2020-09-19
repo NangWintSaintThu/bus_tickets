@@ -25,7 +25,7 @@
                       <th>Time</th>
                       <th>Number of seat</th>
                       <th>Total</th>
-                      <th>Action</th>
+                     
                
                </tr>
              </thead>
@@ -47,8 +47,6 @@
                  <th><input  class="form-control" id="time_pick"  value='{{$city_time}}' name="city_time"></th>
                  <th><input class="form-control" name="" value="{{$city_seat}}"></th>
                   <th><input class="form-control" name="" value="{{$city_total}}"></th>
-                  <th><input type="submit" name="submit" class="btn btn-success" value="Comfirm"><i class="fas fa-edit"></i>
-                    <input type="submit" name="submit" class="btn btn-danger" value="Cencle"><i class="fas fa-Delect"></th>
                </tr>
              </tbody>
            </table>

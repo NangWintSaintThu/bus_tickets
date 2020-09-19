@@ -48,11 +48,13 @@
                     </tr>
                     @php $i++; @endphp
                     @endforeach
-                     </tbody> 
+                     </tbody>
                    </thead>
-               </table>
-              </div>
+                 </table>
+               </div>
+             </div>
            </div>
+           
 
   
 
