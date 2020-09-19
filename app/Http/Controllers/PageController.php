@@ -27,11 +27,8 @@ class PageController extends Controller
 
      public function selectseat($value='')
 	{
-<<<<<<< HEAD
-		return view('frontend.selectseat'/*,compact('search')*/);
-=======
-		return view('frontend.selectseat');
->>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
+    $bustypes=Bustype::all();
+		return view('frontend.selectseat',compact('bustypes'));
     }
 
      
@@ -74,28 +71,10 @@ class PageController extends Controller
 
      public function searchfun(Request $request)
     {
-<<<<<<< HEAD
-=======
         //dd($request);
 
-<<<<<<< HEAD
 
       //for city
-
-
-=======
-<<<<<<< HEAD
-      //for city
-
-=======
-<<<<<<< HEAD
-=======
-      //for city
-
->>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
->>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
->>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
->>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
         $cities=City::all();
         $leavingfrom=$request->leavingfrom;
         $goingto=$request->goingto;
@@ -103,30 +82,17 @@ class PageController extends Controller
         $city_seat=$request->city_seat;
         $city_time=$request->city_time;
 
-<<<<<<< HEAD
         return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;   
 
-=======
 
 //dd($city_date);  
-//dd($city_date);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
-        return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;   
 
->>>>>>> 4421ad4830d0a1e73122e7ec1231ee05c868ff25
->>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
-        return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ; 
->>>>>>> 8d5e8e9146c13e6d0ede26924762f8c61fb7172e
 
         return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;   
        // for route
-        //dd($request);
->>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
+        //dd($request);s
         $routes=Route::all();
         $departure_station=$request->depature_station;
         $arrival_station=$request->arrival_station;
