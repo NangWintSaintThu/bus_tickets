@@ -15,7 +15,7 @@
                  <div class="MultiCarousel-inner">
                     <div class="bustype">
                         <div class="pad15">
-                         <a href="{{route('seatpage')}}"> <img src="{{ asset($bustype->photo)}}" class="img-fluid"></a>
+                         <a href="{{route('seatpage')}}"> <img src="{{ asset($bustype->logo)}}" class="img-fluid"></a>
                             <p class="text-truncate">{{$bustype->name}}</p>
                             <div class="star-rating">
                   <ul class="list-inline">
@@ -27,7 +27,7 @@
                   </ul>
                 </div>
 
-                <a href="{{route('seatpage')}}" class="addtocartBtn text-decoration-none btn_add_to_cart" data-id = '{{$bustype->id}}' data-name = '{{$bustype->name}}' data-photo = '{{$bustype->photo}'>Select Seat</a>
+                <a href="{{route('seatpage')}}" class="addtocartBtn text-decoration-none btn_add_to_cart" data-id = '{{$bustype->id}}' data-name = '{{$bustype->name}}' data-logo = '{{$bustype->logo}}'>Select Seat</a>
 
                         </div>
                     </div>
@@ -39,3 +39,52 @@
             </div>
         </div>
     </div>
+ {{-- for part1 --}}
+ <?php
+ for($i=1;$i<=$tseat;$i++){
+
+  ?>
+<?php if ($i%4==1){?>
+<tr>
+<?php }?>
+<?php if (in_arrat($i, $sumArray))
+{?>
+<td>
+<a href="" class="seat1 seat-unavailable">
+<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+</a>
+</td>}
+
+    <?php }else{?>
+    <tr>
+    <td>
+      <a href="#" class="seat seat-available" data-seat-number="about.blade.php{{$i}}" data-carseat="{{$seat}}">
+        <span>{{$i}}</span>
+      </a>
+    </td>
+    <?php }?>
+    <?php if($i%4==2){?>
+    <td><span class="aisle"></span></td>
+    <?php }?>
+    <?php if($i%4==0){?>
+  </tr>
+
+  {{-- for part2 --}}
+ {{--  for ($i=1; $i <=$tset; $i++){
+  ?>
+  <?php if ($i%4==1){?>
+<tr>
+<?php }?>
+<?php if (in_array($i,$sumArray))
+{?>
+<td><a href="#" class="seat1 seat-unavailable">
+  <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+</a></td>
+</tr>
+}
+ --}}
+
+  <?php }?>
+
+      
+   

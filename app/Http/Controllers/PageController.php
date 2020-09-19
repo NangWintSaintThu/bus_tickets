@@ -14,7 +14,7 @@ class PageController extends Controller
 	{      
         $bustypes=BusType::all();
         $cities=City::all();
-		return view('frontend.home',compact('cities','bustypes'));
+		return view('frontend.home',compact('cities','bustypes','routes'));
     }
 
 
@@ -27,14 +27,8 @@ class PageController extends Controller
 
      public function selectseat($value='')
 	{
-<<<<<<< HEAD
-		return view('frontend.selectseat');
-=======
 
-		return view('frontend.selectseat'/*,compact('search')*/);
 		return view('frontend.selectseat');
-
->>>>>>> 939d146fb1dc4046e3cf1dc27338fc38addc3f5b
     }
 
      
@@ -76,49 +70,33 @@ class PageController extends Controller
 
      public function searchfun(Request $request)
     {
-
-<<<<<<< HEAD
-=======
-        //dd($request);
-
-
-
-      //for city
->>>>>>> 939d146fb1dc4046e3cf1dc27338fc38addc3f5b
         $cities=City::all();
         $leavingfrom=$request->leavingfrom;
         $goingto=$request->goingto;
         $city_date=$request->city_date;
         $city_seat=$request->city_seat;
-        $city_time=$request->city_time;
-<<<<<<< HEAD
-
-
-        return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;   
-
-
-=======
- return view ('frontend.search',compact('cities','leavingfrom','goingto','city_date','city_seat','city_time')) ;  
-//dd($city_date);  
-//dd($city_date);
-
-         // for route
-        //dd($request);
->>>>>>> 939d146fb1dc4046e3cf1dc27338fc38addc3f5b
-        $routes=Route::all();
-        $departure_station=$request->depature_station;
-        $arrival_station=$request->arrival_station;
-        $route_time=$request->route_time;
-        $route_price=$request->route_price;
-        $route_bustype=$request->route_bustype;
-        $city_seat=$request->city_seat;
        
-        return view ('frontend.search',compact('routes','route_name','depaturestation','arrivalstation','route_time','route_price','route_bustype','route_seat')) ;  
+
+        $routes=Route::where('departure_station',$leavingfrom)->where('arrival_station',$goingto)->get();
+
+        $bustypes=BusType::all();
+        return view ('frontend.search',compact('routes','leavingfrom','goingto','city_date','cities','city_seat')) ;   
+
+        $routes=Route::all();
+        $name=$request->name;
+        $departure_station=$request->departurestation;
+        $arrival_station=$request->arrivalstation;
+        $departure_time=$request->departuretime;
+        $price=$request->price;
+        $bus_type_id=$request->bustypeid;
+        $seat=$request->busseat;
+       
+        return view ('frontend.search',compact('routes','name','departure_station','arrival_station','departure_time','price','bus_type_id','seat')) ;  
     }
      public function cityfun($value='')
     {
-       
-        return view ('backend.cities.index') ;
+       $routes=Route::all();
+        return view ('backend.cities.index',compact('routes')) ;
         
     }
     public function bustypefun($value='')

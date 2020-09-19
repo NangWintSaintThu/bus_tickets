@@ -29,7 +29,7 @@
                               <div class="form-group row">
                                 <label for="inputphoto" class="col-sm-2 col-form-label">Departure_Time</label>
                                  <div class="col-sm-10">
-                                  <input type="departure_time" class="file" id="inputtime" name="departuretime" value="{{$route->departure_time}}">
+                                  <input type="time" class="file" id="inputtime" name="departuretime" value="{{$route->departure_time}}">
                                   <span class="text-danger">{{$errors->first('departuretime')}}</span>
                              </div>
                              </div>
@@ -45,7 +45,7 @@
                               <div class="form-group row">
                                 <label for="inputbus" class="col-sm-2 col-form-label">Bus Type</label>
                                  <div class="col-sm-10">
-                                  <input type="text" class="file" id="inputbus" name="bustypeid">
+                                  <input type="text" class="file" id="inputbus" name="bustypeid" value="{{$route->bus_type_id}}">
                                   <span class="text-danger">{{$errors->first('bustypeid')}}</span>
                              </div>
                              </div>

@@ -11,7 +11,7 @@
             </div>
           </div>
 
-          <div class="col-lg-12 col-md-6 mt-0 mt-md-5 d-flex mt-5">
+         {{--  <div class="col-lg-12 col-md-6 mt-0 mt-md-5 d-flex mt-5"> --}}
 
 
            <section class="ftco-section ftco-no-pb ftco-no-pt">
@@ -59,11 +59,7 @@
                       <input type="text" class="form-control" id="book_pick_date"  value='{{$city_date}}'>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label for="" class="label">Pick-up time</label>
-                    <input type="text" class="form-control" id="time_pick" placeholder="Time" value='{{$city_time}}' name="city_time">
-                  </div> 
-
+             
                   <div class="col-lg align-items-end">
                     <div class="form-group">
                       <label for="#">Number of seat</label>
@@ -84,42 +80,60 @@
                      </div>
                    </div>
                  </div>
-                 <div class="col-lg align-self-end">
-                  <div class="form-group">
-                    <div class="form-field">
-                      <a href="{{route('selectseatpage')}}" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Search Now</a>
-                    </div>
-                  </div>
-                </div>
+               </div>
+             </form>
+           </div>
+         </div>
+       </div>
+     </div>
+               <div>
+                 @foreach($routes as $route)
+                 <div class="row">
+                  <div class="col-md-12 mx-auto">
+                    <div class="card shadow">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img src="{{asset($route->photo)}}" width="120px" height="100px">
+                          </div>
+                          <div class="col-md-4">
+                            <h4>{{$route->bustype->name}}</h4>
+                            <p>{{$route->departure->name}}._.{{$route->arrival->name}}</p>
+                          </div>
+
+                          <div class="col-md-4">
+                            <form action="{{route('seatpage')}}" method="post" class="d-inline-block">
+                              @csrf
+                              <input type="hidden" name="leavingfrom" value="{{$leavingfrom}}">
+                              <input type="hidden" name="goingto" value="{{$goingto}}">
+                              <input type="hidden" name="time" value="{{$city_seat}}">
+                              <input type="hidden" name="seat" value="{{$route_id}}">
+
+                               <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Search Now</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</div
+           {{--  </section>
 
-   {{--  <div class="container ">  
-         <div class="row mt-3">
-          <div class=" col-md-4 ">
-            <h4>Time</h4>
-  <input class="time-option" type="radio" name="time-option" id="time-option" value="time-option" checked>
-  <label class="time-option" for="time-option">
-    8:00AM
-  </label>
-<br>
-  <input class="time-option" type="radio" name="time-option" id="time-option" value="time-option" checked>
-  <label class="time-option" for="time-option">
-    7:00AM
-  </label>
-<br>
-  <input class="time-option" type="radio" name="time-option" id="time-option" value="time-option" checked>
-  <label class="time-option" for="time-option">
-    12:00AM
-  </label>
+
+                            
+                            </form>
+                          
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div> --}}
+
+@endforeach
 </div>
-</div>
-</div> --}}
+</section>
 
 @endsection   

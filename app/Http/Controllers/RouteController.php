@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Route;
+use App\City;
 use Illuminate\Http\Request;
 
 class RouteController extends Controller
@@ -17,7 +18,7 @@ class RouteController extends Controller
 
         $routes=Route::all();
 
-         return view('backend.routes.index',compact('routes'));
+        return view('backend.routes.index',compact('routes'));
     }
 
     /**
@@ -27,8 +28,8 @@ class RouteController extends Controller
      */
     public function create()
     {
-              $cities=City::all();
-       return view('backend.routes.create',compact('cities'));
+        $cities=City::all();
+        return view('backend.routes.create',compact('cities'));
     }
 
     /**
@@ -39,30 +40,30 @@ class RouteController extends Controller
      */
     public function store(Request $request)
     {
-          $request->validate([
-            "name"=>'required',
-            "departurestation"=>'required',
-            "arrivalstation"=>'required',
-            "departuretime"=>'required',
-            "price"=>'required',
-            "bustypeid"=>'required',
-            "busseat"=>'required'
+      $request->validate([
+        "name"=>'required',
+        "departurestation"=>'required',
+        "arrivalstation"=>'required',
+        "departuretime"=>'required',
+        "price"=>'required',
+        "bustypeid"=>'required',
+        "busseat"=>'required'
 
-        ]);
-        
+    ]);
 
-        $route=new Route;
-        $route->name=$request->name;
-        $route->departure_station=$request->departurestation;
-        $route->arrival_station=$request->arrivalstation;
-        $route->departure_time=$request->departuretime;
-        $route->price=$request->price;
-        $route->bus_type_id=$request->bustypeid;
-        $route->seat=$request->busseat;
-        $route->save();
 
-        return redirect()->route('routes.index');
-    }
+      $route=new Route;
+      $route->name=$request->name;
+      $route->departure_station=$request->departurestation;
+      $route->arrival_station=$request->arrivalstation;
+      $route->departure_time=$request->departuretime;
+      $route->price=$request->price;
+      $route->bus_type_id=$request->bustypeid;
+      $route->seat=$request->busseat;
+      $route->save();
+
+      return redirect()->route('routes.index');
+  }
 
     /**
      * Display the specified resource.
@@ -83,9 +84,9 @@ class RouteController extends Controller
      */
     public function edit(Route $route)
     {
-         return view('backend.routes.edit',compact('route'));
+       return view('backend.routes.edit',compact('route'));
 
-    }
+   }
 
     /**
      * Update the specified resource in storage.
@@ -96,28 +97,28 @@ class RouteController extends Controller
      */
     public function update(Request $request, Route $route)
     {
-          $request->validate([
-            "name"=>'required',
-            "departurestation"=>'required',
-            "arrivalstation"=>'required',
-            "departuretime"=>'required',
-            "price"=>'required',
-            "bustypeid"=>'required',
-            "busseat"=>'required'
+      $request->validate([
+        "name"=>'required',
+        "departurestation"=>'required',
+        "arrivalstation"=>'required',
+        "departuretime"=>'required',
+        "price"=>'required',
+        "bustypeid"=>'required',
+        "busseat"=>'required'
 
-        ]);
-        
-        $route->name=$request->name;
-        $route->departure_station=$request->departurestation;
-        $route->arrival_station=$request->arrivalstation;
-        $route->departure_time=$request->departuretime;
-        $route->price=$request->price;
-        $route->bus_type_id=$request->bustypeid;
-        $route->seat=$request->busseat;
-        $route->save();
+    ]);
 
-        return redirect()->route('routes.index');
-    }
+      $route->name=$request->name;
+      $route->departure_station=$request->departurestation;
+      $route->arrival_station=$request->arrivalstation;
+      $route->departure_time=$request->departuretime;
+      $route->price=$request->price;
+      $route->bus_type_id=$request->bustypeid;
+      $route->seat=$request->busseat;
+      $route->save();
+
+      return redirect()->route('routes.index');
+  }
 
     /**
      * Remove the specified resource from storage.
@@ -127,7 +128,7 @@ class RouteController extends Controller
      */
     public function destroy(Route $route)
     {
-         $route->delete();
-        return redirect()->route('routes.index');
-    }
+       $route->delete();
+       return redirect()->route('routes.index');
+   }
 }
