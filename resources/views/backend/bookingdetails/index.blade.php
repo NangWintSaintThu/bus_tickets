@@ -11,6 +11,22 @@
     
     
     <div class="row m-2">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+{{-- 
+=======
+
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
+>>>>>>> 55d9569c7092df12139cbdfb7b524e8f8d5211ef
+>>>>>>> 0c72d5b8e473b874b95b46911dea9ad2b7b9d5e7
     	<div class="col-md-12">
     		<table class="table table-bordered">
     			<thead class="thead bg-primary text-light">
@@ -19,15 +35,73 @@
     					<th>travellerinfo_id</th>
     					<th>route_id</th>
     					<th>no_people</th>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0c72d5b8e473b874b95b46911dea9ad2b7b9d5e7
                      <th>total</th>
                      <th>seat_no</th>
                      <th>departure_date</th>
                      
                  </tr>
-             </thead>
+             </thead> --}}
 
+<<<<<<< HEAD
      
+=======
+             <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>No</th>
+                            <th>User No</th>
+                            <th>Route</th>
+                            <th>No People</th>
+                            <th>Total</th>
+                            <th>Seat No</th>
+                            <th>Departure Date</th>
+                            
+                        </tr>
+                    </thead>
+<<<<<<< HEAD
+                </table>
+            </div>
+        </div>
+    </div>
+@endsection
+    
+
+   
+=======
+=======
+               <th>total</th>
+              <th>seat_no</th>
+              <th>departure_date</th>
+    					
+    				</tr>
+    			</thead>
+<<<<<<< HEAD
+            </table>
+        </div>
+=======
+>>>>>>> 6aff1f81e5c2ac9fc923e5820018ffcb658e615e
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>No</th>
+                        <th>User No</th>
+                        <th>Route</th>
+                        <th>No People</th>
+                        <th>Total</th>
+                        <th>Seat No</th>
+                        <th>Departure Date</th>
+                        
+                    </tr>
+                </thead>
+<<<<<<< HEAD
+>>>>>>> 808e42de1145c8463cfe104053df8154a61e95d4
+>>>>>>> 0c72d5b8e473b874b95b46911dea9ad2b7b9d5e7
 
     	{{-- <tbody> 
     				@php $i=1; @endphp
@@ -52,4 +126,10 @@
     </div>
 </div>
 </div>
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
+>>>>>>> 55d9569c7092df12139cbdfb7b524e8f8d5211ef
+>>>>>>> 0c72d5b8e473b874b95b46911dea9ad2b7b9d5e7

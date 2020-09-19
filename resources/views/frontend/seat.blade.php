@@ -47,6 +47,36 @@
 				</tr>
 
 			</table>
+			<div class="row">
+				<table cellspacing="10" cellpadding="15" border="1">
+					<tr style="background-color: gray">
+						<td colspan="5">
+							<input type="button" value="Driver" disabled>
+						</td>
+						</tr>
+						<?php
+						for ($i=1; $i < ; $route->seat; $i++) { 
+							?>
+							<?php if($i%4==1){?>
+							<tr>
+								<?php }?>
+								<td>
+									<a href="h=javascript:void(0)" class="btn btn-outline-success btn-sm btn_check btn_available">{{$i}}</a>
+
+								</td>
+								<?php if($i%4==2){?>
+								<td>
+									
+								</td>
+								<?php }?>
+								<?php if($i%4==0){?>
+							</tr>
+							<?php } ?>
+							<?php }?>
+
+				</table>
+				
+			</div>
 
 			<div class="col-md-4 offset-1">
 				<div class="card shadow">

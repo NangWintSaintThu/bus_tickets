@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
   <title>Autoroad - Free Bootstrap 4 Template by Colorlib</title>
   <meta charset="utf-8">
@@ -49,6 +50,68 @@
           <li class="nav-item"><a href="{{route('contactpage')}}" class="nav-link">Contact</a></li>
 
           <div class="col-lg-4 col-10">
+=======
+  <head>
+    <title>Autoroad - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   {{--  <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="{{asset('frontend/css/open-iconic-bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/animate.css')}}">
+    
+    <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/magnific-popup.css')}}">
+
+    <link rel="stylesheet" href="{{asset('frontend/css/aos.css')}}">
+
+    <link rel="stylesheet" href="{{asset('frontend/css/ionicons.min.css')}}">
+
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap-datepicker.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/jquery.timepicker.css')}}">
+
+    
+    <link rel="stylesheet" href="{{asset('frontend/css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/icomoon.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-info ftco_navbar bg-warning ftco-navbar-light" id="ftco-navbar">
+      <div class="container ">
+        <a class="navbar-brand" href="{{asset('frontend/img/icon.jpg')}}">Bus<span>Reservation</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="{{route('homepage')}}" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="{{route('aboutpage')}}" class="nav-link">About</a></li>
+
+          
+            
+
+          {{--   <li class="nav-item"><a href="{{ route('bookingdetailpage') }}" class="nav-link">Book Detail</a></li>
+            <li class="nav-item"><a href="{{ route('travellerinfopage') }}" class="nav-link">Traveller</a></li> --}}
+           {{--  <li class="nav-item"><a href="{{route('busroutepage')}}" class="nav-link">Bus Route</a></li> --}}
+
+            <li class="nav-item"><a href="{{route('yourticketpage')}}" class="nav-link">Your Ticket</a></li>
+
+            <li class="nav-item"><a href="{{route('bookpage')}}" class="nav-link">Booking Detail</a></li>
+
+
+            <li class="nav-item"><a href="{{route('contactpage')}}" class="nav-link">Contact</a></li>
+           
+            <div class="col-lg-4 col-10">
+>>>>>>> 0c72d5b8e473b874b95b46911dea9ad2b7b9d5e7
            @guest
            <span class="float-right d-xl-block d-lg-block d-md-block d-none">
             <a href="{{route('loginpage')}}" class=" text-decoration-none loginLink"> Login |</a>
