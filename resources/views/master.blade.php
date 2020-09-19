@@ -58,12 +58,43 @@
 
 
             <li class="nav-item"><a href="{{route('contactpage')}}" class="nav-link">Contact</a></li>
+           
+            <div class="col-lg-4 col-10">
+           @guest
             <span class="float-right d-xl-block d-lg-block d-md-block d-none">
-            <a href="{{route('loginpage')}}" class=" text-decoration-none loginLink ml-right"> Login |</a>
+            <a href="{{route('loginpage')}}" class=" text-decoration-none loginLink"> Login |</a>
               </span>
-              <span class="float-right d-xl-block d-lg-block d-md-block d-none">
-            <a href="{{route('registerpage')}}" class=" text-decoration-none loginLink ml-right"> Register</a>
-              </span>
+              @else
+              <a id="navbarDropdown" class="loginLink text-decoration-none dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                      {{ Auth::user()->name }}
+                  </a>
+
+                  <div class="dropdown-menu" >
+                      {{-- <a href="{{route('order_detail')}}" class="dropdown-item">Order History</a> --}}
+
+                      <a class="dropdown-item btn_logout text-dark"  href="{{ route('logout') }}"
+                         onclick="event.preventDefault();
+                                       document.getElementById('logout-form').submit();">
+                          {{ __('Logout') }}
+                      </a>
+
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                          @csrf
+                      </form>
+
+                      
+                  </div>
+              
+              @endguest 
+
+                        <a href="{{route('registerpage')}}" class="text-decoration-none registerLink ">  Sign-up </a>
+            
+          </div>
+        </div>
+      </div>
+      
+             
+              
           </ul>
         </div>
       </div>

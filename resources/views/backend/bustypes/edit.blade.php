@@ -21,6 +21,15 @@
       <input type="id" class="form-control" id="inputid" name="id" value="{{$bustype->id}}">
     </div>
   </div> --}}
+<<<<<<< HEAD
+  <div class="form-group row">
+    <label for="inputname" class="col-sm-2 col-form-label" >Name</label>
+    <div class="col-sm-10">
+      <input type="name" class="form-control" id="inputname" name="name" value="{{$bustype->name}}">
+    </div>
+  </div>
+  
+=======
  <div class="form-group row {{ $errors->has('name') ? 'has-error' : '' }}">
               <label for="inputname" class="col-sm-2 col-form-label">Name</label>
               <div class="col-sm-5">
@@ -37,6 +46,7 @@
                 <span class="text-danger">{{ $errors->first('logo') }}</span>
               </div>
             </div>
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
   
    <div class="form-group row">
     <div class="col-sm-10">

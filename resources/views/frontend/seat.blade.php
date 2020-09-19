@@ -84,6 +84,13 @@
 						<div class="row">
 							<div class="col-md-12" >
 								<div class="form-group">
+<<<<<<< HEAD
+									<label class="small mb-1" for="inputname">Leaving From</label>
+									<select class="form-control" name="leavingfrom">
+										@foreach($cities as $city)
+										<option placeholder=" Choose City" value="{{$city->id}}" @if($city->id==$leavingfrom) {{'selected'}} @endif>{{$city->name}}</option>
+										@endforeach 
+=======
 									<span class="form-label">Leaving From</span>
 									<select name="leavingfrom" id="city" class="form-control">
 										<optgroup label="Choose City">
@@ -91,10 +98,19 @@
 											<option placeholder=" Choose City" value="{{$city->id}}">{{$city->name}}</option>
 											@endforeach 
 										</optgroup>
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
 									</select>
 								</div>
 
 								<div class="form-group">
+<<<<<<< HEAD
+									<label class="small mb-1" for="inputname">Going To</label>
+									 <select class="form-control" name="leavingfrom">
+                               @foreach($cities as $city)
+                               <option placeholder=" Choose City" value="{{$city->id}}" @if($city->id==$leavingfrom) {{'selected'}} @endif>{{$city->name}}</option>
+                               @endforeach 
+                             </select>
+=======
 									<span class="form-label">Going To</span>
 									<select name="goingto" id="city" class="form-control">
 										<optgroup label="Choose City">
@@ -103,6 +119,7 @@
 											@endforeach 
 										</optgroup>
 									</select>
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
 								</div>
     
 								<div class="form-group">
@@ -142,8 +159,11 @@
 								</div>
 
 								<button type="submit" class="btn btn-secondary mainfullbtncolor btn-block">Book Now</button>
+<<<<<<< HEAD
+=======
 
 								
+>>>>>>> 3280294b9fbfdb0160c2ee5a01bc1d4dd8108d17
 							</div>
 
 						</table>
